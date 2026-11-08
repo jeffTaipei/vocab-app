@@ -13,13 +13,40 @@ const shuf = a => a.map(x => [Math.random(), x]).sort((p, q) => p[0] - q[0]).map
 // 錯題本裡、但目前單字表中有的字（舊版的字暫時不在表上，紀錄保留但不顯示）
 const bookKeys = () => Object.keys(S.m).filter(find);
 
+// 朗讀：挑一個英文語音。優先 en-US，其次任何英文（en-GB 等）
+// 語音清單是非同步載入的，所以要等 voiceschanged 事件
+let enVoice = null;
+function pickVoice() {
+  if (!("speechSynthesis" in window)) return;
+  const vs = speechSynthesis.getVoices();
+  enVoice = vs.find(v => v.lang.replace("_", "-") === "en-US") || vs.find(v => /^en/i.test(v.lang)) || null;
+}
+pickVoice();
+if ("speechSynthesis" in window) speechSynthesis.addEventListener("voiceschanged", pickVoice);
+
 function say(t) {
-  try {
+  if (!("speechSynthesis" in window)) return voiceHelp("這個瀏覽器不支援朗讀功能，請改用 Chrome 或 Edge。");
+  pickVoice();
+  if (!enVoice) return voiceHelp("這台裝置沒有安裝英文語音，所以無法朗讀。請在 Windows「設定 → 時間與語言 → 語音」新增「英文（美國）」，或改用 Edge 瀏覽器開啟。");
+  const u = new SpeechSynthesisUtterance(t);
+  u.voice = enVoice; u.lang = enVoice.lang; u.rate = .9;
+  // Chrome 的小毛病：cancel() 之後立刻 speak() 有時會被吞掉，所以等一下下再講
+  if (speechSynthesis.speaking || speechSynthesis.pending) {
     speechSynthesis.cancel();
-    const u = new SpeechSynthesisUtterance(t);
-    u.lang = "en-US"; u.rate = .9;
-    speechSynthesis.speak(u);
-  } catch (e) {}
+    setTimeout(() => speechSynthesis.speak(u), 80);
+  } else speechSynthesis.speak(u);
+}
+
+// 無法朗讀時，在畫面上方顯示一次提示（不用 alert，免得打斷答題）
+function voiceHelp(msg) {
+  let el = $("#voice-help");
+  if (!el) {
+    el = document.createElement("p");
+    el.id = "voice-help";
+    el.setAttribute("role", "status");
+    $("#stat").after(el);
+  }
+  el.textContent = "🔇 " + msg;
 }
 
 function next() {

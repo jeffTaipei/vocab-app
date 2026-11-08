@@ -37,5 +37,6 @@ h1{font:600 22px "Newsreader","Noto Sans TC",serif;margin:8px 0 2px}
 .en{font:400 17px/1.5 "Newsreader",Georgia,serif}
 .ex .btn{padding:6px 12px;font-size:14px}
 button:focus-visible{outline:2px solid var(--ac);outline-offset:2px}
+#voice-help{margin:0 0 12px;padding:10px 12px;border:1px solid var(--bad);background:var(--badbg);color:var(--bad);border-radius:10px;font-size:14px}
 footer{margin-top:24px;color:var(--mut);font-size:12px;line-height:1.7}
 footer p{margin:4px 0}
