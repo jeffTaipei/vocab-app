@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>單字練習 Level 4–6</title>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,600;1,400&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef0f6;--fg:#1d2340;--card:#fff;--mut:#5d6483;--ac:#1f6f6b;--acfg:#fff;--ok:#1b7a43;--okbg:#dff3e6;--bad:#b3261e;--badbg:#fbe4e2;--bd:#d3d7e6;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141a2b;--fg:#e8eaf5;--card:#1d2540;--mut:#9aa3c7;--ac:#5fc2b8;--acfg:#0d1a1a;--ok:#7fdca0;--okbg:#1a3a2a;--bad:#f2a29c;--badbg:#412326;--bd:#323c63}}
+:root[data-theme="dark"]{--bg:#141a2b;--fg:#e8eaf5;--card:#1d2540;--mut:#9aa3c7;--ac:#5fc2b8;--acfg:#0d1a1a;--ok:#7fdca0;--okbg:#1a3a2a;--bad:#f2a29c;--badbg:#412326;--bd:#323c63}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 "Noto Sans TC",system-ui,sans-serif}
+.wrap{max-width:560px;margin:0 auto;padding:16px}
+h1{font:600 22px "Newsreader","Noto Sans TC",serif;margin:8px 0 2px}
+#stat{color:var(--mut);font-size:14px;margin-bottom:12px}
+.tabs{display:flex;gap:8px;margin-bottom:14px}
+.tab{flex:1;padding:10px;border:1px solid var(--bd);background:var(--card);color:var(--fg);border-radius:10px;font:inherit;cursor:pointer}
+.tab.on{background:var(--ac);color:var(--acfg);border-color:var(--ac)}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:20px}
+.sent{font:400 24px/1.5 "Newsreader",Georgia,serif;margin:0 0 18px}
+.hl{color:var(--ac);font-weight:600}
+.opts{display:grid;gap:10px}
+.opt{padding:12px 14px;text-align:left;border:1px solid var(--bd);background:var(--bg);color:var(--fg);border-radius:10px;font:500 18px "Newsreader",Georgia,serif;cursor:pointer}
+.opt.ok{background:var(--okbg);border-color:var(--ok);color:var(--ok)}
+.opt.bad{background:var(--badbg);border-color:var(--bad);color:var(--bad)}
+.zh{margin-left:10px;font:400 14px "Noto Sans TC",system-ui,sans-serif;opacity:.85}
+.fb{margin-top:16px;padding-top:14px;border-top:1px solid var(--bd)}
+.fb p{margin:4px 0}
+.mut{color:var(--mut);font-size:14px}
+.row{display:flex;gap:10px;margin-top:14px}
+.btn{padding:10px 16px;border-radius:10px;border:1px solid var(--bd);background:var(--card);color:var(--fg);font:inherit;cursor:pointer}
+.btn.pri{background:var(--ac);color:var(--acfg);border-color:var(--ac);flex:1}
+.item{display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid var(--bd)}
+.item:last-child{border:0}
+.item .w{font:600 18px "Newsreader",Georgia,serif}
+.item .n{flex:1}
+.cnt{color:var(--bad);font-weight:700}
+.wb{padding:12px 0;border-bottom:1px solid var(--bd)}
+.wb .item{border:0;padding:0 0 4px}
+.ex{display:flex;gap:10px;align-items:flex-start;padding:8px 0 0}
+.ex div{flex:1}
+.ex p{margin:0}
+.en{font:400 17px/1.5 "Newsreader",Georgia,serif}
+.ex .btn{padding:6px 12px;font-size:14px}
+button:focus-visible{outline:2px solid var(--ac);outline-offset:2px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>單字練習 Level 4–6</h1>
+<div id="stat"></div>
+<div class="tabs"><button class="tab" data-t="quiz">練習</button><button class="tab" data-t="book">錯題本</button></div>
+<div id="main"></div>
+</div>
+<script>
+// [單字, 詞性, 中文, [[例句, 翻譯], ...]]
+const W=[
+["reluctant","adj","不情願的",[["Harry was reluctant to tell Ron about his strange dream.","哈利不情願告訴榮恩他那個奇怪的夢。"],["Neville looked reluctant to open the door of the dark classroom.","奈威看起來不情願打開那間陰暗教室的門。"]],[["Mia was reluctant to speak in front of the whole class.","米亞不情願在全班面前發言。"],["He gave a reluctant smile when his mom asked him to clean his room.","媽媽叫他整理房間時，他勉強地笑了一下。"]]],
+["ambitious","adj","有野心的",[["Hermione is ambitious and wants the highest grade in every class.","妙麗很有野心，想在每一堂課都拿最高分。"],["Draco is ambitious, but he often depends on his father.","跩哥很有野心，但他常常依賴父親。"]],[["The ambitious young chef dreams of opening his own restaurant.","這位有野心的年輕廚師夢想開一間自己的餐廳。"],["Our team set an ambitious goal of collecting one thousand books.","我們的團隊訂下收集一千本書的遠大目標。"]]],
+["vanish","v","消失",[["Under the Invisibility Cloak, Harry seemed to vanish into thin air.","披著隱形斗篷，哈利彷彿憑空消失了。"],["The sweets on the table began to vanish when Ron walked in.","榮恩一走進來，桌上的糖果就開始消失了。"]],[["The morning fog began to vanish as the sun rose.","太陽升起時，晨霧開始消失。"],["My phone seemed to vanish, but it was in my bag the whole time.","我的手機好像不見了，其實它一直在我的包包裡。"]]],
+["fragile","adj","易碎的；脆弱的",[["Professor Flitwick warned that the crystal ball was very fragile.","佛立維教授警告說那顆水晶球非常易碎。"],["After the long battle, Harry felt fragile and tired.","漫長的戰鬥後，哈利覺得自己脆弱又疲憊。"]],[["Please be careful with this box; the glasses inside are fragile.","請小心這個箱子，裡面的玻璃杯很易碎。"],["Trust is fragile, and it takes time to rebuild.","信任很脆弱，重建需要時間。"]]],
+["anxious","adj","焦慮的；渴望的",[["Neville felt anxious before every Potions class.","每次魔藥課前，奈威都感到焦慮。"],["Hagrid was anxious to show everyone his new creature.","海格迫不及待想讓大家看他的新生物。"]],[["She felt anxious while waiting for her exam results.","等待考試成績時，她感到焦慮。"],["The fans were anxious to see their favorite singer on stage.","粉絲們迫不及待想在舞台上看到他們最愛的歌手。"]]],
+["convince","v","說服；使相信",[["Hermione tried to convince Ron to start studying earlier.","妙麗試著說服榮恩早點開始讀書。"],["It was hard to convince Professor McGonagall that the story was true.","要讓麥教授相信這個故事是真的很困難。"]],[["I could not convince my brother to share his snacks.","我沒辦法說服弟弟分享他的零食。"],["The doctor tried to convince him to sleep earlier.","醫生試著說服他早點睡。"]]],
+["ancient","adj","古老的",[["Hogwarts is an ancient castle full of secret passages.","霍格華茲是一座布滿祕密通道的古老城堡。"],["Hermione found an ancient book about magical creatures in the library.","妙麗在圖書館找到一本關於魔法生物的古老書籍。"]],[["We visited an ancient temple on our trip to Tainan.","我們去台南旅行時參觀了一座古老的廟宇。"],["Ancient people used the stars to find their way at night.","古人利用星星在夜晚找路。"]]],
+["curious","adj","好奇的",[["Luna is curious about every strange animal she meets.","露娜對她遇到的每一種奇特動物都很好奇。"],["Harry grew curious about the mirror in the empty room.","哈利對那間空房間裡的鏡子越來越好奇。"]],[["The curious kitten kept looking into every box.","好奇的小貓一直往每個箱子裡看。"],["I am curious about how airplanes stay in the sky.","我很好奇飛機如何停留在空中。"]]],
+["humble","adj","謙虛的",[["Even though he was famous, Harry stayed humble.","即使很有名，哈利仍然保持謙虛。"],["Dumbledore was a great wizard, yet he was always humble.","鄧不利多是偉大的巫師，卻總是很謙虛。"]],[["The winner was humble and thanked everyone who helped her.","這位冠軍很謙虛，感謝每一位幫助過她的人。"],["He comes from a humble family, but he studies very hard.","他出身平凡的家庭，但讀書非常努力。"]]],
+["loyal","adj","忠誠的",[["Hagrid is loyal to Dumbledore, and he never doubts him.","海格對鄧不利多忠心耿耿，從不懷疑他。"],["Ron proved to be a loyal friend in the hardest moments.","榮恩在最艱難的時刻證明了自己是忠實的朋友。"]],[["Dogs are known to be loyal to their owners.","狗以對主人忠誠聞名。"],["She is a loyal customer who visits the shop every week.","她是忠實的顧客，每週都來這家店。"]]],
+["temporary","adj","暫時的",[["The professor said the magic spell was only temporary.","教授說這個魔法咒語只是暫時的。"],["Harry took a temporary job helping Hagrid feed the creatures.","哈利暫時做了一份幫海格餵生物的工作。"]],[["The bridge is closed for temporary repairs.","這座橋因臨時維修而封閉。"],["Stress can cause a temporary loss of appetite.","壓力可能造成暫時的食慾不振。"]]],
+["hesitate","v","猶豫",[["Harry did not hesitate to jump on his broom to save Ginny.","哈利毫不猶豫地跳上掃帚去救金妮。"],["Do not hesitate to ask Madam Pomfrey if you feel sick.","如果覺得不舒服，別猶豫去問龐芮夫人。"]],[["Don't hesitate to call me if you need help.","如果需要幫忙，別猶豫打電話給我。"],["She did not hesitate to give her seat to the elderly man.","她毫不猶豫地把座位讓給那位老先生。"]]],
+["conceal","v","隱藏；隱瞞",[["Draco tried to conceal his fear behind a proud smile.","跩哥試著用驕傲的笑容掩飾他的恐懼。"],["Snape could conceal his true feelings from almost everyone.","石內卜幾乎能對所有人隱藏他真正的感受。"]],[["He tried to conceal the gift behind his back.","他試著把禮物藏在背後。"],["She could not conceal her excitement when the bell rang.","鈴聲一響，她藏不住興奮的心情。"]]],
+["cunning","adj","狡猾的；機靈的",[["The Slytherin students were known to be clever and cunning.","史萊哲林的學生以聰明又狡猾聞名。"],["Fred and George made a cunning plan to leave the school.","弗雷和喬治想出一個機靈的計畫來離開學校。"]],[["The cunning fox tricked the crow into dropping its food.","狡猾的狐狸騙烏鴉掉下牠的食物。"],["He made a cunning plan to win the board game.","他想出一個機靈的計畫來贏得這場桌遊。"]]],
+["generous","adj","慷慨的",[["Sirius was generous and gave Harry a very special gift.","天狼星很慷慨，送給哈利一份非常特別的禮物。"],["Mrs. Weasley is generous, so there is always extra food on the table.","衛斯理太太很慷慨，所以桌上總是有多的食物。"]],[["My uncle is generous and always pays for our dinner.","我叔叔很慷慨，總是請我們吃晚餐。"],["The company made a generous donation to the school.","這家公司對學校做了慷慨的捐贈。"]]],
+["obstacle","n","障礙",[["Each trial was an obstacle on the way to the Philosopher’s Stone.","每一道關卡都是通往魔法石路上的障礙。"],["Fear was the biggest obstacle for Neville, not his skill.","對奈威來說，最大的障礙是恐懼，而不是能力。"]],[["A fallen tree was an obstacle on the mountain path.","一棵倒下的樹成了山徑上的障礙。"],["Lack of sleep can be an obstacle to learning.","睡眠不足可能成為學習的障礙。"]]],
+["rumor","n","謠言",[["A rumor spread that Harry was the heir of Slytherin.","謠言傳開，說哈利是史萊哲林的後裔。"],["Hermione refused to believe a rumor without checking the facts.","妙麗拒絕在沒有查證事實前相信謠言。"]],[["There is a rumor that our school will start a new club.","有謠言說我們學校將成立新社團。"],["Don't spread a rumor if you are not sure it is true.","如果不確定是真的，就不要散播謠言。"]]],
+["determined","adj","堅決的",[["Harry was determined to find out the truth about the stone.","哈利下定決心要查出魔法石的真相。"],["Hermione looked determined as she opened her thick spell book.","妙麗翻開她厚厚的咒語書，神情堅決。"]],[["She is determined to run a marathon next year.","她下定決心明年要跑馬拉松。"],["The determined student practiced the piano every day.","那位意志堅定的學生每天練鋼琴。"]]],
+["betray","v","背叛",[["Peter Pettigrew chose to betray his friends, the Potters.","彼得·佩迪鐸選擇背叛他的朋友波特夫婦。"],["Harry would never betray the people who trusted him.","哈利絕不會背叛信任他的人。"]],[["A true friend will never betray your secret.","真正的朋友絕不會出賣你的祕密。"],["The spy decided to betray his country for money.","這名間諜為了錢決定背叛他的國家。"]]],
+["survive","v","倖存；存活",[["No one expected a baby to survive the Killing Curse.","沒有人預料一個嬰兒能在索命咒下存活。"],["It is hard to survive in the Forbidden Forest at night.","夜裡要在禁忌森林中存活很不容易。"]],[["Some plants can survive in the desert with very little water.","有些植物能在幾乎沒有水的沙漠中存活。"],["Penguins huddle together to survive the cold winter.","企鵝擠在一起以度過寒冷的冬天。"]]]
+];
+const POS={adj:"形容詞",v:"動詞",n:"名詞"};
+const $=s=>document.querySelector(s);
+let S={m:{},ok:0,tot:0},cur=null,last="",tab="quiz",armed=false;
+try{const r=localStorage.getItem("vocabQ");if(r)S=Object.assign(S,JSON.parse(r))}catch(e){}
+const save=()=>{try{localStorage.setItem("vocabQ",JSON.stringify(S))}catch(e){}};
+const shuf=a=>a.map(x=>[Math.random(),x]).sort((p,q)=>p[0]-q[0]).map(x=>x[1]);
+function say(t){try{speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t);u.lang="en-US";u.rate=.9;speechSynthesis.speak(u)}catch(e){}}
+function next(){
+  const ws=W.map(w=>1+4*(S.m[w[0]]||0));
+  let r=Math.random()*ws.reduce((a,b)=>a+b,0),i=0;
+  while(i<ws.length-1&&r>=ws[i]){r-=ws[i];i++}
+  const w=W[i],pool=(S.m[w[0]]&&w[4])?w[4]:w[3],ss=pool.filter(s=>s[0]!==last),s=ss[Math.floor(Math.random()*ss.length)];
+  last=s[0];
+  const d=shuf(W.filter(x=>x!==w&&x[1]===w[1])).concat(shuf(W.filter(x=>x!==w&&x[1]!==w[1]))).slice(0,3);
+  cur={w,s,opts:shuf([w].concat(d)),done:false,pick:-1};
+  render();
+}
+function pick(i){
+  if(cur.done)return;
+  const c=cur,w=c.w[0],good=c.opts[i]===c.w;
+  S.tot++;
+  if(good){S.ok++;if(S.m[w]){S.m[w]--;if(!S.m[w])delete S.m[w]}}
+  else S.m[w]=Math.min(5,(S.m[w]||0)+1);
+  c.done=true;c.pick=i;save();render();say(c.s[0]);
+}
+function render(){
+  $("#stat").textContent="答對 "+S.ok+" / "+S.tot+"，錯題本 "+Object.keys(S.m).length+" 個單字";
+  document.querySelectorAll(".tab").forEach(b=>b.classList.toggle("on",b.dataset.t===tab));
+  if(tab==="book")return book();
+  if(!cur)return next();
+  const c=cur,re=new RegExp("\\b"+c.w[0]+"\\b","i");
+  const q=c.done?c.s[0].replace(re,'<span class="hl">'+c.w[0]+'</span>'):c.s[0].replace(re,"＿＿＿＿＿");
+  let h='<div class="card"><p class="sent">'+q+'</p><div class="opts">';
+  c.opts.forEach((o,i)=>{
+    let k="opt";
+    if(c.done){if(o===c.w)k+=" ok";else if(i===c.pick)k+=" bad"}
+    h+='<button class="'+k+'" data-i="'+i+'">'+o[0]+(c.done?'<span class="zh">'+o[2]+'</span>':'')+'</button>';
+  });
+  h+='</div>';
+  if(c.done){
+    h+='<div class="fb"><p>'+c.s[1]+'</p><p class="mut">'+c.w[0]+"（"+POS[c.w[1]]+"）"+c.w[2]+'</p>'+
+    '<div class="row"><button class="btn" data-a="say">再聽一次</button><button class="btn pri" data-a="next">下一題</button></div></div>';
+  }
+  $("#main").innerHTML=h+'</div>';
+}
+function book(){
+  const ks=Object.keys(S.m).sort((a,b)=>S.m[b]-S.m[a]);
+  let h='<div class="card">';
+  if(!ks.length)h+='<p>目前沒有錯題。到「練習」答題，答錯的單字會出現在這裡，並且更常出題。</p>';
+  ks.forEach(k=>{
+    const w=W.find(x=>x[0]===k);if(!w)return;
+    const re=new RegExp("\\b"+k+"\\b","i");
+    h+='<div class="wb"><div class="item"><span class="w">'+k+'</span><span class="n mut">'+w[2]+'</span><span class="cnt">'+S.m[k]+'</span><button class="btn" data-w="'+k+'" aria-label="朗讀 '+k+'">朗讀</button></div>';
+    (w[4]||[]).forEach((s,n)=>{
+      h+='<div class="ex"><div><p class="en">'+s[0].replace(re,'<span class="hl">'+k+'</span>')+'</p><p class="mut">'+s[1]+'</p></div><button class="btn" data-x="'+k+'|'+n+'" aria-label="朗讀例句">朗讀</button></div>';
+    });
+    h+='</div>';
+  });
+  if(ks.length)h+='<div class="row"><button class="btn pri" data-a="go">練習錯題</button></div>';
+  h+='<div class="row"><button class="btn" data-a="reset">'+(armed?"再按一次確認清除":"清除全部紀錄")+'</button></div></div>';
+  $("#main").innerHTML=h;
+}
+document.addEventListener("click",e=>{
+  const t=e.target.closest("button");if(!t)return;
+  if(t.dataset.t){tab=t.dataset.t;armed=false;render();return}
+  if(t.dataset.i!==undefined)return pick(+t.dataset.i);
+  if(t.dataset.w)return say(t.dataset.w);
+  if(t.dataset.x){const p=t.dataset.x.split("|"),w=W.find(x=>x[0]===p[0]);return say(w[4][+p[1]][0])}
+  const a=t.dataset.a;
+  if(a==="next")next();
+  else if(a==="say")say(cur.s[0]);
+  else if(a==="go"){tab="quiz";next()}
+  else if(a==="reset"){
+    if(!armed){armed=true;render();return}
+    S={m:{},ok:0,tot:0};armed=false;save();cur=null;render();
+  }
+});
+render();
+</script>
+</body>
+</html>
