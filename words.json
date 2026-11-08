@@ -1,0 +1,332 @@
+[
+  {
+    "word": "reluctant", "pos": "adj", "level": 4, "zh": "不情願的",
+    "hp": [
+      {"en": "Harry was reluctant to tell Ron about his strange dream.", "zh": "哈利不情願告訴榮恩他那個奇怪的夢。"},
+      {"en": "Neville looked reluctant to open the door of the dark classroom.", "zh": "奈威看起來不情願打開那間陰暗教室的門。"}
+    ],
+    "extra": [
+      {"en": "Mia was reluctant to speak in front of the whole class.", "zh": "米亞不情願在全班面前發言。"},
+      {"en": "He gave a reluctant smile when his mom asked him to clean his room.", "zh": "媽媽叫他整理房間時，他勉強地笑了一下。"}
+    ]
+  },
+  {
+    "word": "ambitious", "pos": "adj", "level": 4, "zh": "有野心的",
+    "hp": [
+      {"en": "Hermione is ambitious and wants the highest grade in every class.", "zh": "妙麗很有野心，想在每一堂課都拿最高分。"},
+      {"en": "Draco is ambitious, but he often depends on his father.", "zh": "跩哥很有野心，但他常常依賴父親。"}
+    ],
+    "extra": [
+      {"en": "The ambitious young chef dreams of opening his own restaurant.", "zh": "這位有野心的年輕廚師夢想開一間自己的餐廳。"},
+      {"en": "Our team set an ambitious goal of collecting one thousand books.", "zh": "我們的團隊訂下收集一千本書的遠大目標。"}
+    ]
+  },
+  {
+    "word": "fragile", "pos": "adj", "level": 4, "zh": "易碎的；脆弱的",
+    "hp": [
+      {"en": "Professor Flitwick warned that the crystal ball was very fragile.", "zh": "孚立維教授警告說那顆水晶球非常易碎。"},
+      {"en": "After the long battle, Harry felt fragile and tired.", "zh": "漫長的戰鬥後，哈利覺得自己脆弱又疲憊。"}
+    ],
+    "extra": [
+      {"en": "Please be careful with this box; the glasses inside are fragile.", "zh": "請小心這個箱子，裡面的玻璃杯很易碎。"},
+      {"en": "Trust is fragile, and it takes time to rebuild.", "zh": "信任很脆弱，重建需要時間。"}
+    ]
+  },
+  {
+    "word": "loyal", "pos": "adj", "level": 4, "zh": "忠誠的",
+    "hp": [
+      {"en": "Hagrid is loyal to Dumbledore, and he never doubts him.", "zh": "海格對鄧不利多忠心耿耿，從不懷疑他。"},
+      {"en": "Ron proved to be a loyal friend in the hardest moments.", "zh": "榮恩在最艱難的時刻證明了自己是忠實的朋友。"}
+    ],
+    "extra": [
+      {"en": "Dogs are known to be loyal to their owners.", "zh": "狗以對主人忠誠聞名。"},
+      {"en": "She is a loyal customer who visits the shop every week.", "zh": "她是忠實的顧客，每週都來這家店。"}
+    ]
+  },
+  {
+    "word": "cunning", "pos": "adj", "level": 4, "zh": "狡猾的；機靈的",
+    "hp": [
+      {"en": "The Slytherin students were known to be clever and cunning.", "zh": "史萊哲林的學生以聰明又狡猾聞名。"},
+      {"en": "Fred and George made a cunning plan to leave the school.", "zh": "弗雷和喬治想出一個機靈的計畫來離開學校。"}
+    ],
+    "extra": [
+      {"en": "The cunning fox tricked the crow into dropping its food.", "zh": "狡猾的狐狸騙烏鴉掉下牠的食物。"},
+      {"en": "He made a cunning plan to win the board game.", "zh": "他想出一個機靈的計畫來贏得這場桌遊。"}
+    ]
+  },
+  {
+    "word": "mysterious", "pos": "adj", "level": 4, "zh": "神祕的",
+    "hp": [
+      {"en": "A mysterious voice whispered to Harry from inside the walls.", "zh": "一個神祕的聲音從牆裡對哈利低語。"},
+      {"en": "Hermione wanted to know who sent Harry the mysterious broom.", "zh": "妙麗想知道是誰寄給哈利那支神祕的掃帚。"}
+    ],
+    "extra": [
+      {"en": "We found a mysterious letter with no name under our door.", "zh": "我們在門下發現一封沒有署名的神祕信件。"},
+      {"en": "The old house at the end of the street looks dark and mysterious.", "zh": "街尾那棟老房子看起來陰暗又神祕。"}
+    ]
+  },
+  {
+    "word": "desperate", "pos": "adj", "level": 4, "zh": "絕望的；極度渴望的",
+    "hp": [
+      {"en": "Ron was desperate to finish his essay before Snape's class.", "zh": "榮恩拚命想在石內卜的課之前寫完報告。"},
+      {"en": "Harry made a desperate attempt to save Sirius from the Dementors.", "zh": "哈利不顧一切地想從催狂魔手中救出天狼星。"}
+    ],
+    "extra": [
+      {"en": "After walking for hours, the hikers were desperate for water.", "zh": "走了好幾個小時後，登山客極度渴望喝水。"},
+      {"en": "Losing by twenty points, the team was in a desperate situation.", "zh": "落後二十分，這支隊伍陷入絕望的處境。"}
+    ]
+  },
+  {
+    "word": "clumsy", "pos": "adj", "level": 4, "zh": "笨手笨腳的；笨拙的",
+    "hp": [
+      {"en": "Neville was so clumsy that he dropped his wand twice in one lesson.", "zh": "奈威笨手笨腳的，一堂課就把魔杖掉了兩次。"},
+      {"en": "Tonks felt clumsy after she knocked over the umbrella stand again.", "zh": "東施又撞倒傘架之後，覺得自己真是笨手笨腳。"}
+    ],
+    "extra": [
+      {"en": "I was clumsy this morning and spilled milk all over the table.", "zh": "我今天早上笨手笨腳的，把牛奶灑得整桌都是。"},
+      {"en": "The puppy is still clumsy and often trips over its own feet.", "zh": "小狗還很笨拙，常常被自己的腳絆倒。"}
+    ]
+  },
+  {
+    "word": "furious", "pos": "adj", "level": 4, "zh": "狂怒的；非常生氣的",
+    "hp": [
+      {"en": "Uncle Vernon was furious when the letters kept flying into the house.", "zh": "信件不斷飛進屋裡，威農姨丈氣炸了。"},
+      {"en": "Mrs. Weasley was furious when Fred and George set off fireworks in the kitchen.", "zh": "弗雷和喬治在廚房放煙火，衛斯理太太氣得火冒三丈。"}
+    ],
+    "extra": [
+      {"en": "My sister was furious when someone ate her birthday cake.", "zh": "有人吃了我姊姊的生日蛋糕，她氣壞了。"},
+      {"en": "The driver was furious about the long traffic jam.", "zh": "司機對漫長的塞車感到非常憤怒。"}
+    ]
+  },
+  {
+    "word": "grateful", "pos": "adj", "level": 4, "zh": "感激的",
+    "hp": [
+      {"en": "Harry was grateful that Dobby warned him about the danger.", "zh": "哈利很感激多比警告他有危險。"},
+      {"en": "Hagrid felt grateful when Dumbledore let him stay at Hogwarts.", "zh": "鄧不利多讓海格留在霍格華茲，海格心懷感激。"}
+    ],
+    "extra": [
+      {"en": "I am grateful to my teacher for her patience.", "zh": "我很感激老師的耐心。"},
+      {"en": "The family was grateful for the neighbors' help after the storm.", "zh": "暴風雨過後，這家人很感謝鄰居的幫忙。"}
+    ]
+  },
+  {
+    "word": "convince", "pos": "v", "level": 4, "zh": "說服；使相信",
+    "hp": [
+      {"en": "Hermione tried to convince Ron to start studying earlier.", "zh": "妙麗試著說服榮恩早點開始讀書。"},
+      {"en": "It was hard to convince Professor McGonagall that the story was true.", "zh": "要讓麥教授相信這個故事是真的很困難。"}
+    ],
+    "extra": [
+      {"en": "I could not convince my brother to share his snacks.", "zh": "我沒辦法說服弟弟分享他的零食。"},
+      {"en": "The doctor tried to convince him to sleep earlier.", "zh": "醫生試著說服他早點睡。"}
+    ]
+  },
+  {
+    "word": "abandon", "pos": "v", "level": 4, "zh": "拋棄；放棄",
+    "hp": [
+      {"en": "Harry would never abandon his friends, even in great danger.", "zh": "即使身陷險境，哈利也絕不會拋下朋友。"},
+      {"en": "Ron refused to abandon Scabbers, even though the rat was old and sick.", "zh": "榮恩不肯拋棄斑斑，即使那隻老鼠又老又病。"}
+    ],
+    "extra": [
+      {"en": "Never abandon a pet just because it is getting old.", "zh": "千萬不要因為寵物變老就拋棄牠。"},
+      {"en": "Heavy rain forced us to abandon our plan for a picnic.", "zh": "大雨迫使我們放棄野餐的計畫。"}
+    ]
+  },
+  {
+    "word": "accuse", "pos": "v", "level": 4, "zh": "指控；指責",
+    "hp": [
+      {"en": "Snape liked to accuse Harry of breaking school rules.", "zh": "石內卜喜歡指責哈利違反校規。"},
+      {"en": "It is not fair to accuse Hagrid without any proof.", "zh": "沒有任何證據就指控海格並不公平。"}
+    ],
+    "extra": [
+      {"en": "Please don't accuse me of lying; I'm telling the truth.", "zh": "請不要指責我說謊，我說的是實話。"},
+      {"en": "The store owner tried to accuse the boy of stealing candy.", "zh": "店老闆試圖指控那個男孩偷糖果。"}
+    ]
+  },
+  {
+    "word": "conquer", "pos": "v", "level": 4, "zh": "征服；克服",
+    "hp": [
+      {"en": "Voldemort wanted to conquer the whole wizarding world.", "zh": "佛地魔想要征服整個魔法世界。"},
+      {"en": "Neville worked hard to conquer his fear of Snape.", "zh": "奈威努力克服對石內卜的恐懼。"}
+    ],
+    "extra": [
+      {"en": "She finally learned to conquer her fear of deep water.", "zh": "她終於學會克服對深水的恐懼。"},
+      {"en": "The army tried to conquer the small island.", "zh": "軍隊試圖征服那座小島。"}
+    ]
+  },
+  {
+    "word": "disguise", "pos": "v", "level": 4, "zh": "偽裝；掩飾",
+    "hp": [
+      {"en": "Harry and Ron drank a potion to disguise themselves as Crabbe and Goyle.", "zh": "哈利和榮恩喝下魔藥，把自己偽裝成克拉和高爾。"},
+      {"en": "Sirius could disguise himself as a big black dog.", "zh": "天狼星能把自己偽裝成一隻大黑狗。"}
+    ],
+    "extra": [
+      {"en": "He wore glasses and a hat to disguise himself at the party.", "zh": "他在派對上戴眼鏡和帽子來偽裝自己。"},
+      {"en": "She tried to disguise her voice on the phone.", "zh": "她講電話時試著偽裝自己的聲音。"}
+    ]
+  },
+  {
+    "word": "endure", "pos": "v", "level": 4, "zh": "忍受；忍耐",
+    "hp": [
+      {"en": "Harry had to endure another long summer with the Dursleys.", "zh": "哈利得再忍受和德思禮一家度過一個漫長的暑假。"},
+      {"en": "The students could hardly endure the cold in the dungeon classroom.", "zh": "學生們幾乎無法忍受地窖教室裡的寒冷。"}
+    ],
+    "extra": [
+      {"en": "We had to endure three hours of waiting at the airport.", "zh": "我們在機場忍受了三個小時的等待。"},
+      {"en": "Some desert animals can endure very high temperatures.", "zh": "有些沙漠動物能忍受極高的溫度。"}
+    ]
+  },
+  {
+    "word": "forbid", "pos": "v", "level": 4, "zh": "禁止",
+    "hp": [
+      {"en": "Hogwarts rules forbid first-years to bring their own brooms.", "zh": "霍格華茲的校規禁止一年級新生帶自己的掃帚。"},
+      {"en": "Mrs. Weasley wanted to forbid the twins from selling joke products at home.", "zh": "衛斯理太太想禁止雙胞胎在家裡賣惡作劇商品。"}
+    ],
+    "extra": [
+      {"en": "Many parks forbid people to feed the birds.", "zh": "許多公園禁止民眾餵鳥。"},
+      {"en": "My parents forbid me to use my phone at the dinner table.", "zh": "爸媽禁止我在餐桌上用手機。"}
+    ]
+  },
+  {
+    "word": "imitate", "pos": "v", "level": 4, "zh": "模仿",
+    "hp": [
+      {"en": "Fred and George loved to imitate Percy's serious voice.", "zh": "弗雷和喬治很愛模仿派西嚴肅的聲音。"},
+      {"en": "A boggart can imitate the thing you fear the most.", "zh": "幻形怪能模仿你最害怕的東西。"}
+    ],
+    "extra": [
+      {"en": "Young children often imitate their parents.", "zh": "小孩子常常模仿父母。"},
+      {"en": "This bird can imitate the sound of a ringing phone.", "zh": "這種鳥能模仿電話鈴聲。"}
+    ]
+  },
+  {
+    "word": "rescue", "pos": "v", "level": 4, "zh": "拯救；救援",
+    "hp": [
+      {"en": "Harry dived into the lake to rescue Ron during the second task.", "zh": "在第二項任務中，哈利潛入湖裡去救榮恩。"},
+      {"en": "Harry and Hermione went back in time to rescue Buckbeak.", "zh": "哈利和妙麗回到過去去救巴嘴。"}
+    ],
+    "extra": [
+      {"en": "Firefighters arrived quickly to rescue the family.", "zh": "消防員迅速趕到，救出那一家人。"},
+      {"en": "The volunteers work hard to rescue stray cats.", "zh": "志工們努力救援流浪貓。"}
+    ]
+  },
+  {
+    "word": "tremble", "pos": "v", "level": 4, "zh": "發抖；震動",
+    "hp": [
+      {"en": "Neville's hands began to tremble when Snape looked at him.", "zh": "石內卜一看著奈威，他的手就開始發抖。"},
+      {"en": "The whole castle seemed to tremble during the battle.", "zh": "戰鬥期間，整座城堡似乎都在震動。"}
+    ],
+    "extra": [
+      {"en": "My legs started to tremble before I went on stage.", "zh": "上台前我的腿開始發抖。"},
+      {"en": "The windows began to tremble as the big truck passed by.", "zh": "大卡車經過時，窗戶開始震動。"}
+    ]
+  },
+  {
+    "word": "obstacle", "pos": "n", "level": 4, "zh": "障礙",
+    "hp": [
+      {"en": "Each trial was an obstacle on the way to the Philosopher's Stone.", "zh": "每一道關卡都是通往魔法石路上的障礙。"},
+      {"en": "Fear was the biggest obstacle for Neville, not his skill.", "zh": "對奈威來說，最大的障礙是恐懼，而不是能力。"}
+    ],
+    "extra": [
+      {"en": "A fallen tree was an obstacle on the mountain path.", "zh": "一棵倒下的樹成了山徑上的障礙。"},
+      {"en": "Lack of sleep can be an obstacle to learning.", "zh": "睡眠不足可能成為學習的障礙。"}
+    ]
+  },
+  {
+    "word": "ancestor", "pos": "n", "level": 4, "zh": "祖先",
+    "hp": [
+      {"en": "Harry learned that his ancestor was one of the three Peverell brothers.", "zh": "哈利得知他的祖先是皮福雷三兄弟之一。"},
+      {"en": "The tapestry in Sirius's house showed every ancestor of the Black family.", "zh": "天狼星家的掛毯上畫著布萊克家族的每一位祖先。"}
+    ],
+    "extra": [
+      {"en": "My ancestor came to Taiwan from Fujian about two hundred years ago.", "zh": "我的祖先大約兩百年前從福建來到台灣。"},
+      {"en": "During Tomb Sweeping Day, we honor every ancestor of our family.", "zh": "清明節時，我們祭拜家族的每一位祖先。"}
+    ]
+  },
+  {
+    "word": "curiosity", "pos": "n", "level": 4, "zh": "好奇心",
+    "hp": [
+      {"en": "Harry's curiosity led him to explore the castle at night.", "zh": "好奇心驅使哈利在夜裡探索城堡。"},
+      {"en": "Luna looked at the strange creature with great curiosity.", "zh": "露娜充滿好奇地看著那隻奇怪的生物。"}
+    ],
+    "extra": [
+      {"en": "The boy's curiosity about space made him read many books.", "zh": "那男孩對太空的好奇心讓他讀了很多書。"},
+      {"en": "Out of curiosity, I opened the old box in the attic.", "zh": "出於好奇，我打開了閣樓裡的舊箱子。"}
+    ]
+  },
+  {
+    "word": "nightmare", "pos": "n", "level": 4, "zh": "惡夢",
+    "hp": [
+      {"en": "Harry woke up from a nightmare about a flash of green light.", "zh": "哈利從一場關於綠光閃現的惡夢中驚醒。"},
+      {"en": "Ron had a nightmare about giant spiders after visiting the forest.", "zh": "去過森林之後，榮恩做了一場關於巨大蜘蛛的惡夢。"}
+    ],
+    "extra": [
+      {"en": "I had a nightmare that I was late for my final exam.", "zh": "我做了一場期末考遲到的惡夢。"},
+      {"en": "Being stuck in traffic for five hours was a total nightmare.", "zh": "塞車塞了五小時，簡直是一場惡夢。"}
+    ]
+  },
+  {
+    "word": "legend", "pos": "n", "level": 4, "zh": "傳說；傳奇人物",
+    "hp": [
+      {"en": "Hermione read the legend of the Chamber of Secrets in a history book.", "zh": "妙麗在一本歷史書中讀到了密室的傳說。"},
+      {"en": "According to an old legend, the Elder Wand cannot be defeated.", "zh": "根據古老的傳說，接骨木魔杖是無法被打敗的。"}
+    ],
+    "extra": [
+      {"en": "There is a legend about a white snake living in the lake.", "zh": "有個傳說提到湖裡住著一條白蛇。"},
+      {"en": "The famous basketball player became a legend in his hometown.", "zh": "那位知名籃球員成了家鄉的傳奇人物。"}
+    ]
+  },
+  {
+    "word": "mischief", "pos": "n", "level": 4, "zh": "惡作劇；調皮搗蛋",
+    "hp": [
+      {"en": "Fred and George were always looking for new mischief.", "zh": "弗雷和喬治總是在找新的惡作劇。"},
+      {"en": "Peeves caused mischief in the halls almost every day.", "zh": "皮皮鬼幾乎每天都在走廊上搗蛋。"}
+    ],
+    "extra": [
+      {"en": "The kids got into mischief while their parents were busy cooking.", "zh": "父母忙著煮飯時，孩子們開始調皮搗蛋。"},
+      {"en": "My cat is full of mischief and knocks things off the table.", "zh": "我的貓很調皮，會把東西從桌上撥下去。"}
+    ]
+  },
+  {
+    "word": "sacrifice", "pos": "n", "level": 4, "zh": "犧牲",
+    "hp": [
+      {"en": "Lily's sacrifice protected baby Harry from Voldemort.", "zh": "莉莉的犧牲保護了還是嬰兒的哈利不受佛地魔傷害。"},
+      {"en": "Dobby made a brave sacrifice to save his friends.", "zh": "多比為了救朋友，勇敢地犧牲了自己。"}
+    ],
+    "extra": [
+      {"en": "Parents often make a sacrifice for their children's future.", "zh": "父母常常為了孩子的未來做出犧牲。"},
+      {"en": "Giving up video games before the exam was a small sacrifice.", "zh": "考試前放棄打電動是個小小的犧牲。"}
+    ]
+  },
+  {
+    "word": "instinct", "pos": "n", "level": 4, "zh": "本能；直覺",
+    "hp": [
+      {"en": "Harry followed his instinct and turned left in the maze.", "zh": "哈利依照直覺在迷宮中左轉。"},
+      {"en": "A Seeker needs good instinct to catch the Golden Snitch.", "zh": "搜捕手需要好的直覺才能抓到金探子。"}
+    ],
+    "extra": [
+      {"en": "Birds fly south in winter by instinct.", "zh": "鳥類憑本能在冬天往南飛。"},
+      {"en": "My first instinct was to run, but I stayed calm.", "zh": "我的第一個直覺是逃跑，但我保持了冷靜。"}
+    ]
+  },
+  {
+    "word": "guardian", "pos": "n", "level": 4, "zh": "監護人；守護者",
+    "hp": [
+      {"en": "Sirius wanted to be Harry's guardian and take him away from the Dursleys.", "zh": "天狼星想當哈利的監護人，把他從德思禮家帶走。"},
+      {"en": "Hagrid was like a guardian to Harry in his first days in the wizarding world.", "zh": "哈利剛進入魔法世界的那段日子，海格就像他的守護者。"}
+    ],
+    "extra": [
+      {"en": "A parent or guardian must sign this form.", "zh": "這份表格必須由家長或監護人簽名。"},
+      {"en": "The old tree stands like a guardian at the village entrance.", "zh": "那棵老樹像守護者一樣矗立在村口。"}
+    ]
+  },
+  {
+    "word": "revenge", "pos": "n", "level": 4, "zh": "報復；復仇",
+    "hp": [
+      {"en": "Sirius wanted revenge on the man who betrayed his best friend.", "zh": "天狼星想向背叛他摯友的人報仇。"},
+      {"en": "Draco planned his revenge after Hermione slapped him.", "zh": "妙麗打了跩哥一巴掌之後，他就計畫報復。"}
+    ],
+    "extra": [
+      {"en": "Taking revenge will not make you feel better.", "zh": "報復並不會讓你感覺好過一點。"},
+      {"en": "The movie is about a man seeking revenge for his family.", "zh": "這部電影講的是一個男人為家人復仇的故事。"}
+    ]
+  }
+]
