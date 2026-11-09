@@ -60,9 +60,12 @@ function next() {
   const ss = pool.filter(s => s.en !== last);
   const s = ss[Math.floor(Math.random() * ss.length)];
   last = s.en;
-  // 干擾選項：優先挑同詞性的字
-  const d = shuf(W.filter(x => x !== w && x.pos === w.pos))
-    .concat(shuf(W.filter(x => x !== w && x.pos !== w.pos))).slice(0, 3);
+  // 干擾選項：
+  // 有 near（易混淆字）的單字 → 用中文意思相近、但文法或搭配不合這句的字
+  // 沒有的 → 從單字表隨機挑，優先挑同詞性
+  const d = w.near ? shuf(w.near).slice(0, 3)
+    : shuf(W.filter(x => x !== w && x.pos === w.pos))
+      .concat(shuf(W.filter(x => x !== w && x.pos !== w.pos))).slice(0, 3);
   cur = { w, s, opts: shuf([w].concat(d)), done: false, pick: -1 };
   render();
 }
@@ -83,11 +86,18 @@ function render() {
   if (!cur) return next();
   const c = cur, k = c.w.word, re = new RegExp("\\b" + k + "\\b", "i");
   const q = c.done ? c.s.en.replace(re, '<span class="hl">' + k + '</span>') : c.s.en.replace(re, "＿＿＿＿＿");
-  let h = '<div class="card"><p class="sent">' + q + '</p><div class="opts">';
+  const near = !!c.w.near;
+  let h = '<div class="card">' + (near ? '<p class="tag">易混淆字</p>' : '') + '<p class="sent">' + q + '</p><div class="opts">';
   c.opts.forEach((o, i) => {
     let cls = "opt";
     if (c.done) { if (o === c.w) cls += " ok"; else if (i === c.pick) cls += " bad"; }
-    h += '<button class="' + cls + '" data-i="' + i + '">' + o.word + (c.done ? '<span class="zh">' + o.zh + '</span>' : '') + '</button>';
+    h += '<button class="' + cls + '" data-i="' + i + '">' + o.word;
+    if (c.done) {
+      h += '<span class="zh">' + o.zh + (near ? '・第 ' + o.level + ' 級' : '') + '</span>';
+      // 易混淆字題：每個選項都顯示適合的情境
+      if (near) h += '<span class="fit">' + (o === c.w ? '✓ ' : '') + o.fit + '</span>';
+    }
+    h += '</button>';
   });
   h += '</div>';
   if (c.done) {

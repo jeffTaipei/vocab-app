@@ -18,6 +18,9 @@ h1{font:600 22px "Newsreader","Noto Sans TC",serif;margin:8px 0 2px}
 .opt.ok{background:var(--okbg);border-color:var(--ok);color:var(--ok)}
 .opt.bad{background:var(--badbg);border-color:var(--bad);color:var(--bad)}
 .zh{margin-left:10px;font:400 14px "Noto Sans TC",system-ui,sans-serif;opacity:.85}
+.fit{display:block;margin-top:4px;font:400 14px/1.5 "Noto Sans TC",system-ui,sans-serif;color:var(--mut)}
+.opt.ok .fit{color:var(--ok)}
+.tag{display:inline-block;margin:0 0 10px;padding:2px 10px;border-radius:999px;background:var(--bg);border:1px solid var(--bd);color:var(--mut);font-size:13px}
 .fb{margin-top:16px;padding-top:14px;border-top:1px solid var(--bd)}
 .fb p{margin:4px 0}
 .mut{color:var(--mut);font-size:14px}

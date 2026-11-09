@@ -133,13 +133,19 @@
   },
   {
     "word": "accuse", "pos": "v", "level": 4, "zh": "指控；指責",
+    "fit": "accuse 人 of 某事：指控某人做了壞事。例：accuse him of lying",
     "hp": [
       {"en": "Snape liked to accuse Harry of breaking school rules.", "zh": "石內卜喜歡指責哈利違反校規。"},
-      {"en": "It is not fair to accuse Hagrid without any proof.", "zh": "沒有任何證據就指控海格並不公平。"}
+      {"en": "It is not fair to accuse Hagrid of opening the Chamber without any proof.", "zh": "沒有任何證據就指控海格打開了密室，並不公平。"}
     ],
     "extra": [
       {"en": "Please don't accuse me of lying; I'm telling the truth.", "zh": "請不要指責我說謊，我說的是實話。"},
       {"en": "The store owner tried to accuse the boy of stealing candy.", "zh": "店老闆試圖指控那個男孩偷糖果。"}
+    ],
+    "near": [
+      {"word": "blame", "pos": "v", "level": 2, "zh": "責怪", "fit": "blame 人 for 某事：把錯怪到某人頭上。例：blame him for the mistake"},
+      {"word": "charge", "pos": "v", "level": 2, "zh": "控告；收費", "fit": "charge 人 with 罪名：正式起訴（法律用語）。例：charge him with theft"},
+      {"word": "criticize", "pos": "v", "level": 4, "zh": "批評", "fit": "criticize 人 for 某事：批評某人的做法。例：criticize her for being late"}
     ]
   },
   {
@@ -155,13 +161,19 @@
   },
   {
     "word": "disguise", "pos": "v", "level": 4, "zh": "偽裝；掩飾",
+    "fit": "disguise oneself as ~：把自己打扮成別人或別的東西",
     "hp": [
       {"en": "Harry and Ron drank a potion to disguise themselves as Crabbe and Goyle.", "zh": "哈利和榮恩喝下魔藥，把自己偽裝成克拉和高爾。"},
       {"en": "Sirius could disguise himself as a big black dog.", "zh": "天狼星能把自己偽裝成一隻大黑狗。"}
     ],
     "extra": [
-      {"en": "He wore glasses and a hat to disguise himself at the party.", "zh": "他在派對上戴眼鏡和帽子來偽裝自己。"},
-      {"en": "She tried to disguise her voice on the phone.", "zh": "她講電話時試著偽裝自己的聲音。"}
+      {"en": "He wore glasses and a fake beard to disguise himself as an old man.", "zh": "他戴上眼鏡和假鬍子，把自己偽裝成老人。"},
+      {"en": "The kids tried to disguise themselves as ghosts for Halloween.", "zh": "孩子們試著在萬聖節把自己打扮成鬼。"}
+    ],
+    "near": [
+      {"word": "hide", "pos": "v", "level": 1, "zh": "隱藏；躲藏", "fit": "hide 某物／hide from 某人：藏起來不被看到，不接 as。例：hide the key under the mat"},
+      {"word": "pretend", "pos": "v", "level": 3, "zh": "假裝", "fit": "pretend to + 原形動詞／pretend that：假裝某件事是真的。例：pretend to be asleep"},
+      {"word": "conceal", "pos": "v", "level": 5, "zh": "隱瞞；隱藏", "fit": "conceal 某物或感情：比 hide 正式，不接 as。例：conceal the truth"}
     ]
   },
   {
@@ -177,13 +189,19 @@
   },
   {
     "word": "forbid", "pos": "v", "level": 4, "zh": "禁止",
+    "fit": "forbid 人 to + 原形動詞：禁止某人做某事（也可用 from + V-ing）",
     "hp": [
       {"en": "Hogwarts rules forbid first-years to bring their own brooms.", "zh": "霍格華茲的校規禁止一年級新生帶自己的掃帚。"},
-      {"en": "Mrs. Weasley wanted to forbid the twins from selling joke products at home.", "zh": "衛斯理太太想禁止雙胞胎在家裡賣惡作劇商品。"}
+      {"en": "Mrs. Weasley wanted to forbid the twins to sell joke products at home.", "zh": "衛斯理太太想禁止雙胞胎在家裡賣惡作劇商品。"}
     ],
     "extra": [
       {"en": "Many parks forbid people to feed the birds.", "zh": "許多公園禁止民眾餵鳥。"},
       {"en": "My parents forbid me to use my phone at the dinner table.", "zh": "爸媽禁止我在餐桌上用手機。"}
+    ],
+    "near": [
+      {"word": "prohibit", "pos": "v", "level": 5, "zh": "（法規）禁止", "fit": "prohibit 人 from + V-ing：用法規正式禁止，不接 to + 原形動詞。例：prohibit drivers from using phones"},
+      {"word": "ban", "pos": "v", "level": 5, "zh": "明令禁止", "fit": "ban 人 from + V-ing，或 ban 某物：公開下令禁止。例：ban smoking in restaurants"},
+      {"word": "prevent", "pos": "v", "level": 3, "zh": "防止；阻止", "fit": "prevent 人 from + V-ing：讓某事無法發生（不一定是規定）。例：prevent the fire from spreading"}
     ]
   },
   {
@@ -496,6 +514,7 @@
   },
   {
     "word": "possess", "pos": "v", "level": 4, "zh": "擁有",
+    "fit": "possess 某物：擁有（及物動詞，後面直接接東西或能力）",
     "hp": [
       {"en": "Only a few wizards possess an Invisibility Cloak.", "zh": "只有少數巫師擁有隱形斗篷。"},
       {"en": "Voldemort wanted to possess the Elder Wand.", "zh": "佛地魔想要擁有接骨木魔杖。"}
@@ -503,6 +522,11 @@
     "extra": [
       {"en": "Some people possess a natural talent for music.", "zh": "有些人天生擁有音樂天分。"},
       {"en": "Few high school students possess their own car.", "zh": "很少高中生擁有自己的車。"}
+    ],
+    "near": [
+      {"word": "belong", "pos": "v", "level": 1, "zh": "屬於", "fit": "某物 belong to 人：東西屬於某人，一定要接 to，主詞是東西。例：The car belongs to my dad."},
+      {"word": "occupy", "pos": "v", "level": 4, "zh": "佔據；佔用", "fit": "occupy 空間或時間：佔用位置。例：occupy two seats on the bus"},
+      {"word": "contain", "pos": "v", "level": 2, "zh": "包含；裝有", "fit": "某容器 contain 某物：裡面裝著。例：This box contains old letters."}
     ]
   },
   {
@@ -628,13 +652,19 @@
   },
   {
     "word": "reputation", "pos": "n", "level": 4, "zh": "名聲；聲譽",
+    "fit": "a good/bad reputation (for/as ~)：名聲、口碑，可數，可以加 a",
     "hp": [
-      {"en": "Lockhart's reputation was built on other people's adventures.", "zh": "洛哈的名聲是建立在別人的冒險之上的。"},
+      {"en": "Lockhart had a reputation as a great hero, but his stories were all lies.", "zh": "洛哈有著大英雄的名聲，但他的故事全是謊言。"},
       {"en": "Snape had a reputation for being the strictest teacher at Hogwarts.", "zh": "石內卜是出了名的霍格華茲最嚴格的老師。"}
     ],
     "extra": [
       {"en": "The restaurant has a good reputation for its noodles.", "zh": "這家餐廳的麵食口碑很好。"},
-      {"en": "Telling lies can hurt your reputation.", "zh": "說謊會傷害你的名聲。"}
+      {"en": "Telling lies can give you a bad reputation.", "zh": "說謊會讓你的名聲變差。"}
+    ],
+    "near": [
+      {"word": "fame", "pos": "n", "level": 4, "zh": "名氣", "fit": "fame 不可數，不說 a fame。指出名這件事。例：win fame as a singer"},
+      {"word": "honor", "pos": "n", "level": 3, "zh": "榮譽；榮幸", "fit": "an honor to + 原形動詞：做某事是一種榮幸；或 in honor of ~。例：It's an honor to meet you."},
+      {"word": "glory", "pos": "n", "level": 3, "zh": "光榮；榮耀", "fit": "glory 不可數，指偉大成就帶來的榮耀。例：the glory of winning the gold medal"}
     ]
   },
   {
