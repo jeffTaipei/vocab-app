@@ -21,6 +21,8 @@ h1{font:600 22px "Newsreader","Noto Sans TC",serif;margin:8px 0 2px}
 .fit{display:block;margin-top:4px;font:400 14px/1.5 "Noto Sans TC",system-ui,sans-serif;color:var(--mut)}
 .opt.ok .fit{color:var(--ok)}
 .tag{display:inline-block;margin:0 0 10px;padding:2px 10px;border-radius:999px;background:var(--bg);border:1px solid var(--bd);color:var(--mut);font-size:13px}
+.mode{display:flex;align-items:center;gap:8px;margin:0 0 12px;font-size:15px;cursor:pointer;user-select:none}
+.mode input{width:18px;height:18px;accent-color:var(--ac);cursor:pointer}
 .fb{margin-top:16px;padding-top:14px;border-top:1px solid var(--bd)}
 .fb p{margin:4px 0}
 .mut{color:var(--mut);font-size:14px}

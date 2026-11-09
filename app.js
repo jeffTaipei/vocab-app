@@ -9,6 +9,9 @@ const find = k => W.find(x => x.word === k);
 let S = { m: {}, ok: 0, tot: 0 }, cur = null, last = "", tab = "quiz", armed = false;
 try { const r = localStorage.getItem("vocabQ"); if (r) S = Object.assign(S, JSON.parse(r)); } catch (e) {}
 const save = () => { try { localStorage.setItem("vocabQ", JSON.stringify(S)); } catch (e) {} };
+// 「只練易混淆字」設定：另外用一個 key 存，不動到 vocabQ 的進度
+let nearOnly = false;
+try { nearOnly = localStorage.getItem("vocabNearOnly") === "1"; } catch (e) {}
 const shuf = a => a.map(x => [Math.random(), x]).sort((p, q) => p[0] - q[0]).map(x => x[1]);
 // 錯題本裡、但目前單字表中有的字（舊版的字暫時不在表上，紀錄保留但不顯示）
 const bookKeys = () => Object.keys(S.m).filter(find);
@@ -50,11 +53,14 @@ function voiceHelp(msg) {
 }
 
 function next() {
+  // 勾選「只練易混淆字」時，只從有 near 的單字出題
+  const nearWords = W.filter(w => w.near);
+  const pool0 = nearOnly && nearWords.length ? nearWords : W;
   // 抽題權重 = 1 + 4 × 錯題次數
-  const ws = W.map(w => 1 + 4 * (S.m[w.word] || 0));
+  const ws = pool0.map(w => 1 + 4 * (S.m[w.word] || 0));
   let r = Math.random() * ws.reduce((a, b) => a + b, 0), i = 0;
   while (i < ws.length - 1 && r >= ws[i]) { r -= ws[i]; i++; }
-  const w = W[i];
+  const w = pool0[i];
   // 在錯題本中的字改用 extra 例句
   const pool = S.m[w.word] ? w.extra : w.hp;
   const ss = pool.filter(s => s.en !== last);
@@ -87,7 +93,9 @@ function render() {
   const c = cur, k = c.w.word, re = new RegExp("\\b" + k + "\\b", "i");
   const q = c.done ? c.s.en.replace(re, '<span class="hl">' + k + '</span>') : c.s.en.replace(re, "＿＿＿＿＿");
   const near = !!c.w.near;
-  let h = '<div class="card">' + (near ? '<p class="tag">易混淆字</p>' : '') + '<p class="sent">' + q + '</p><div class="opts">';
+  const nNear = W.filter(w => w.near).length;
+  let h = '<label class="mode"><input type="checkbox" id="nearOnly"' + (nearOnly ? ' checked' : '') + '> 只練易混淆字（' + nNear + ' 個字）</label>';
+  h += '<div class="card">' + (near ? '<p class="tag">易混淆字</p>' : '') + '<p class="sent">' + q + '</p><div class="opts">';
   c.opts.forEach((o, i) => {
     let cls = "opt";
     if (c.done) { if (o === c.w) cls += " ok"; else if (i === c.pick) cls += " bad"; }
@@ -138,6 +146,15 @@ document.addEventListener("click", e => {
     if (!armed) { armed = true; render(); return; }
     S = { m: {}, ok: 0, tot: 0 }; armed = false; save(); cur = null; render();
   }
+});
+
+// 勾選框：切換「只練易混淆字」
+document.addEventListener("change", e => {
+  if (e.target.id !== "nearOnly") return;
+  nearOnly = e.target.checked;
+  try { localStorage.setItem("vocabNearOnly", nearOnly ? "1" : "0"); } catch (err) {}
+  // 剛勾選、而目前這題不是易混淆字題 → 馬上換一題；取消勾選則保留目前這題
+  if (nearOnly && !(cur && cur.w.near)) next(); else render();
 });
 
 // 讀取 words.json。直接雙擊 html 開啟時瀏覽器會擋下讀檔，要用本機伺服器
