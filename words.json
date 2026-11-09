@@ -1,13 +1,19 @@
 [
   {
     "word": "reluctant", "pos": "adj", "level": 4, "zh": "不情願的",
+    "fit": "reluctant to V：不情願做某事",
     "hp": [
       {"en": "Harry was reluctant to tell Ron about his strange dream.", "zh": "哈利不情願告訴榮恩他那個奇怪的夢。"},
       {"en": "Neville looked reluctant to open the door of the dark classroom.", "zh": "奈威看起來不情願打開那間陰暗教室的門。"}
     ],
     "extra": [
       {"en": "Mia was reluctant to speak in front of the whole class.", "zh": "米亞不情願在全班面前發言。"},
-      {"en": "He gave a reluctant smile when his mom asked him to clean his room.", "zh": "媽媽叫他整理房間時，他勉強地笑了一下。"}
+      {"en": "He was reluctant to clean his room when his mom asked him.", "zh": "媽媽叫他整理房間時，他不太情願。"}
+    ],
+    "near": [
+      {"word": "bored", "pos": "adj", "level": 1, "zh": "無聊的；厭煩的", "fit": "bored (with 某事)：感到無聊，不接 to V。例：bored with the movie"},
+      {"word": "tired", "pos": "adj", "level": 1, "zh": "疲倦的；厭倦的", "fit": "tired of V-ing：厭倦做某事，不接 to V。例：tired of waiting"},
+      {"word": "doubtful", "pos": "adj", "level": 3, "zh": "懷疑的", "fit": "doubtful (about 某事)：懷疑、不確定。例：doubtful about the plan"}
     ]
   },
   {
@@ -34,13 +40,19 @@
   },
   {
     "word": "loyal", "pos": "adj", "level": 4, "zh": "忠誠的",
+    "fit": "loyal to 人或團體：忠於、對…忠心",
     "hp": [
       {"en": "Hagrid is loyal to Dumbledore, and he never doubts him.", "zh": "海格對鄧不利多忠心耿耿，從不懷疑他。"},
-      {"en": "Ron proved to be a loyal friend in the hardest moments.", "zh": "榮恩在最艱難的時刻證明了自己是忠實的朋友。"}
+      {"en": "Ron stayed loyal to Harry even in the hardest moments.", "zh": "即使在最艱難的時刻，榮恩仍然對哈利忠心。"}
     ],
     "extra": [
       {"en": "Dogs are known to be loyal to their owners.", "zh": "狗以對主人忠誠聞名。"},
-      {"en": "She is a loyal customer who visits the shop every week.", "zh": "她是忠實的顧客，每週都來這家店。"}
+      {"en": "She has stayed loyal to this little shop for ten years.", "zh": "十年來，她一直是這家小店的忠實顧客。"}
+    ],
+    "near": [
+      {"word": "honest", "pos": "adj", "level": 1, "zh": "誠實的", "fit": "honest (with 人)：誠實、不說謊，不接 to 人。例：be honest with me"},
+      {"word": "sincere", "pos": "adj", "level": 3, "zh": "真誠的", "fit": "sincere：真誠的，形容人、道歉、感謝。例：a sincere apology"},
+      {"word": "frank", "pos": "adj", "level": 3, "zh": "坦白的", "fit": "frank (with 人)：坦白直率。例：be frank with your parents"}
     ]
   },
   {
@@ -100,17 +112,24 @@
   },
   {
     "word": "grateful", "pos": "adj", "level": 4, "zh": "感激的",
+    "fit": "grateful to 人 for 某事：對某人心存感激",
     "hp": [
-      {"en": "Harry was grateful that Dobby warned him about the danger.", "zh": "哈利很感激多比警告他有危險。"},
-      {"en": "Hagrid felt grateful when Dumbledore let him stay at Hogwarts.", "zh": "鄧不利多讓海格留在霍格華茲，海格心懷感激。"}
+      {"en": "Harry was grateful to Dobby for the warning.", "zh": "哈利很感激多比的警告。"},
+      {"en": "Hagrid felt grateful to Dumbledore for letting him stay at Hogwarts.", "zh": "海格很感激鄧不利多讓他留在霍格華茲。"}
     ],
     "extra": [
       {"en": "I am grateful to my teacher for her patience.", "zh": "我很感激老師的耐心。"},
-      {"en": "The family was grateful for the neighbors' help after the storm.", "zh": "暴風雨過後，這家人很感謝鄰居的幫忙。"}
+      {"en": "The family was grateful to the neighbors for their help after the storm.", "zh": "暴風雨過後，這家人很感謝鄰居的幫忙。"}
+    ],
+    "near": [
+      {"word": "glad", "pos": "adj", "level": 1, "zh": "高興的", "fit": "glad to V／glad that：高興，不接 to 人 for 某事。例：glad to see you"},
+      {"word": "pleasant", "pos": "adj", "level": 2, "zh": "令人愉快的", "fit": "pleasant：令人愉快的，形容事物、天氣。例：a pleasant trip"},
+      {"word": "satisfactory", "pos": "adj", "level": 3, "zh": "令人滿意的", "fit": "satisfactory：令人滿意的，形容結果、表現。例：a satisfactory answer"}
     ]
   },
   {
     "word": "convince", "pos": "v", "level": 4, "zh": "說服；使相信",
+    "fit": "convince 人 to V／convince 人 that：說服、使相信",
     "hp": [
       {"en": "Hermione tried to convince Ron to start studying earlier.", "zh": "妙麗試著說服榮恩早點開始讀書。"},
       {"en": "It was hard to convince Professor McGonagall that the story was true.", "zh": "要讓麥教授相信這個故事是真的很困難。"}
@@ -118,17 +137,28 @@
     "extra": [
       {"en": "I could not convince my brother to share his snacks.", "zh": "我沒辦法說服弟弟分享他的零食。"},
       {"en": "The doctor tried to convince him to sleep earlier.", "zh": "醫生試著說服他早點睡。"}
+    ],
+    "near": [
+      {"word": "suggest", "pos": "v", "level": 2, "zh": "建議", "fit": "suggest V-ing／suggest that：建議，不說 suggest 人 to V。例：suggest going home"},
+      {"word": "explain", "pos": "v", "level": 1, "zh": "解釋", "fit": "explain 某事 (to 人)：解釋，人前面要加 to。例：explain the rule to me"},
+      {"word": "describe", "pos": "v", "level": 2, "zh": "描述", "fit": "describe 某事 (to 人)：描述樣子或經過。例：describe the man to the police"}
     ]
   },
   {
     "word": "abandon", "pos": "v", "level": 4, "zh": "拋棄；放棄",
+    "fit": "abandon：拋棄、放棄（人、動物或計畫）",
     "hp": [
       {"en": "Harry would never abandon his friends, even in great danger.", "zh": "即使身陷險境，哈利也絕不會拋下朋友。"},
       {"en": "Ron refused to abandon Scabbers, even though the rat was old and sick.", "zh": "榮恩不肯拋棄斑斑，即使那隻老鼠又老又病。"}
     ],
     "extra": [
       {"en": "Never abandon a pet just because it is getting old.", "zh": "千萬不要因為寵物變老就拋棄牠。"},
-      {"en": "Heavy rain forced us to abandon our plan for a picnic.", "zh": "大雨迫使我們放棄野餐的計畫。"}
+      {"en": "Heavy rain forced us to abandon the picnic and go home.", "zh": "大雨迫使我們放棄野餐、回家去。"}
+    ],
+    "near": [
+      {"word": "relax", "pos": "v", "level": 3, "zh": "放鬆", "fit": "relax：放鬆、休息。例：relax on the sofa"},
+      {"word": "enlarge", "pos": "v", "level": 4, "zh": "放大", "fit": "enlarge：放大（照片、尺寸）。例：enlarge a photo"},
+      {"word": "broadcast", "pos": "v", "level": 3, "zh": "廣播；播放", "fit": "broadcast：播放、廣播（節目）。例：broadcast the news"}
     ]
   },
   {
@@ -178,13 +208,19 @@
   },
   {
     "word": "endure", "pos": "v", "level": 4, "zh": "忍受；忍耐",
+    "fit": "endure：忍受（長時間的痛苦或不舒服）",
     "hp": [
-      {"en": "Harry had to endure another long summer with the Dursleys.", "zh": "哈利得再忍受和德思禮一家度過一個漫長的暑假。"},
-      {"en": "The students could hardly endure the cold in the dungeon classroom.", "zh": "學生們幾乎無法忍受地窖教室裡的寒冷。"}
+      {"en": "Harry had to endure another long summer of being shouted at by the Dursleys.", "zh": "哈利得再忍受一整個被德思禮一家吼來吼去的漫長暑假。"},
+      {"en": "The students had to endure two hours of cold in the dungeon classroom.", "zh": "學生們得在地窖教室裡忍受兩個小時的寒冷。"}
     ],
     "extra": [
       {"en": "We had to endure three hours of waiting at the airport.", "zh": "我們在機場忍受了三個小時的等待。"},
-      {"en": "Some desert animals can endure very high temperatures.", "zh": "有些沙漠動物能忍受極高的溫度。"}
+      {"en": "Some desert animals can endure many days without water.", "zh": "有些沙漠動物能忍受好幾天沒水喝。"}
+    ],
+    "near": [
+      {"word": "enjoy", "pos": "v", "level": 1, "zh": "享受", "fit": "enjoy：享受、喜歡（愉快的事）。例：enjoy the music"},
+      {"word": "receive", "pos": "v", "level": 2, "zh": "收到；接收", "fit": "receive：收到（信、禮物）。例：receive a letter"},
+      {"word": "feel", "pos": "v", "level": 1, "zh": "感覺；感受", "fit": "feel：感覺到（溫度、情緒）。例：feel cold"}
     ]
   },
   {
@@ -228,6 +264,7 @@
   },
   {
     "word": "tremble", "pos": "v", "level": 4, "zh": "發抖；震動",
+    "fit": "tremble：發抖、顫動（不及物動詞，後面不接受詞）",
     "hp": [
       {"en": "Neville's hands began to tremble when Snape looked at him.", "zh": "石內卜一看著奈威，他的手就開始發抖。"},
       {"en": "The whole castle seemed to tremble during the battle.", "zh": "戰鬥期間，整座城堡似乎都在震動。"}
@@ -235,6 +272,11 @@
     "extra": [
       {"en": "My legs started to tremble before I went on stage.", "zh": "上台前我的腿開始發抖。"},
       {"en": "The windows began to tremble as the big truck passed by.", "zh": "大卡車經過時，窗戶開始震動。"}
+    ],
+    "near": [
+      {"word": "discover", "pos": "v", "level": 2, "zh": "發現", "fit": "discover 某物：發現，後面一定要接受詞。例：discover a new island"},
+      {"word": "invent", "pos": "v", "level": 3, "zh": "發明", "fit": "invent 某物：發明，後面一定要接受詞。例：invent a machine"},
+      {"word": "issue", "pos": "v", "level": 4, "zh": "發布；發行", "fit": "issue 某物：發布、發行，後面一定要接受詞。例：issue a warning"}
     ]
   },
   {
@@ -250,13 +292,19 @@
   },
   {
     "word": "ancestor", "pos": "n", "level": 4, "zh": "祖先",
+    "fit": "ancestor：祖先（很久以前的長輩）",
     "hp": [
-      {"en": "Harry learned that his ancestor was one of the three Peverell brothers.", "zh": "哈利得知他的祖先是皮福雷三兄弟之一。"},
-      {"en": "The tapestry in Sirius's house showed every ancestor of the Black family.", "zh": "天狼星家的掛毯上畫著布萊克家族的每一位祖先。"}
+      {"en": "Harry learned that his ancestor, who lived hundreds of years ago, was one of the three Peverell brothers.", "zh": "哈利得知他那位活在幾百年前的祖先，是皮福雷三兄弟之一。"},
+      {"en": "Sirius's ancestor built the old house hundreds of years ago.", "zh": "天狼星的祖先在幾百年前蓋了那棟老房子。"}
     ],
     "extra": [
       {"en": "My ancestor came to Taiwan from Fujian about two hundred years ago.", "zh": "我的祖先大約兩百年前從福建來到台灣。"},
-      {"en": "During Tomb Sweeping Day, we honor every ancestor of our family.", "zh": "清明節時，我們祭拜家族的每一位祖先。"}
+      {"en": "On Tomb Sweeping Day, my grandpa cleans the grave of his ancestor.", "zh": "清明節時，爺爺會去打掃他祖先的墳墓。"}
+    ],
+    "near": [
+      {"word": "pioneer", "pos": "n", "level": 4, "zh": "先驅；開拓者", "fit": "pioneer：先驅、最早開拓某領域的人。例：a pioneer of space travel"},
+      {"word": "generation", "pos": "n", "level": 4, "zh": "世代；一代人", "fit": "generation：同一時期出生的一代人。例：the younger generation"},
+      {"word": "founder", "pos": "n", "level": 4, "zh": "創立者", "fit": "founder：創立學校、公司的人。例：the founder of the company"}
     ]
   },
   {
@@ -272,13 +320,19 @@
   },
   {
     "word": "nightmare", "pos": "n", "level": 4, "zh": "惡夢",
+    "fit": "nightmare：惡夢（睡覺時做的可怕的夢）",
     "hp": [
       {"en": "Harry woke up from a nightmare about a flash of green light.", "zh": "哈利從一場關於綠光閃現的惡夢中驚醒。"},
       {"en": "Ron had a nightmare about giant spiders after visiting the forest.", "zh": "去過森林之後，榮恩做了一場關於巨大蜘蛛的惡夢。"}
     ],
     "extra": [
       {"en": "I had a nightmare that I was late for my final exam.", "zh": "我做了一場期末考遲到的惡夢。"},
-      {"en": "Being stuck in traffic for five hours was a total nightmare.", "zh": "塞車塞了五小時，簡直是一場惡夢。"}
+      {"en": "Last night I had a nightmare about falling from a tall building.", "zh": "昨晚我做了一場從高樓掉下來的惡夢。"}
+    ],
+    "near": [
+      {"word": "evil", "pos": "n", "level": 2, "zh": "邪惡", "fit": "evil：邪惡、壞事。例：good and evil"},
+      {"word": "crime", "pos": "n", "level": 2, "zh": "罪行；犯罪", "fit": "crime：犯罪行為。例：commit a crime"},
+      {"word": "hatred", "pos": "n", "level": 4, "zh": "憎恨", "fit": "hatred：強烈的恨意。例：hatred of war"}
     ]
   },
   {
@@ -316,13 +370,19 @@
   },
   {
     "word": "instinct", "pos": "n", "level": 4, "zh": "本能；直覺",
+    "fit": "instinct：本能、直覺（不用思考就會做）；by instinct、act on instinct",
     "hp": [
       {"en": "Harry followed his instinct and turned left in the maze.", "zh": "哈利依照直覺在迷宮中左轉。"},
-      {"en": "A Seeker needs good instinct to catch the Golden Snitch.", "zh": "搜捕手需要好的直覺才能抓到金探子。"}
+      {"en": "Without thinking, Harry acted on instinct and caught the falling wand.", "zh": "哈利沒有多想，憑直覺接住了掉下來的魔杖。"}
     ],
     "extra": [
       {"en": "Birds fly south in winter by instinct.", "zh": "鳥類憑本能在冬天往南飛。"},
       {"en": "My first instinct was to run, but I stayed calm.", "zh": "我的第一個直覺是逃跑，但我保持了冷靜。"}
+    ],
+    "near": [
+      {"word": "ability", "pos": "n", "level": 1, "zh": "能力", "fit": "ability to V：做某事的能力。例：the ability to swim"},
+      {"word": "energy", "pos": "n", "level": 2, "zh": "能量；精力", "fit": "energy：能量、體力。例：full of energy"},
+      {"word": "talent", "pos": "n", "level": 3, "zh": "才能；天分", "fit": "a talent for 某事：天分。例：a talent for music"}
     ]
   },
   {
@@ -338,13 +398,19 @@
   },
   {
     "word": "revenge", "pos": "n", "level": 4, "zh": "報復；復仇",
+    "fit": "take revenge on 人：向某人報復",
     "hp": [
-      {"en": "Sirius wanted revenge on the man who betrayed his best friend.", "zh": "天狼星想向背叛他摯友的人報仇。"},
-      {"en": "Draco planned his revenge after Hermione slapped him.", "zh": "妙麗打了跩哥一巴掌之後，他就計畫報復。"}
+      {"en": "Sirius wanted to take revenge on the man who betrayed his best friend.", "zh": "天狼星想向背叛他摯友的人報仇。"},
+      {"en": "Draco swore to take revenge on Hermione after she slapped him.", "zh": "妙麗打了跩哥一巴掌後，他發誓要報復她。"}
     ],
     "extra": [
-      {"en": "Taking revenge will not make you feel better.", "zh": "報復並不會讓你感覺好過一點。"},
-      {"en": "The movie is about a man seeking revenge for his family.", "zh": "這部電影講的是一個男人為家人復仇的故事。"}
+      {"en": "Taking revenge on a bully will not solve the problem.", "zh": "向霸凌者報復並不能解決問題。"},
+      {"en": "The movie is about a man who takes revenge on the people who hurt his family.", "zh": "這部電影講的是一個男人向傷害他家人的人復仇。"}
+    ],
+    "near": [
+      {"word": "reward", "pos": "n", "level": 4, "zh": "報酬；獎賞", "fit": "reward：報酬、獎賞（a reward for…）。例：a reward for finding the dog"},
+      {"word": "report", "pos": "n", "level": 1, "zh": "報告；報導", "fit": "report：報告、報導（a report on 主題）。例：a book report"},
+      {"word": "return", "pos": "n", "level": 2, "zh": "回報；歸還", "fit": "return：回報、歸還（in return for…）。例：in return for your help"}
     ]
   },
   {
@@ -426,13 +492,19 @@
   },
   {
     "word": "timid", "pos": "adj", "level": 4, "zh": "膽小的；害羞的",
+    "fit": "timid：膽小的、羞怯的，可以放在名詞前（a timid boy）",
     "hp": [
-      {"en": "In his first year, Neville was a timid boy who rarely spoke up.", "zh": "一年級時，奈威是個很少發言的膽小男孩。"},
-      {"en": "Dobby looked timid when he first appeared in Harry's bedroom.", "zh": "多比第一次出現在哈利的臥室時，看起來很膽怯。"}
+      {"en": "In his first year, Neville was a timid boy who was scared of almost everything.", "zh": "一年級時，奈威是個幾乎什麼都怕的膽小男孩。"},
+      {"en": "Dobby was a timid house-elf who hid whenever someone shouted.", "zh": "多比是個膽小的家庭小精靈，有人大吼他就躲起來。"}
     ],
     "extra": [
-      {"en": "The timid rabbit ran away when we came closer.", "zh": "我們一靠近，膽小的兔子就跑走了。"},
-      {"en": "He was too timid to ask the teacher a question.", "zh": "他太害羞了，不敢問老師問題。"}
+      {"en": "The timid rabbit ran away because it was frightened by our footsteps.", "zh": "那隻膽小的兔子被我們的腳步聲嚇得跑走了。"},
+      {"en": "A timid student like him is too shy to ask questions in class.", "zh": "像他那樣膽小的學生，太害羞而不敢在課堂上發問。"}
+    ],
+    "near": [
+      {"word": "afraid", "pos": "adj", "level": 1, "zh": "害怕的", "fit": "afraid：害怕的，只能放在 be 動詞後（He is afraid.），不能放在名詞前"},
+      {"word": "ashamed", "pos": "adj", "level": 4, "zh": "羞愧的", "fit": "ashamed (of 某事)：感到羞恥，只能放在 be 動詞後，不能放在名詞前"},
+      {"word": "scary", "pos": "adj", "level": 3, "zh": "可怕的", "fit": "scary：嚇人的，讓別人害怕（a scary movie），不是自己膽小"}
     ]
   },
   {
@@ -470,13 +542,19 @@
   },
   {
     "word": "confess", "pos": "v", "level": 4, "zh": "坦白；承認",
+    "fit": "confess (to 人) that：向某人坦白自己做錯的事",
     "hp": [
       {"en": "Ron had to confess to his mother that he flew the car.", "zh": "榮恩不得不向媽媽坦白是他開了飛車。"},
-      {"en": "Hermione decided to confess that she had set fire to Snape's robe.", "zh": "妙麗決定坦白，是她點火燒了石內卜的長袍。"}
+      {"en": "Neville decided to confess to Professor McGonagall that he had lost the list of passwords.", "zh": "奈威決定向麥教授坦白，他把密碼清單弄丟了。"}
     ],
     "extra": [
-      {"en": "He decided to confess that he had broken the window.", "zh": "他決定坦白是他打破了窗戶。"},
-      {"en": "I must confess that I didn't read the whole book.", "zh": "我必須承認我沒有讀完整本書。"}
+      {"en": "He decided to confess to his teacher that he had broken the window.", "zh": "他決定向老師坦白是他打破了窗戶。"},
+      {"en": "I must confess to you that I didn't read the whole book.", "zh": "我必須向你坦白，我沒有讀完整本書。"}
+    ],
+    "near": [
+      {"word": "recognize", "pos": "v", "level": 3, "zh": "認出；承認", "fit": "recognize 人或物：認出（看到就認得），不說 recognize to 人。例：recognize her voice"},
+      {"word": "identify", "pos": "v", "level": 4, "zh": "辨認；確認", "fit": "identify：辨認、確認身分。例：identify the thief"},
+      {"word": "realize", "pos": "v", "level": 2, "zh": "了解；意識到", "fit": "realize that：自己意識到，不接 to 人。例：realize that I was wrong"}
     ]
   },
   {
@@ -492,13 +570,19 @@
   },
   {
     "word": "flee", "pos": "v", "level": 4, "zh": "逃離；逃跑",
+    "fit": "flee (from) 地方或危險：逃離",
     "hp": [
       {"en": "Harry and his friends had to flee from Gringotts on the back of a dragon.", "zh": "哈利和朋友們必須騎在龍背上逃離古靈閣。"},
       {"en": "Sirius managed to flee from Azkaban as a black dog.", "zh": "天狼星化身為黑狗，成功逃出阿茲卡班。"}
     ],
     "extra": [
-      {"en": "Many families had to flee their homes because of the flood.", "zh": "許多家庭因為水災不得不逃離家園。"},
+      {"en": "Many families had to flee from the flood in the middle of the night.", "zh": "許多家庭不得不在半夜逃離洪水。"},
       {"en": "The thief tried to flee, but the police caught him.", "zh": "小偷想逃跑，但被警察抓住了。"}
+    ],
+    "near": [
+      {"word": "divorce", "pos": "v", "level": 4, "zh": "離婚", "fit": "divorce 人：和某人離婚。例：They divorced last year."},
+      {"word": "separate", "pos": "v", "level": 2, "zh": "分開；分離", "fit": "separate A from B：把兩樣東西分開。例：separate eggs from milk"},
+      {"word": "isolate", "pos": "v", "level": 4, "zh": "隔離；孤立", "fit": "isolate 人或物：隔離，後面要接受詞。例：isolate sick animals"}
     ]
   },
   {
@@ -531,17 +615,24 @@
   },
   {
     "word": "pursue", "pos": "v", "level": 4, "zh": "追求；追趕",
+    "fit": "pursue：追求（夢想、目標）；追趕（人或車）",
     "hp": [
-      {"en": "Hermione wanted to pursue a career protecting magical creatures.", "zh": "妙麗想從事保護魔法生物的工作。"},
+      {"en": "Hermione wanted to pursue her dream of helping house-elves.", "zh": "妙麗想追求幫助家庭小精靈的夢想。"},
       {"en": "The Dementors began to pursue Harry across the lake.", "zh": "催狂魔開始越過湖面追趕哈利。"}
     ],
     "extra": [
       {"en": "She plans to pursue her dream of becoming a doctor.", "zh": "她打算追求成為醫生的夢想。"},
       {"en": "The police car began to pursue the speeding truck.", "zh": "警車開始追趕那輛超速的卡車。"}
+    ],
+    "near": [
+      {"word": "request", "pos": "v", "level": 3, "zh": "要求；請求", "fit": "request 某物：正式要求、申請。例：request more information"},
+      {"word": "require", "pos": "v", "level": 2, "zh": "需要；規定", "fit": "require：需要、要求（規定）。例：The job requires English."},
+      {"word": "beg", "pos": "v", "level": 2, "zh": "乞求；懇求", "fit": "beg (人) for 某物：乞求。例：beg for money"}
     ]
   },
   {
     "word": "scold", "pos": "v", "level": 4, "zh": "責罵",
+    "fit": "scold 人 (for 某事)：責罵某人，後面直接接人",
     "hp": [
       {"en": "Mrs. Weasley would often scold Fred and George for their tricks.", "zh": "衛斯理太太常常為了弗雷和喬治的惡作劇罵他們。"},
       {"en": "Professor McGonagall did not scold Harry; she made him a Seeker instead.", "zh": "麥教授沒有責罵哈利，反而讓他當上搜捕手。"}
@@ -549,17 +640,28 @@
     "extra": [
       {"en": "My mom will scold me if I come home late.", "zh": "如果我晚回家，媽媽會罵我。"},
       {"en": "Teachers should not scold students in front of the class.", "zh": "老師不應該在全班面前責罵學生。"}
+    ],
+    "near": [
+      {"word": "complain", "pos": "v", "level": 3, "zh": "抱怨", "fit": "complain about 某事／to 人：抱怨，不能直接接人。例：complain about the noise"},
+      {"word": "argue", "pos": "v", "level": 2, "zh": "爭論", "fit": "argue with 人／argue that：爭論，不能直接接人。例：argue with my sister"},
+      {"word": "quarrel", "pos": "v", "level": 4, "zh": "吵架", "fit": "quarrel with 人：吵架，不能直接接人。例：quarrel with a friend"}
     ]
   },
   {
     "word": "overcome", "pos": "v", "level": 4, "zh": "克服；戰勝",
+    "fit": "overcome：克服（困難、恐懼、缺點）",
     "hp": [
       {"en": "Harry had to overcome his fear of the Dementors.", "zh": "哈利必須克服對催狂魔的恐懼。"},
-      {"en": "With his friends' help, Neville learned to overcome his shyness.", "zh": "在朋友的幫助下，奈威學會克服自己的害羞。"}
+      {"en": "With practice, Neville was finally able to overcome his fear of flying.", "zh": "經過練習，奈威終於克服了對飛行的恐懼。"}
     ],
     "extra": [
       {"en": "She worked hard to overcome her fear of public speaking.", "zh": "她努力克服對公開演講的恐懼。"},
       {"en": "Our team can overcome any problem if we work together.", "zh": "只要齊心合作，我們的團隊能克服任何問題。"}
+    ],
+    "near": [
+      {"word": "persuade", "pos": "v", "level": 3, "zh": "說服", "fit": "persuade 人 to V：說服某人，受詞是人。例：persuade him to stay"},
+      {"word": "obey", "pos": "v", "level": 2, "zh": "服從", "fit": "obey：服從（命令、規則、父母）。例：obey the rules"},
+      {"word": "admire", "pos": "v", "level": 3, "zh": "佩服；欣賞", "fit": "admire：佩服、欣賞（人或作品）。例：admire her courage"}
     ]
   },
   {
@@ -608,13 +710,19 @@
   },
   {
     "word": "grief", "pos": "n", "level": 4, "zh": "悲傷；悲痛",
+    "fit": "grief：失去親友或心愛事物的悲傷",
     "hp": [
       {"en": "Harry was filled with grief after Sirius died.", "zh": "天狼星死後，哈利充滿悲傷。"},
       {"en": "Hagrid could not hide his grief when Aragog died.", "zh": "阿辣哥死時，海格藏不住心中的悲痛。"}
     ],
     "extra": [
-      {"en": "Time can slowly heal the grief of losing a pet.", "zh": "時間能慢慢撫平失去寵物的悲傷。"},
+      {"en": "Time can slowly ease her grief over losing a pet.", "zh": "時間能慢慢減輕她失去寵物的悲傷。"},
       {"en": "She wrote a song to express her grief.", "zh": "她寫了一首歌來表達自己的悲傷。"}
+    ],
+    "near": [
+      {"word": "injury", "pos": "n", "level": 3, "zh": "傷害；受傷", "fit": "injury：身體受傷。例：a knee injury"},
+      {"word": "wound", "pos": "n", "level": 2, "zh": "傷口", "fit": "wound：傷口（刀傷、槍傷）。例：clean the wound"},
+      {"word": "damage", "pos": "n", "level": 2, "zh": "損害", "fit": "damage：東西被破壞的損害（不可數）。例：storm damage"}
     ]
   },
   {
@@ -669,24 +777,36 @@
   },
   {
     "word": "triumph", "pos": "n", "level": 4, "zh": "勝利；成功",
+    "fit": "in triumph：得勝地、得意洋洋地",
     "hp": [
-      {"en": "Winning the House Cup was a great triumph for Gryffindor.", "zh": "贏得學院盃對葛來分多是一大勝利。"},
+      {"en": "The Gryffindors cheered in triumph when they won the House Cup.", "zh": "贏得學院盃時，葛來分多的學生歡呼慶祝勝利。"},
       {"en": "Harry flew around the pitch in triumph, holding the Snitch.", "zh": "哈利握著金探子，得意洋洋地繞著球場飛行。"}
     ],
     "extra": [
-      {"en": "Finishing the marathon was a personal triumph for my dad.", "zh": "跑完馬拉松是我爸爸個人的一大成就。"},
+      {"en": "Dad raised his arms in triumph as he finished the marathon.", "zh": "爸爸跑完馬拉松時，得意地舉起雙臂。"},
       {"en": "The team returned home in triumph after the final.", "zh": "決賽後，球隊凱旋歸來。"}
+    ],
+    "near": [
+      {"word": "profit", "pos": "n", "level": 3, "zh": "利潤", "fit": "profit：做生意賺的錢。例：make a profit"},
+      {"word": "interest", "pos": "n", "level": 1, "zh": "興趣；利息", "fit": "interest：興趣（in…）；銀行的利息。例：an interest in music"},
+      {"word": "benefit", "pos": "n", "level": 3, "zh": "好處；利益", "fit": "benefit：好處（for the benefit of…）。例：the benefits of exercise"}
     ]
   },
   {
     "word": "companion", "pos": "n", "level": 4, "zh": "同伴；夥伴",
+    "fit": "companion：陪伴你的同伴（人或動物）",
     "hp": [
       {"en": "Hedwig was Harry's loyal companion for many years.", "zh": "嘿美多年來都是哈利忠實的夥伴。"},
       {"en": "Fang was Hagrid's faithful companion in the forest.", "zh": "牙牙是海格在森林裡忠實的同伴。"}
     ],
     "extra": [
       {"en": "My dog is my best companion on long walks.", "zh": "散步走很遠時，我的狗是我最好的同伴。"},
-      {"en": "She met a friendly companion on the train to Hualien.", "zh": "她在往花蓮的火車上遇到一位友善的旅伴。"}
+      {"en": "On the long train ride to Hualien, her cat was her only companion.", "zh": "搭火車去花蓮的漫長路上，她的貓是她唯一的旅伴。"}
+    ],
+    "near": [
+      {"word": "colleague", "pos": "n", "level": 4, "zh": "同事", "fit": "colleague：同事，一起工作的人。例：my colleague at the office"},
+      {"word": "competitor", "pos": "n", "level": 4, "zh": "競爭者", "fit": "competitor：參加比賽或商業競爭的人。例：a strong competitor"},
+      {"word": "opponent", "pos": "n", "level": 5, "zh": "對手", "fit": "opponent：比賽、辯論中跟你對抗的人。例：beat his opponent"}
     ]
   }
 ]
