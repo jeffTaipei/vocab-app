@@ -131,7 +131,8 @@ document.addEventListener("click", e => {
 });
 
 // 讀取 words.json。直接雙擊 html 開啟時瀏覽器會擋下讀檔，要用本機伺服器
-fetch("words.json")
+// cache: "no-cache" = 每次都向伺服器確認檔案有沒有更新，新增單字後不用強制重新整理
+fetch("words.json", { cache: "no-cache" })
   .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
   .then(data => { W = data; render(); })
   .catch(() => {

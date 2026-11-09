@@ -328,5 +328,335 @@
       {"en": "Taking revenge will not make you feel better.", "zh": "報復並不會讓你感覺好過一點。"},
       {"en": "The movie is about a man seeking revenge for his family.", "zh": "這部電影講的是一個男人為家人復仇的故事。"}
     ]
+  },
+  {
+    "word": "brutal", "pos": "adj", "level": 4, "zh": "殘忍的；嚴酷的",
+    "hp": [
+      {"en": "The Death Eaters were brutal to anyone who stood in their way.", "zh": "食死人對任何擋路的人都很殘忍。"},
+      {"en": "The winter wind on the Quidditch pitch was brutal that morning.", "zh": "那天早上，魁地奇球場上的冬風冷得刺骨。"}
+    ],
+    "extra": [
+      {"en": "The brutal heat made it hard to walk outside.", "zh": "酷熱讓人很難在外面走路。"},
+      {"en": "The movie shows the brutal side of war.", "zh": "這部電影呈現了戰爭殘酷的一面。"}
+    ]
+  },
+  {
+    "word": "courageous", "pos": "adj", "level": 4, "zh": "勇敢的",
+    "hp": [
+      {"en": "Neville was courageous enough to pull the sword out of the Sorting Hat.", "zh": "奈威夠勇敢，從分類帽中拔出了寶劍。"},
+      {"en": "Everyone agreed that Cedric was a courageous champion.", "zh": "大家都認為西追是一位勇敢的鬥士。"}
+    ],
+    "extra": [
+      {"en": "The courageous firefighter ran back into the burning building.", "zh": "那位勇敢的消防員衝回燃燒的大樓。"},
+      {"en": "It was courageous of her to tell the truth.", "zh": "她說出實話，真的很勇敢。"}
+    ]
+  },
+  {
+    "word": "fierce", "pos": "adj", "level": 4, "zh": "兇猛的；激烈的",
+    "hp": [
+      {"en": "Fluffy was a fierce three-headed dog.", "zh": "毛毛是一隻兇猛的三頭犬。"},
+      {"en": "The match between Gryffindor and Slytherin was fierce.", "zh": "葛來分多和史萊哲林的比賽非常激烈。"}
+    ],
+    "extra": [
+      {"en": "There was fierce competition for the last concert ticket.", "zh": "最後一張演唱會門票競爭非常激烈。"},
+      {"en": "A fierce dog barked at us from behind the fence.", "zh": "一隻兇猛的狗在圍籬後對我們吠叫。"}
+    ]
+  },
+  {
+    "word": "genuine", "pos": "adj", "level": 4, "zh": "真正的；真誠的",
+    "hp": [
+      {"en": "Harry's smile was genuine when he saw Hagrid again.", "zh": "再次見到海格時，哈利露出真誠的笑容。"},
+      {"en": "Hermione checked whether the old spell book was genuine or a fake.", "zh": "妙麗檢查那本舊咒語書是真品還是假貨。"}
+    ],
+    "extra": [
+      {"en": "This bag is made of genuine leather.", "zh": "這個包包是真皮做的。"},
+      {"en": "She showed genuine interest in my drawings.", "zh": "她對我的畫表現出真誠的興趣。"}
+    ]
+  },
+  {
+    "word": "guilty", "pos": "adj", "level": 4, "zh": "有罪的；內疚的",
+    "hp": [
+      {"en": "Ron felt guilty after shouting at Hermione.", "zh": "榮恩對妙麗大吼之後覺得很內疚。"},
+      {"en": "Sirius was not guilty, but he was sent to Azkaban.", "zh": "天狼星是無罪的，卻被送進了阿茲卡班。"}
+    ],
+    "extra": [
+      {"en": "I felt guilty for forgetting my friend's birthday.", "zh": "我忘了朋友的生日，覺得很內疚。"},
+      {"en": "The judge decided that the man was guilty.", "zh": "法官判定那名男子有罪。"}
+    ]
+  },
+  {
+    "word": "miserable", "pos": "adj", "level": 4, "zh": "悲慘的；難受的",
+    "hp": [
+      {"en": "Harry felt miserable living in the cupboard under the stairs.", "zh": "住在樓梯下的儲物櫃裡，哈利覺得很悲慘。"},
+      {"en": "Moaning Myrtle looked miserable as she cried in the bathroom.", "zh": "愛哭鬼麥朵在廁所裡哭泣，看起來很難過。"}
+    ],
+    "extra": [
+      {"en": "I had a cold and felt miserable all weekend.", "zh": "我感冒了，整個週末都很難受。"},
+      {"en": "The rainy weather made our trip miserable.", "zh": "下雨天讓我們的旅行變得很糟糕。"}
+    ]
+  },
+  {
+    "word": "modest", "pos": "adj", "level": 4, "zh": "謙虛的；不大的",
+    "hp": [
+      {"en": "Even after winning, Harry stayed modest about his flying skills.", "zh": "即使贏了，哈利對自己的飛行技術仍然很謙虛。"},
+      {"en": "The Weasleys live in a modest house called the Burrow.", "zh": "衛斯理一家住在一棟叫「洞穴屋」的簡樸房子裡。"}
+    ],
+    "extra": [
+      {"en": "She is very modest about her success.", "zh": "她對自己的成功非常謙虛。"},
+      {"en": "They live in a modest apartment near the station.", "zh": "他們住在車站附近一間不大的公寓。"}
+    ]
+  },
+  {
+    "word": "timid", "pos": "adj", "level": 4, "zh": "膽小的；害羞的",
+    "hp": [
+      {"en": "In his first year, Neville was a timid boy who rarely spoke up.", "zh": "一年級時，奈威是個很少發言的膽小男孩。"},
+      {"en": "Dobby looked timid when he first appeared in Harry's bedroom.", "zh": "多比第一次出現在哈利的臥室時，看起來很膽怯。"}
+    ],
+    "extra": [
+      {"en": "The timid rabbit ran away when we came closer.", "zh": "我們一靠近，膽小的兔子就跑走了。"},
+      {"en": "He was too timid to ask the teacher a question.", "zh": "他太害羞了，不敢問老師問題。"}
+    ]
+  },
+  {
+    "word": "stingy", "pos": "adj", "level": 4, "zh": "小氣的",
+    "hp": [
+      {"en": "Uncle Vernon was stingy and gave Harry only old socks as gifts.", "zh": "威農姨丈很小氣，只送哈利舊襪子當禮物。"},
+      {"en": "Ron said the goblins at Gringotts were stingy with their gold.", "zh": "榮恩說古靈閣的妖精對他們的金子很小氣。"}
+    ],
+    "extra": [
+      {"en": "My stingy neighbor never shares the fruit from his tree.", "zh": "我那小氣的鄰居從不分享他樹上的水果。"},
+      {"en": "Don't be so stingy; share some of your snacks.", "zh": "別那麼小氣，分一些零食吧。"}
+    ]
+  },
+  {
+    "word": "magnificent", "pos": "adj", "level": 4, "zh": "壯麗的；雄偉的",
+    "hp": [
+      {"en": "The Great Hall looked magnificent with floating candles.", "zh": "蠟燭飄浮在空中，大廳看起來壯麗極了。"},
+      {"en": "Buckbeak was a magnificent creature with shiny gray feathers.", "zh": "巴嘴是一隻有著閃亮灰色羽毛的雄偉生物。"}
+    ],
+    "extra": [
+      {"en": "We watched a magnificent sunset over the sea.", "zh": "我們欣賞了一場海上的壯麗夕陽。"},
+      {"en": "The palace has a magnificent garden.", "zh": "這座宮殿有一座華麗的花園。"}
+    ]
+  },
+  {
+    "word": "cherish", "pos": "v", "level": 4, "zh": "珍惜；珍愛",
+    "hp": [
+      {"en": "Harry will always cherish the photo album Hagrid gave him.", "zh": "哈利會永遠珍惜海格送他的相簿。"},
+      {"en": "Mrs. Weasley taught her children to cherish their family.", "zh": "衛斯理太太教孩子們要珍惜家人。"}
+    ],
+    "extra": [
+      {"en": "We should cherish the time we spend with our grandparents.", "zh": "我們應該珍惜與祖父母相處的時光。"},
+      {"en": "I cherish the letters my best friend wrote to me.", "zh": "我很珍惜好朋友寫給我的信。"}
+    ]
+  },
+  {
+    "word": "confess", "pos": "v", "level": 4, "zh": "坦白；承認",
+    "hp": [
+      {"en": "Ron had to confess to his mother that he flew the car.", "zh": "榮恩不得不向媽媽坦白是他開了飛車。"},
+      {"en": "Hermione decided to confess that she had set fire to Snape's robe.", "zh": "妙麗決定坦白，是她點火燒了石內卜的長袍。"}
+    ],
+    "extra": [
+      {"en": "He decided to confess that he had broken the window.", "zh": "他決定坦白是他打破了窗戶。"},
+      {"en": "I must confess that I didn't read the whole book.", "zh": "我必須承認我沒有讀完整本書。"}
+    ]
+  },
+  {
+    "word": "defend", "pos": "v", "level": 4, "zh": "保衛；保護；辯護",
+    "hp": [
+      {"en": "Lupin taught the students how to defend themselves against Dark creatures.", "zh": "路平教學生如何保護自己，對抗黑暗生物。"},
+      {"en": "Harry stood up to defend Hagrid when Draco laughed at him.", "zh": "跩哥嘲笑海格時，哈利站出來替他說話。"}
+    ],
+    "extra": [
+      {"en": "Soldiers defend their country in times of war.", "zh": "戰時，士兵保衛自己的國家。"},
+      {"en": "She always tries to defend her little brother.", "zh": "她總是試著保護弟弟。"}
+    ]
+  },
+  {
+    "word": "flee", "pos": "v", "level": 4, "zh": "逃離；逃跑",
+    "hp": [
+      {"en": "Harry and his friends had to flee from Gringotts on the back of a dragon.", "zh": "哈利和朋友們必須騎在龍背上逃離古靈閣。"},
+      {"en": "Sirius managed to flee from Azkaban as a black dog.", "zh": "天狼星化身為黑狗，成功逃出阿茲卡班。"}
+    ],
+    "extra": [
+      {"en": "Many families had to flee their homes because of the flood.", "zh": "許多家庭因為水災不得不逃離家園。"},
+      {"en": "The thief tried to flee, but the police caught him.", "zh": "小偷想逃跑，但被警察抓住了。"}
+    ]
+  },
+  {
+    "word": "seize", "pos": "v", "level": 4, "zh": "抓住；奪取；把握",
+    "hp": [
+      {"en": "Harry jumped forward to seize the Golden Snitch.", "zh": "哈利向前一躍，抓住了金探子。"},
+      {"en": "Voldemort tried to seize control of the Ministry of Magic.", "zh": "佛地魔試圖奪取魔法部的控制權。"}
+    ],
+    "extra": [
+      {"en": "You should seize every chance to practice English.", "zh": "你應該把握每個練習英文的機會。"},
+      {"en": "The police seize illegal goods at the border every year.", "zh": "警方每年都在邊境查扣非法物品。"}
+    ]
+  },
+  {
+    "word": "possess", "pos": "v", "level": 4, "zh": "擁有",
+    "hp": [
+      {"en": "Only a few wizards possess an Invisibility Cloak.", "zh": "只有少數巫師擁有隱形斗篷。"},
+      {"en": "Voldemort wanted to possess the Elder Wand.", "zh": "佛地魔想要擁有接骨木魔杖。"}
+    ],
+    "extra": [
+      {"en": "Some people possess a natural talent for music.", "zh": "有些人天生擁有音樂天分。"},
+      {"en": "Few high school students possess their own car.", "zh": "很少高中生擁有自己的車。"}
+    ]
+  },
+  {
+    "word": "pursue", "pos": "v", "level": 4, "zh": "追求；追趕",
+    "hp": [
+      {"en": "Hermione wanted to pursue a career protecting magical creatures.", "zh": "妙麗想從事保護魔法生物的工作。"},
+      {"en": "The Dementors began to pursue Harry across the lake.", "zh": "催狂魔開始越過湖面追趕哈利。"}
+    ],
+    "extra": [
+      {"en": "She plans to pursue her dream of becoming a doctor.", "zh": "她打算追求成為醫生的夢想。"},
+      {"en": "The police car began to pursue the speeding truck.", "zh": "警車開始追趕那輛超速的卡車。"}
+    ]
+  },
+  {
+    "word": "scold", "pos": "v", "level": 4, "zh": "責罵",
+    "hp": [
+      {"en": "Mrs. Weasley would often scold Fred and George for their tricks.", "zh": "衛斯理太太常常為了弗雷和喬治的惡作劇罵他們。"},
+      {"en": "Professor McGonagall did not scold Harry; she made him a Seeker instead.", "zh": "麥教授沒有責罵哈利，反而讓他當上搜捕手。"}
+    ],
+    "extra": [
+      {"en": "My mom will scold me if I come home late.", "zh": "如果我晚回家，媽媽會罵我。"},
+      {"en": "Teachers should not scold students in front of the class.", "zh": "老師不應該在全班面前責罵學生。"}
+    ]
+  },
+  {
+    "word": "overcome", "pos": "v", "level": 4, "zh": "克服；戰勝",
+    "hp": [
+      {"en": "Harry had to overcome his fear of the Dementors.", "zh": "哈利必須克服對催狂魔的恐懼。"},
+      {"en": "With his friends' help, Neville learned to overcome his shyness.", "zh": "在朋友的幫助下，奈威學會克服自己的害羞。"}
+    ],
+    "extra": [
+      {"en": "She worked hard to overcome her fear of public speaking.", "zh": "她努力克服對公開演講的恐懼。"},
+      {"en": "Our team can overcome any problem if we work together.", "zh": "只要齊心合作，我們的團隊能克服任何問題。"}
+    ]
+  },
+  {
+    "word": "deserve", "pos": "v", "level": 4, "zh": "應得；值得",
+    "hp": [
+      {"en": "Harry and his friends deserve extra points for their bravery.", "zh": "哈利和朋友們這麼勇敢，值得獲得額外加分。"},
+      {"en": "Hermione believed that house-elves deserve better treatment.", "zh": "妙麗認為家庭小精靈應該得到更好的待遇。"}
+    ],
+    "extra": [
+      {"en": "You worked so hard; you deserve a good rest.", "zh": "你那麼努力，值得好好休息一下。"},
+      {"en": "All children deserve a safe place to live.", "zh": "所有孩子都應該擁有安全的住處。"}
+    ]
+  },
+  {
+    "word": "coward", "pos": "n", "level": 4, "zh": "懦夫；膽小鬼",
+    "hp": [
+      {"en": "Draco called Neville a coward, but Neville proved him wrong.", "zh": "跩哥罵奈威是膽小鬼，但奈威證明他錯了。"},
+      {"en": "Peter Pettigrew was a coward who hid as a rat for twelve years.", "zh": "彼得・佩迪魯是個懦夫，化身成老鼠躲了十二年。"}
+    ],
+    "extra": [
+      {"en": "He is not a coward; he just needs more time.", "zh": "他不是膽小鬼，只是需要多一點時間。"},
+      {"en": "Only a coward would run away and leave his friends behind.", "zh": "只有懦夫才會丟下朋友自己逃跑。"}
+    ]
+  },
+  {
+    "word": "cruelty", "pos": "n", "level": 4, "zh": "殘忍；虐待",
+    "hp": [
+      {"en": "Hermione was angry about the cruelty toward house-elves.", "zh": "妙麗對虐待家庭小精靈的殘忍行為感到憤怒。"},
+      {"en": "Umbridge's cruelty shocked even the older students.", "zh": "恩不里居的殘忍連高年級學生都感到震驚。"}
+    ],
+    "extra": [
+      {"en": "The law protects animals from cruelty.", "zh": "法律保護動物免受虐待。"},
+      {"en": "Everyone was shocked by his cruelty to the stray dog.", "zh": "大家都對他虐待流浪狗的殘忍行為感到震驚。"}
+    ]
+  },
+  {
+    "word": "dignity", "pos": "n", "level": 4, "zh": "尊嚴",
+    "hp": [
+      {"en": "Even as a prisoner, Sirius kept his dignity.", "zh": "即使身為囚犯，天狼星仍保有尊嚴。"},
+      {"en": "Hermione believed house-elves should have dignity and fair pay.", "zh": "妙麗認為家庭小精靈應該擁有尊嚴和合理的薪水。"}
+    ],
+    "extra": [
+      {"en": "Every person should be treated with dignity.", "zh": "每個人都應該受到有尊嚴的對待。"},
+      {"en": "She lost the game but left the court with dignity.", "zh": "她輸了比賽，但仍有尊嚴地離開球場。"}
+    ]
+  },
+  {
+    "word": "grief", "pos": "n", "level": 4, "zh": "悲傷；悲痛",
+    "hp": [
+      {"en": "Harry was filled with grief after Sirius died.", "zh": "天狼星死後，哈利充滿悲傷。"},
+      {"en": "Hagrid could not hide his grief when Aragog died.", "zh": "阿辣哥死時，海格藏不住心中的悲痛。"}
+    ],
+    "extra": [
+      {"en": "Time can slowly heal the grief of losing a pet.", "zh": "時間能慢慢撫平失去寵物的悲傷。"},
+      {"en": "She wrote a song to express her grief.", "zh": "她寫了一首歌來表達自己的悲傷。"}
+    ]
+  },
+  {
+    "word": "jealousy", "pos": "n", "level": 4, "zh": "嫉妒",
+    "hp": [
+      {"en": "Ron's jealousy grew when Harry became a Triwizard champion.", "zh": "哈利成為三巫鬥法大賽的鬥士後，榮恩的嫉妒心愈來愈強。"},
+      {"en": "Draco could not hide his jealousy of Harry's fame.", "zh": "跩哥藏不住對哈利名氣的嫉妒。"}
+    ],
+    "extra": [
+      {"en": "Her jealousy began when her sister got a new phone.", "zh": "姊姊拿到新手機後，她就開始嫉妒了。"},
+      {"en": "Try not to let jealousy ruin your friendships.", "zh": "試著別讓嫉妒毀了你的友誼。"}
+    ]
+  },
+  {
+    "word": "mercy", "pos": "n", "level": 4, "zh": "慈悲；憐憫",
+    "hp": [
+      {"en": "Harry showed mercy and did not let Sirius and Lupin kill Pettigrew.", "zh": "哈利心存憐憫，沒讓天狼星和路平殺死佩迪魯。"},
+      {"en": "The Death Eaters showed no mercy to their enemies.", "zh": "食死人對敵人毫不留情。"}
+    ],
+    "extra": [
+      {"en": "The king showed mercy and set the prisoner free.", "zh": "國王大發慈悲，釋放了那名囚犯。"},
+      {"en": "The storm showed no mercy to the small fishing boats.", "zh": "暴風雨對小漁船毫不留情。"}
+    ]
+  },
+  {
+    "word": "privilege", "pos": "n", "level": 4, "zh": "特權；榮幸",
+    "hp": [
+      {"en": "Using the prefects' bathroom was a privilege that Cedric shared with Harry.", "zh": "使用級長浴室是一項特權，西追把它分享給了哈利。"},
+      {"en": "It was a privilege for Harry to learn from Dumbledore.", "zh": "能向鄧不利多學習，對哈利來說是一種榮幸。"}
+    ],
+    "extra": [
+      {"en": "Driving a car is a privilege, not a right.", "zh": "開車是一種特權，而不是權利。"},
+      {"en": "It is a privilege to speak at the graduation ceremony.", "zh": "能在畢業典禮上致詞是一種榮幸。"}
+    ]
+  },
+  {
+    "word": "reputation", "pos": "n", "level": 4, "zh": "名聲；聲譽",
+    "hp": [
+      {"en": "Lockhart's reputation was built on other people's adventures.", "zh": "洛哈的名聲是建立在別人的冒險之上的。"},
+      {"en": "Snape had a reputation for being the strictest teacher at Hogwarts.", "zh": "石內卜是出了名的霍格華茲最嚴格的老師。"}
+    ],
+    "extra": [
+      {"en": "The restaurant has a good reputation for its noodles.", "zh": "這家餐廳的麵食口碑很好。"},
+      {"en": "Telling lies can hurt your reputation.", "zh": "說謊會傷害你的名聲。"}
+    ]
+  },
+  {
+    "word": "triumph", "pos": "n", "level": 4, "zh": "勝利；成功",
+    "hp": [
+      {"en": "Winning the House Cup was a great triumph for Gryffindor.", "zh": "贏得學院盃對葛來分多是一大勝利。"},
+      {"en": "Harry flew around the pitch in triumph, holding the Snitch.", "zh": "哈利握著金探子，得意洋洋地繞著球場飛行。"}
+    ],
+    "extra": [
+      {"en": "Finishing the marathon was a personal triumph for my dad.", "zh": "跑完馬拉松是我爸爸個人的一大成就。"},
+      {"en": "The team returned home in triumph after the final.", "zh": "決賽後，球隊凱旋歸來。"}
+    ]
+  },
+  {
+    "word": "companion", "pos": "n", "level": 4, "zh": "同伴；夥伴",
+    "hp": [
+      {"en": "Hedwig was Harry's loyal companion for many years.", "zh": "嘿美多年來都是哈利忠實的夥伴。"},
+      {"en": "Fang was Hagrid's faithful companion in the forest.", "zh": "牙牙是海格在森林裡忠實的同伴。"}
+    ],
+    "extra": [
+      {"en": "My dog is my best companion on long walks.", "zh": "散步走很遠時，我的狗是我最好的同伴。"},
+      {"en": "She met a friendly companion on the train to Hualien.", "zh": "她在往花蓮的火車上遇到一位友善的旅伴。"}
+    ]
   }
 ]
