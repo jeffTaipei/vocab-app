@@ -808,5 +808,335 @@
       {"word": "competitor", "pos": "n", "level": 4, "zh": "競爭者", "fit": "competitor：參加比賽或商業競爭的人。例：a strong competitor"},
       {"word": "opponent", "pos": "n", "level": 5, "zh": "對手", "fit": "opponent：比賽、辯論中跟你對抗的人。例：beat his opponent"}
     ]
+  },
+  {
+    "word": "harsh", "pos": "adj", "level": 4, "zh": "嚴厲的；惡劣的",
+    "hp": [
+      {"en": "Snape gave Neville a harsh look after the potion exploded.", "zh": "魔藥爆炸後，石內卜嚴厲地瞪了奈威一眼。"},
+      {"en": "The giants live in a harsh place high in the cold mountains.", "zh": "巨人住在寒冷高山上一個環境惡劣的地方。"}
+    ],
+    "extra": [
+      {"en": "The coach's words were harsh, but they helped us improve.", "zh": "教練的話很嚴厲，但幫助我們進步。"},
+      {"en": "Few plants can grow in such a harsh climate.", "zh": "很少植物能在這麼惡劣的氣候中生長。"}
+    ]
+  },
+  {
+    "word": "urgent", "pos": "adj", "level": 4, "zh": "緊急的",
+    "hp": [
+      {"en": "Hedwig arrived with an urgent letter from Sirius.", "zh": "嘿美帶來天狼星的一封緊急信件。"},
+      {"en": "Dumbledore called an urgent meeting of the Order of the Phoenix.", "zh": "鄧不利多召開了鳳凰會的緊急會議。"}
+    ],
+    "extra": [
+      {"en": "Please call me back; it's urgent.", "zh": "請回電給我，事情很緊急。"},
+      {"en": "The patient needs urgent care at the hospital.", "zh": "這位病人需要在醫院接受緊急治療。"}
+    ]
+  },
+  {
+    "word": "thorough", "pos": "adj", "level": 4, "zh": "徹底的；仔細的",
+    "hp": [
+      {"en": "Hermione did a thorough search of the library for information about Flamel.", "zh": "妙麗在圖書館徹底搜尋關於勒梅的資料。"},
+      {"en": "Filch made a thorough check of every student's bag.", "zh": "飛七仔細檢查了每個學生的包包。"}
+    ],
+    "extra": [
+      {"en": "The doctor gave me a thorough checkup.", "zh": "醫生幫我做了一次徹底的健康檢查。"},
+      {"en": "We gave the house a thorough cleaning before New Year.", "zh": "過年前我們把房子徹底打掃了一遍。"}
+    ]
+  },
+  {
+    "word": "tolerate", "pos": "v", "level": 4, "zh": "容忍；忍受",
+    "hp": [
+      {"en": "Professor McGonagall would not tolerate cheating in her class.", "zh": "麥教授不容許有人在她的課上作弊。"},
+      {"en": "Hermione could not tolerate Ron's bad table manners.", "zh": "妙麗無法容忍榮恩糟糕的餐桌禮儀。"}
+    ],
+    "extra": [
+      {"en": "Our teacher does not tolerate rude behavior.", "zh": "我們老師不容忍無禮的行為。"},
+      {"en": "Some plants can tolerate very little sunlight.", "zh": "有些植物能忍受很少的日照。"}
+    ]
+  },
+  {
+    "word": "devote", "pos": "v", "level": 4, "zh": "奉獻；致力於",
+    "hp": [
+      {"en": "Hermione decided to devote her free time to helping house-elves.", "zh": "妙麗決定把空閒時間都用來幫助家庭小精靈。"},
+      {"en": "Oliver Wood wanted the team to devote every weekend to Quidditch practice.", "zh": "木透希望球隊把每個週末都投入魁地奇練習。"}
+    ],
+    "extra": [
+      {"en": "My grandmother chose to devote her life to teaching.", "zh": "我奶奶選擇把一生奉獻給教育。"},
+      {"en": "I plan to devote two hours a day to studying English.", "zh": "我打算每天花兩小時學英文。"}
+    ]
+  },
+  {
+    "word": "interfere", "pos": "v", "level": 4, "zh": "干涉；妨礙",
+    "hp": [
+      {"en": "Hermione told Harry not to interfere with the past when they used the Time-Turner.", "zh": "使用時光器時，妙麗告訴哈利不要干涉過去。"},
+      {"en": "Dumbledore did not want the Ministry to interfere with Hogwarts.", "zh": "鄧不利多不希望魔法部干涉霍格華茲。"}
+    ],
+    "extra": [
+      {"en": "Don't let video games interfere with your schoolwork.", "zh": "別讓電動妨礙你的課業。"},
+      {"en": "My parents try not to interfere in my choice of friends.", "zh": "爸媽盡量不干涉我交什麼朋友。"}
+    ]
+  },
+  {
+    "word": "harmony", "pos": "n", "level": 4, "zh": "和諧；和聲",
+    "hp": [
+      {"en": "The four houses rarely lived in harmony at Hogwarts.", "zh": "霍格華茲的四個學院很少和諧相處。"},
+      {"en": "The phoenix song filled the room with peace and harmony.", "zh": "鳳凰的歌聲讓房間充滿平靜與和諧。"}
+    ],
+    "extra": [
+      {"en": "The choir sang in perfect harmony.", "zh": "合唱團唱出完美的和聲。"},
+      {"en": "People of different cultures can live in harmony.", "zh": "不同文化的人可以和諧共處。"}
+    ]
+  },
+  {
+    "word": "privacy", "pos": "n", "level": 4, "zh": "隱私",
+    "hp": [
+      {"en": "Harry wanted some privacy, so he read the letter under his blanket.", "zh": "哈利想要一點隱私，所以躲在被子裡讀信。"},
+      {"en": "There is little privacy in the Gryffindor dormitory.", "zh": "葛來分多的宿舍幾乎沒什麼隱私。"}
+    ],
+    "extra": [
+      {"en": "Teenagers often want more privacy from their parents.", "zh": "青少年常希望父母給他們更多隱私。"},
+      {"en": "Please respect my privacy and don't read my diary.", "zh": "請尊重我的隱私，不要看我的日記。"}
+    ]
+  },
+  {
+    "word": "tension", "pos": "n", "level": 4, "zh": "緊張；緊繃",
+    "hp": [
+      {"en": "There was a lot of tension in the Great Hall before the Triwizard champions were chosen.", "zh": "三巫鬥法大賽的鬥士揭曉前，大廳裡氣氛非常緊張。"},
+      {"en": "The tension between Harry and Snape grew every year.", "zh": "哈利和石內卜之間的緊張關係一年比一年嚴重。"}
+    ],
+    "extra": [
+      {"en": "You could feel the tension in the classroom before the exam.", "zh": "考試前，教室裡的緊張氣氛感覺得到。"},
+      {"en": "A short walk can help reduce tension after a long day.", "zh": "散步一下能幫助舒緩一整天的緊繃。"}
+    ]
+  },
+  {
+    "word": "glimpse", "pos": "n", "level": 4, "zh": "一瞥；瞥見",
+    "hp": [
+      {"en": "Harry caught a glimpse of the Snitch near the ground.", "zh": "哈利瞥見金探子在接近地面的地方。"},
+      {"en": "In the mirror, Harry had a glimpse of his parents smiling at him.", "zh": "在鏡子裡，哈利瞥見父母對他微笑。"}
+    ],
+    "extra": [
+      {"en": "We caught a glimpse of the famous singer as her car drove by.", "zh": "那位知名歌手的車經過時，我們瞥見了她。"},
+      {"en": "From the plane, I got a glimpse of Taipei 101.", "zh": "從飛機上，我瞥見了台北 101。"}
+    ]
+  },
+  {
+    "word": "absurd", "pos": "adj", "level": 5, "zh": "荒謬的",
+    "hp": [
+      {"en": "Hermione thought Professor Trelawney's predictions were absurd.", "zh": "妙麗認為崔老妮教授的預言很荒謬。"},
+      {"en": "The idea that Harry put his own name in the Goblet of Fire was absurd.", "zh": "說哈利自己把名字投進火盃，這種想法很荒謬。"}
+    ],
+    "extra": [
+      {"en": "It is absurd to wear a coat on such a hot day.", "zh": "這麼熱的天穿大衣真是荒謬。"},
+      {"en": "His excuse for being late was completely absurd.", "zh": "他遲到的藉口完全荒謬。"}
+    ]
+  },
+  {
+    "word": "arrogant", "pos": "adj", "level": 5, "zh": "傲慢的",
+    "hp": [
+      {"en": "Draco was arrogant and often laughed at other students.", "zh": "跩哥很傲慢，常嘲笑其他學生。"},
+      {"en": "Lockhart was too arrogant to admit his mistakes.", "zh": "洛哈太傲慢了，不肯承認自己的錯。"}
+    ],
+    "extra": [
+      {"en": "The arrogant player refused to shake hands after the game.", "zh": "那位傲慢的球員賽後拒絕握手。"},
+      {"en": "Being smart does not give you the right to be arrogant.", "zh": "聰明不代表你有權傲慢。"}
+    ]
+  },
+  {
+    "word": "vulnerable", "pos": "adj", "level": 5, "zh": "脆弱的；容易受傷害的",
+    "hp": [
+      {"en": "Without his wand, Harry felt completely vulnerable.", "zh": "沒有魔杖，哈利覺得自己毫無防備。"},
+      {"en": "First-years are vulnerable to tricks from older students.", "zh": "一年級新生很容易被高年級生捉弄。"}
+    ],
+    "extra": [
+      {"en": "Old people are more vulnerable to the flu.", "zh": "老年人比較容易得流感。"},
+      {"en": "Small animals are vulnerable when they leave their nests.", "zh": "小動物離開巢穴時很容易受到傷害。"}
+    ]
+  },
+  {
+    "word": "betray", "pos": "v", "level": 5, "zh": "背叛；出賣",
+    "hp": [
+      {"en": "Peter Pettigrew chose to betray his friends, the Potters.", "zh": "彼得・佩迪魯選擇背叛他的朋友波特夫婦。"},
+      {"en": "Harry would never betray the people who trusted him.", "zh": "哈利絕不會背叛信任他的人。"}
+    ],
+    "extra": [
+      {"en": "A true friend will never betray your secret.", "zh": "真正的朋友絕不會出賣你的祕密。"},
+      {"en": "The spy decided to betray his country for money.", "zh": "這名間諜為了錢決定背叛他的國家。"}
+    ]
+  },
+  {
+    "word": "adore", "pos": "v", "level": 5, "zh": "非常喜愛；崇拜",
+    "hp": [
+      {"en": "Hagrid seems to adore every dangerous creature he meets.", "zh": "海格似乎很喜愛他遇到的每一種危險生物。"},
+      {"en": "The younger students adore Professor Lupin's lessons.", "zh": "低年級學生非常喜歡路平教授的課。"}
+    ],
+    "extra": [
+      {"en": "Children adore this cartoon character.", "zh": "小朋友非常喜愛這個卡通角色。"},
+      {"en": "I adore the smell of fresh bread in the morning.", "zh": "我非常喜歡早上新鮮麵包的香味。"}
+    ]
+  },
+  {
+    "word": "accelerate", "pos": "v", "level": 5, "zh": "加速",
+    "hp": [
+      {"en": "Harry leaned forward to make his broom accelerate.", "zh": "哈利身體往前傾，讓掃帚加速。"},
+      {"en": "The Hogwarts Express began to accelerate as it left the station.", "zh": "霍格華茲特快車駛離車站時開始加速。"}
+    ],
+    "extra": [
+      {"en": "The car began to accelerate on the highway.", "zh": "車子在高速公路上開始加速。"},
+      {"en": "Warm weather can accelerate the growth of plants.", "zh": "溫暖的天氣能加速植物生長。"}
+    ]
+  },
+  {
+    "word": "affection", "pos": "n", "level": 5, "zh": "喜愛；感情",
+    "hp": [
+      {"en": "Mrs. Weasley showed great affection for Harry, like a mother.", "zh": "衛斯理太太像母親一樣非常疼愛哈利。"},
+      {"en": "Hagrid had deep affection for his pet dragon, Norbert.", "zh": "海格非常疼愛他的寵物龍蘿蔔。"}
+    ],
+    "extra": [
+      {"en": "My cat shows affection by rubbing against my legs.", "zh": "我的貓會磨蹭我的腿來表達喜愛。"},
+      {"en": "Grandpa never says much, but we can feel his affection.", "zh": "爺爺話不多，但我們感受得到他的關愛。"}
+    ]
+  },
+  {
+    "word": "allergy", "pos": "n", "level": 5, "zh": "過敏",
+    "hp": [
+      {"en": "Ron joked that he had an allergy to homework.", "zh": "榮恩開玩笑說他對功課過敏。"},
+      {"en": "Professor Sprout warned that some students might have an allergy to the plant's pollen.", "zh": "芽菜教授警告說，有些學生可能會對這種植物的花粉過敏。"}
+    ],
+    "extra": [
+      {"en": "My brother has an allergy to peanuts.", "zh": "我弟弟對花生過敏。"},
+      {"en": "Spring is hard for people with a pollen allergy.", "zh": "對花粉過敏的人來說，春天很難熬。"}
+    ]
+  },
+  {
+    "word": "applause", "pos": "n", "level": 5, "zh": "掌聲",
+    "hp": [
+      {"en": "The Great Hall burst into applause when Gryffindor won the House Cup.", "zh": "葛來分多贏得學院盃時，大廳響起熱烈掌聲。"},
+      {"en": "Harry received loud applause after he finished the first task.", "zh": "哈利完成第一項任務後，獲得熱烈的掌聲。"}
+    ],
+    "extra": [
+      {"en": "The singer bowed to the applause of the audience.", "zh": "歌手向觀眾的掌聲鞠躬致意。"},
+      {"en": "Let's give our teacher a big round of applause.", "zh": "讓我們給老師熱烈的掌聲。"}
+    ]
+  },
+  {
+    "word": "hostility", "pos": "n", "level": 5, "zh": "敵意；敵對",
+    "hp": [
+      {"en": "Harry could feel Snape's hostility in every class.", "zh": "每堂課哈利都感受得到石內卜的敵意。"},
+      {"en": "The goblins showed hostility toward wizards who broke their promises.", "zh": "妖精對違背承諾的巫師充滿敵意。"}
+    ],
+    "extra": [
+      {"en": "The new student was surprised by the hostility of some classmates.", "zh": "新同學對部分同學的敵意感到驚訝。"},
+      {"en": "The two countries ended years of hostility with a peace deal.", "zh": "兩國以和平協議結束了多年的敵對。"}
+    ]
+  },
+  {
+    "word": "reckless", "pos": "adj", "level": 6, "zh": "魯莽的；不顧後果的",
+    "hp": [
+      {"en": "Hermione said it was reckless to fly the car to school.", "zh": "妙麗說開飛車去學校太魯莽了。"},
+      {"en": "Sirius could be reckless, especially when Harry was in danger.", "zh": "天狼星有時很魯莽，尤其是哈利有危險的時候。"}
+    ],
+    "extra": [
+      {"en": "The police stopped him for reckless driving.", "zh": "警察因為他魯莽駕駛而把他攔下。"},
+      {"en": "It was reckless of him to swim alone at night.", "zh": "他晚上一個人去游泳，實在太魯莽了。"}
+    ]
+  },
+  {
+    "word": "frantic", "pos": "adj", "level": 6, "zh": "驚慌失措的；手忙腳亂的",
+    "hp": [
+      {"en": "Neville was frantic when he couldn't find his toad, Trevor.", "zh": "奈威找不到他的蟾蜍吙夫，急得要命。"},
+      {"en": "Mrs. Weasley was frantic with worry when the boys did not come home.", "zh": "男孩們沒回家，衛斯理太太擔心得快瘋了。"}
+    ],
+    "extra": [
+      {"en": "The mother was frantic when she lost her child at the mall.", "zh": "那位媽媽在購物中心找不到孩子，急得不得了。"},
+      {"en": "We made a frantic call to the vet when our dog got sick.", "zh": "狗生病時，我們慌張地打電話給獸醫。"}
+    ]
+  },
+  {
+    "word": "notorious", "pos": "adj", "level": 6, "zh": "惡名昭彰的",
+    "hp": [
+      {"en": "Sirius Black was a notorious prisoner who escaped from Azkaban.", "zh": "天狼星・布萊克是逃出阿茲卡班、惡名昭彰的囚犯。"},
+      {"en": "Knockturn Alley is notorious for its dark magic shops.", "zh": "夜行巷以販賣黑魔法的商店而惡名昭彰。"}
+    ],
+    "extra": [
+      {"en": "This road is notorious for traffic accidents.", "zh": "這條路以車禍頻傳出了名。"},
+      {"en": "The city is notorious for its heavy traffic.", "zh": "這座城市的交通壅塞是出了名的。"}
+    ]
+  },
+  {
+    "word": "reliant", "pos": "adj", "level": 6, "zh": "依賴的",
+    "hp": [
+      {"en": "Draco was too reliant on his father's money and power.", "zh": "跩哥太依賴他父親的錢和權勢。"},
+      {"en": "Ron became less reliant on Hermione's notes after his fifth year.", "zh": "五年級之後，榮恩比較不依賴妙麗的筆記了。"}
+    ],
+    "extra": [
+      {"en": "Many people are too reliant on their phones.", "zh": "很多人太依賴手機了。"},
+      {"en": "Our town is reliant on tourism.", "zh": "我們鎮靠觀光業維生。"}
+    ]
+  },
+  {
+    "word": "linger", "pos": "v", "level": 6, "zh": "逗留；徘徊；揮之不去",
+    "hp": [
+      {"en": "Harry liked to linger in the Great Hall after the feast.", "zh": "宴會結束後，哈利喜歡在大廳逗留。"},
+      {"en": "The smell of Snape's potion seemed to linger in the dungeon all day.", "zh": "石內卜魔藥的氣味似乎整天都在地窖裡揮之不去。"}
+    ],
+    "extra": [
+      {"en": "We like to linger at the café after school.", "zh": "放學後我們喜歡在咖啡廳逗留。"},
+      {"en": "Sad memories can linger for a long time.", "zh": "悲傷的回憶可能會縈繞很久。"}
+    ]
+  },
+  {
+    "word": "accumulate", "pos": "v", "level": 6, "zh": "累積；堆積",
+    "hp": [
+      {"en": "Fred and George began to accumulate money for their joke shop.", "zh": "弗雷和喬治開始為他們的惡作劇商店存錢。"},
+      {"en": "Dust began to accumulate on the old books in the Restricted Section.", "zh": "禁書區的舊書上開始積起灰塵。"}
+    ],
+    "extra": [
+      {"en": "Snow began to accumulate on the roads.", "zh": "路上開始積雪。"},
+      {"en": "If you save a little every day, the money will accumulate.", "zh": "每天存一點，錢就會越積越多。"}
+    ]
+  },
+  {
+    "word": "alienate", "pos": "v", "level": 6, "zh": "使疏遠",
+    "hp": [
+      {"en": "Harry's angry mood began to alienate his friends in his fifth year.", "zh": "五年級時，哈利的壞脾氣開始讓朋友疏遠他。"},
+      {"en": "Percy's choice to side with the Ministry began to alienate him from his family.", "zh": "派西選擇站在魔法部那邊，開始和家人疏遠。"}
+    ],
+    "extra": [
+      {"en": "Rude comments can alienate your classmates.", "zh": "無禮的評論會讓同學疏遠你。"},
+      {"en": "The new rule may alienate some loyal customers.", "zh": "新規定可能會讓一些忠實顧客疏遠。"}
+    ]
+  },
+  {
+    "word": "amplify", "pos": "v", "level": 6, "zh": "放大；增強",
+    "hp": [
+      {"en": "Lee Jordan used a magical microphone to amplify his voice during Quidditch matches.", "zh": "魁地奇比賽時，李・喬丹用魔法麥克風放大自己的聲音。"},
+      {"en": "The Weasley twins used magic to amplify the sound of their fireworks.", "zh": "衛斯理雙胞胎用魔法讓煙火的聲音更響亮。"}
+    ],
+    "extra": [
+      {"en": "The speaker can amplify the music for the whole room.", "zh": "喇叭能把音樂放大，讓整個房間都聽得到。"},
+      {"en": "Social media can amplify a small rumor.", "zh": "社群媒體可能把一個小謠言放大。"}
+    ]
+  },
+  {
+    "word": "adolescence", "pos": "n", "level": 6, "zh": "青春期",
+    "hp": [
+      {"en": "Harry spent his adolescence fighting dark wizards.", "zh": "哈利的青春期都在對抗黑巫師。"},
+      {"en": "Tom Riddle showed his cruel nature in early adolescence.", "zh": "湯姆・瑞斗在青春期早期就顯露出殘酷的本性。"}
+    ],
+    "extra": [
+      {"en": "Many people grow quickly during adolescence.", "zh": "很多人在青春期長得很快。"},
+      {"en": "Writing a diary helped her get through adolescence.", "zh": "寫日記陪她度過了青春期。"}
+    ]
+  },
+  {
+    "word": "disturbance", "pos": "n", "level": 6, "zh": "干擾；騷動",
+    "hp": [
+      {"en": "Peeves caused a disturbance in the library and made Madam Pince angry.", "zh": "皮皮鬼在圖書館引起騷動，惹得平斯夫人很生氣。"},
+      {"en": "The Ministry noticed a magical disturbance near the Dursleys' house.", "zh": "魔法部察覺到德思禮家附近有魔法騷動。"}
+    ],
+    "extra": [
+      {"en": "The loud music next door was a disturbance to our sleep.", "zh": "隔壁的大聲音樂干擾了我們睡覺。"},
+      {"en": "The police were called to stop a disturbance in the park.", "zh": "警察被叫來平息公園裡的騷動。"}
+    ]
   }
 ]
