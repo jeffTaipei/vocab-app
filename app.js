@@ -11,6 +11,11 @@ try { const r = localStorage.getItem("vocabQ"); if (r) S = Object.assign(S, JSON
 // 舊紀錄沒有 seen：至少把錯題本裡的字算成「練過」（答錯過一定練過）
 if (!S.seen || typeof S.seen !== "object") S.seen = {};
 Object.keys(S.m).forEach(k => { S.seen[k] = 1; });
+// 一輪 20 題的計分：round 本輪進度 {n: 已答題數, ok: 答對題數, miss: 答錯的字}，best 最高分，rounds 完成幾輪
+const newRound = () => ({ n: 0, ok: 0, miss: [] });
+if (!S.round || typeof S.round.n !== "number" || !Array.isArray(S.round.miss)) S.round = newRound();
+if (typeof S.best !== "number") S.best = 0;
+if (typeof S.rounds !== "number") S.rounds = 0;
 const save = () => { try { localStorage.setItem("vocabQ", JSON.stringify(S)); } catch (e) {} };
 // 「只練易混淆字」設定：另外用一個 key 存，不動到 vocabQ 的進度
 let nearOnly = false;
@@ -59,6 +64,9 @@ function voiceHelp(msg) {
 const CLOZE_RATE = 0.25;
 // 優先出沒練過的字：還有沒練過的字時，每題約 70% 機會從中抽
 const NEW_RATE = 0.7;
+// 一輪幾題；幾分以上出現表揚畫面
+const ROUND = 20;
+const PRAISE = 90;
 
 // 依權重抽一個字：權重 = 1 + 4 × 錯題次數
 function weighted(list) {
@@ -77,6 +85,8 @@ function pickSentence(pool) {
 }
 
 function next() {
+  // 這一輪 20 題答完了 → 先看成績
+  if (S.round.n >= ROUND) return finishRound();
   // 勾選「只練易混淆字」時，只從有 near 的單字出題
   const nearWords = W.filter(w => w.near);
   const pool0 = nearOnly && nearWords.length ? nearWords : W;
@@ -111,6 +121,10 @@ function next() {
 function grade(k, good) {
   S.tot++;
   S.seen[k] = 1; // 記下這個字練過了
+  // 本輪計分
+  S.round.n++;
+  if (good) S.round.ok++;
+  else if (!S.round.miss.includes(k)) S.round.miss.push(k);
   if (good) { S.ok++; if (S.m[k]) { S.m[k]--; if (!S.m[k]) delete S.m[k]; } }
   else S.m[k] = Math.min(5, (S.m[k] || 0) + 1);
   save();
@@ -149,10 +163,12 @@ function render() {
   // 已練／未練：只算目前題庫裡有的字
   const seenN = W.filter(w => S.seen[w.word]).length;
   $("#stat").innerHTML = "答對 " + S.ok + " / " + S.tot + "，錯題本 " + bookKeys().length + " 個單字<br>" +
-    "題庫 " + W.length + " 字：已練 " + seenN + " 字、未練 " + (W.length - seenN) + " 字";
+    "題庫 " + W.length + " 字：已練 " + seenN + " 字、未練 " + (W.length - seenN) + " 字" +
+    (S.rounds ? "・最高分 " + S.best + " 分" : "");
   document.querySelectorAll(".tab").forEach(b => b.classList.toggle("on", b.dataset.t === tab));
   if (tab === "book") return book();
   if (!cur) return next();
+  if (cur.type === "result") return renderResult();
   const c = cur, k = c.w.word, re = new RegExp("\\b" + k + "\\b", "i");
   const cloze = c.type === "cloze", near = !cloze && !!c.w.near;
   const nNear = W.filter(w => w.near).length;
@@ -162,7 +178,11 @@ function render() {
   const q = c.done ? c.s.en.replace(re, '<span class="hl">' + k + '</span>') : c.s.en.replace(re, blank);
 
   let h = '<label class="mode"><input type="checkbox" id="nearOnly"' + (nearOnly ? ' checked' : '') + '> 只練易混淆字（' + nNear + ' 個字）</label>';
-  h += '<div class="card"><div class="qhead">';
+  // 本輪進度：作答前是「正在答第幾題」，答完後就是已答題數
+  const qNo = S.round.n + (c.done ? 0 : 1);
+  h += '<div class="card"><div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="' + ROUND + '" aria-valuenow="' + S.round.n + '">' +
+    '<i style="width:' + (S.round.n / ROUND * 100) + '%"></i></div>' +
+    '<div class="qhead"><span class="prog">第 ' + qNo + ' / ' + ROUND + ' 題</span>';
   if (cloze) h += '<span class="tag">錯題複習・填充題</span>';
   else if (near) h += '<span class="tag">易混淆字</span>';
   if (!c.done) h += '<button class="btn sm" data-a="readq" aria-label="朗讀題目">🔊 朗讀題目</button>';
@@ -195,11 +215,62 @@ function render() {
 
   if (c.done) {
     h += '<div class="fb"><p>' + c.s.zh + '</p><p class="mut">' + k + "（" + POS[c.w.pos] + "）" + c.w.zh + '</p>' +
-      '<div class="row"><button class="btn" data-a="say">再聽一次</button><button class="btn pri" data-a="next">下一題</button></div></div>';
+      '<div class="row"><button class="btn" data-a="say">再聽一次</button><button class="btn pri" data-a="next">' + (S.round.n >= ROUND ? "看成績" : "下一題") + '</button></div></div>';
   }
   $("#main").innerHTML = h + '</div>';
   // 填充題：自動把游標放進輸入框
   if (cloze && !c.done) $("#cloze").focus();
+}
+
+// 一輪結束：算分數（每題 5 分）、更新最高分，然後開始新的一輪
+function finishRound() {
+  const r = S.round, score = Math.round(r.ok / r.n * 100);
+  const newBest = score > S.best;
+  if (newBest) S.best = score;
+  S.rounds++;
+  cur = { type: "result", score, ok: r.ok, n: r.n, miss: r.miss.slice(), newBest };
+  S.round = newRound();
+  save(); render();
+}
+
+// 表揚用的彩帶：40 條小紙片，位置、顏色、速度隨機
+const CONFETTI = ["#f2b134", "#e4572e", "#1f6f6b", "#5fc2b8", "#7b61ff", "#ff8fab"];
+function confetti() {
+  let s = "";
+  for (let i = 0; i < 40; i++) {
+    s += '<i style="left:' + (Math.random() * 100).toFixed(1) + '%;background:' + CONFETTI[i % CONFETTI.length] +
+      ';animation-delay:' + (Math.random() * 1.2).toFixed(2) + 's;animation-duration:' + (2.4 + Math.random() * 1.8).toFixed(2) + 's"></i>';
+  }
+  return s;
+}
+
+// 成績畫面：90 分以上表揚；70–85 分鼓勵；70 分以下提醒複習
+function renderResult() {
+  const c = cur, great = c.score >= PRAISE;
+  let icon, head, msg;
+  if (c.score === 100) { icon = "🏆"; head = "滿分！太完美了！"; msg = ROUND + " 題全對，你是單字大師！"; }
+  else if (great) { icon = "🏆"; head = "太厲害了！"; msg = "這一輪表現非常出色，繼續保持！"; }
+  else if (c.score >= 70) { icon = "👍"; head = "做得好！"; msg = "再多練幾輪，下次挑戰 " + PRAISE + " 分以上！"; }
+  else { icon = "💪"; head = "再接再厲！"; msg = "把下面答錯的字多聽幾次，下一輪會更好。"; }
+
+  let h = '<div class="card result' + (great ? ' great' : '') + '">';
+  if (great) h += '<div class="confetti" aria-hidden="true">' + confetti() + '</div>';
+  h += '<div class="trophy" aria-hidden="true">' + icon + '</div><h2>' + head + '</h2>' +
+    '<p class="score"><b>' + c.score + '</b> 分</p>' +
+    '<p class="mut">本輪答對 ' + c.ok + ' / ' + c.n + ' 題・最高分 ' + S.best + ' 分</p>';
+  if (c.newBest) h += '<p class="newbest">🎉 新紀錄！</p>';
+  h += '<p>' + msg + '</p>';
+  if (c.miss.length) {
+    h += '<div class="miss"><p class="mut">這一輪答錯的字</p>';
+    c.miss.forEach(k => {
+      const w = find(k); if (!w) return;
+      h += '<div class="item"><span class="w">' + k + '</span><span class="n mut">' + w.zh + '</span><button class="btn sm" data-w="' + k + '" aria-label="朗讀 ' + k + '">朗讀</button></div>';
+    });
+    h += '</div>';
+  }
+  h += '<div class="row"><button class="btn pri" data-a="next">再來一輪</button>' +
+    (bookKeys().length ? '<button class="btn" data-t="book">看錯題本</button>' : '') + '</div></div>';
+  $("#main").innerHTML = h;
 }
 
 function book() {
@@ -233,7 +304,7 @@ document.addEventListener("click", e => {
   else if (a === "go") { tab = "quiz"; next(); }
   else if (a === "reset") {
     if (!armed) { armed = true; render(); return; }
-    S = { m: {}, ok: 0, tot: 0, seen: {} }; armed = false; save(); cur = null; render();
+    S = { m: {}, ok: 0, tot: 0, seen: {}, round: newRound(), best: 0, rounds: 0 }; armed = false; save(); cur = null; render();
   }
 });
 

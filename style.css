@@ -33,6 +33,25 @@ h1{font:600 22px "Newsreader","Noto Sans TC",serif;margin:8px 0 2px}
 .res{margin:12px 0 0;padding:10px 14px;border-radius:10px;border:1px solid}
 .res.ok{background:var(--okbg);border-color:var(--ok);color:var(--ok)}
 .res.bad{background:var(--badbg);border-color:var(--bad);color:var(--bad)}
+.bar{height:6px;border-radius:999px;background:var(--bg);overflow:hidden;margin:-4px 0 12px}
+.bar i{display:block;height:100%;background:var(--ac);border-radius:999px;transition:width .3s}
+.prog{font-size:14px;color:var(--mut);font-weight:500}
+.result{position:relative;overflow:hidden;text-align:center}
+.result h2{font:600 24px "Newsreader","Noto Sans TC",serif;margin:4px 0}
+.trophy{font-size:56px;line-height:1.2}
+.result.great .trophy{animation:pop .6s ease-out}
+.score{margin:6px 0 2px;font-size:18px}
+.score b{font:600 56px/1 "Newsreader",Georgia,serif;color:var(--ac)}
+.newbest{display:inline-block;margin:8px 0 0;padding:4px 14px;border-radius:999px;background:var(--okbg);color:var(--ok);font-weight:700}
+.result.great{border-color:#f2b134;box-shadow:0 0 0 3px rgba(242,177,52,.25)}
+.miss{text-align:left;margin-top:14px;padding-top:12px;border-top:1px solid var(--bd)}
+.miss .item{padding:6px 0}
+.result .row{justify-content:center}
+.confetti{position:absolute;inset:0;pointer-events:none}
+.confetti i{position:absolute;top:-12px;width:8px;height:14px;border-radius:2px;opacity:.9;animation:fall linear forwards}
+@keyframes fall{0%{transform:translateY(0) rotate(0)}100%{transform:translateY(520px) rotate(540deg);opacity:0}}
+@keyframes pop{0%{transform:scale(.3)}70%{transform:scale(1.15)}100%{transform:scale(1)}}
+@media (prefers-reduced-motion:reduce){.confetti{display:none}.result.great .trophy{animation:none}}
 .fb{margin-top:16px;padding-top:14px;border-top:1px solid var(--bd)}
 .fb p{margin:4px 0}
 .mut{color:var(--mut);font-size:14px}
