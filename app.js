@@ -57,6 +57,8 @@ function voiceHelp(msg) {
 
 // 錯題本填充題：錯題本有字時，每一題約有 25% 機會換成填充題
 const CLOZE_RATE = 0.25;
+// 優先出沒練過的字：還有沒練過的字時，每題約 70% 機會從中抽
+const NEW_RATE = 0.7;
 
 // 依權重抽一個字：權重 = 1 + 4 × 錯題次數
 function weighted(list) {
@@ -87,8 +89,13 @@ function next() {
     return render();
   }
 
-  // 一般選擇題；在錯題本中的字改用 extra 例句
-  const w = weighted(pool0);
+  // 一般選擇題：
+  // 還有沒練過的字時，NEW_RATE 的機會從沒練過的字裡隨機抽；其餘照權重抽（錯越多越常出）
+  const unseen = pool0.filter(w => !S.seen[w.word]);
+  const w = unseen.length && Math.random() < NEW_RATE
+    ? unseen[Math.floor(Math.random() * unseen.length)]
+    : weighted(pool0);
+  // 在錯題本中的字改用 extra 例句
   const s = pickSentence(S.m[w.word] ? w.extra : w.hp);
   // 干擾選項：
   // 有 near（易混淆字）的單字 → 用中文意思相近、但文法或搭配不合這句的字
