@@ -5,9 +5,12 @@ const $ = s => document.querySelector(s);
 const find = k => W.find(x => x.word === k);
 
 // 進度存在 localStorage 的 "vocabQ"（不要改名，否則舊紀錄會消失）
-// m：錯題本 {單字: 錯題次數}，ok：答對題數，tot：總題數
-let S = { m: {}, ok: 0, tot: 0 }, cur = null, last = "", tab = "quiz", armed = false;
+// m：錯題本 {單字: 錯題次數}，ok：答對題數，tot：總題數，seen：練過的字 {單字: 1}
+let S = { m: {}, ok: 0, tot: 0, seen: {} }, cur = null, last = "", tab = "quiz", armed = false;
 try { const r = localStorage.getItem("vocabQ"); if (r) S = Object.assign(S, JSON.parse(r)); } catch (e) {}
+// 舊紀錄沒有 seen：至少把錯題本裡的字算成「練過」（答錯過一定練過）
+if (!S.seen || typeof S.seen !== "object") S.seen = {};
+Object.keys(S.m).forEach(k => { S.seen[k] = 1; });
 const save = () => { try { localStorage.setItem("vocabQ", JSON.stringify(S)); } catch (e) {} };
 // 「只練易混淆字」設定：另外用一個 key 存，不動到 vocabQ 的進度
 let nearOnly = false;
@@ -100,6 +103,7 @@ function next() {
 // 計分：答對 −1、答錯 +1（上限 5），減到 0 就移出錯題本
 function grade(k, good) {
   S.tot++;
+  S.seen[k] = 1; // 記下這個字練過了
   if (good) { S.ok++; if (S.m[k]) { S.m[k]--; if (!S.m[k]) delete S.m[k]; } }
   else S.m[k] = Math.min(5, (S.m[k] || 0) + 1);
   save();
@@ -135,7 +139,10 @@ function readQuestion() {
 }
 
 function render() {
-  $("#stat").textContent = "答對 " + S.ok + " / " + S.tot + "，錯題本 " + bookKeys().length + " 個單字";
+  // 已練／未練：只算目前題庫裡有的字
+  const seenN = W.filter(w => S.seen[w.word]).length;
+  $("#stat").innerHTML = "答對 " + S.ok + " / " + S.tot + "，錯題本 " + bookKeys().length + " 個單字<br>" +
+    "題庫 " + W.length + " 字：已練 " + seenN + " 字、未練 " + (W.length - seenN) + " 字";
   document.querySelectorAll(".tab").forEach(b => b.classList.toggle("on", b.dataset.t === tab));
   if (tab === "book") return book();
   if (!cur) return next();
@@ -219,7 +226,7 @@ document.addEventListener("click", e => {
   else if (a === "go") { tab = "quiz"; next(); }
   else if (a === "reset") {
     if (!armed) { armed = true; render(); return; }
-    S = { m: {}, ok: 0, tot: 0 }; armed = false; save(); cur = null; render();
+    S = { m: {}, ok: 0, tot: 0, seen: {} }; armed = false; save(); cur = null; render();
   }
 });
 
