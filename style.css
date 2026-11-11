@@ -23,6 +23,16 @@ h1{font:600 22px "Newsreader","Noto Sans TC",serif;margin:8px 0 2px}
 .tag{display:inline-block;margin:0 0 10px;padding:2px 10px;border-radius:999px;background:var(--bg);border:1px solid var(--bd);color:var(--mut);font-size:13px}
 .mode{display:flex;align-items:center;gap:8px;margin:0 0 12px;font-size:15px;cursor:pointer;user-select:none}
 .mode input{width:18px;height:18px;accent-color:var(--ac);cursor:pointer}
+.qhead{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+.qhead .tag{margin:0}
+.btn.sm{padding:6px 12px;font-size:14px;margin-left:auto}
+.blank{color:var(--ac);font-weight:600;letter-spacing:.08em;white-space:nowrap}
+.cloze{display:flex;gap:10px;margin-top:10px}
+.cloze input{flex:1;min-width:0;padding:12px 14px;border:1px solid var(--bd);border-radius:10px;background:var(--bg);color:var(--fg);font:500 18px "Newsreader",Georgia,serif}
+.cloze input:focus{outline:2px solid var(--ac);outline-offset:1px}
+.res{margin:12px 0 0;padding:10px 14px;border-radius:10px;border:1px solid}
+.res.ok{background:var(--okbg);border-color:var(--ok);color:var(--ok)}
+.res.bad{background:var(--badbg);border-color:var(--bad);color:var(--bad)}
 .fb{margin-top:16px;padding-top:14px;border-top:1px solid var(--bd)}
 .fb p{margin:4px 0}
 .mut{color:var(--mut);font-size:14px}

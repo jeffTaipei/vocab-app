@@ -52,37 +52,86 @@ function voiceHelp(msg) {
   el.textContent = "🔇 " + msg;
 }
 
+// 錯題本填充題：錯題本有字時，每一題約有 25% 機會換成填充題
+const CLOZE_RATE = 0.25;
+
+// 依權重抽一個字：權重 = 1 + 4 × 錯題次數
+function weighted(list) {
+  const ws = list.map(w => 1 + 4 * (S.m[w.word] || 0));
+  let r = Math.random() * ws.reduce((a, b) => a + b, 0), i = 0;
+  while (i < ws.length - 1 && r >= ws[i]) { r -= ws[i]; i++; }
+  return list[i];
+}
+
+// 挑一句例句，避免連續兩題是同一句
+function pickSentence(pool) {
+  const ss = pool.filter(s => s.en !== last);
+  const s = ss[Math.floor(Math.random() * ss.length)];
+  last = s.en;
+  return s;
+}
+
 function next() {
   // 勾選「只練易混淆字」時，只從有 near 的單字出題
   const nearWords = W.filter(w => w.near);
   const pool0 = nearOnly && nearWords.length ? nearWords : W;
-  // 抽題權重 = 1 + 4 × 錯題次數
-  const ws = pool0.map(w => 1 + 4 * (S.m[w.word] || 0));
-  let r = Math.random() * ws.reduce((a, b) => a + b, 0), i = 0;
-  while (i < ws.length - 1 && r >= ws[i]) { r -= ws[i]; i++; }
-  const w = pool0[i];
-  // 在錯題本中的字改用 extra 例句
-  const pool = S.m[w.word] ? w.extra : w.hp;
-  const ss = pool.filter(s => s.en !== last);
-  const s = ss[Math.floor(Math.random() * ss.length)];
-  last = s.en;
+
+  // 錯題本填充題：從錯題本（且在目前出題範圍內）的字隨機抽，用 extra 例句
+  const bookWords = pool0.filter(w => S.m[w.word]);
+  if (bookWords.length && Math.random() < CLOZE_RATE) {
+    const w = weighted(bookWords);
+    cur = { type: "cloze", w, s: pickSentence(w.extra), done: false, typed: "", good: false };
+    return render();
+  }
+
+  // 一般選擇題；在錯題本中的字改用 extra 例句
+  const w = weighted(pool0);
+  const s = pickSentence(S.m[w.word] ? w.extra : w.hp);
   // 干擾選項：
   // 有 near（易混淆字）的單字 → 用中文意思相近、但文法或搭配不合這句的字
   // 沒有的 → 從單字表隨機挑，優先挑同詞性
   const d = w.near ? shuf(w.near).slice(0, 3)
     : shuf(W.filter(x => x !== w && x.pos === w.pos))
       .concat(shuf(W.filter(x => x !== w && x.pos !== w.pos))).slice(0, 3);
-  cur = { w, s, opts: shuf([w].concat(d)), done: false, pick: -1 };
+  cur = { type: "choice", w, s, opts: shuf([w].concat(d)), done: false, pick: -1 };
   render();
 }
 
-function pick(i) {
-  if (cur.done) return;
-  const c = cur, k = c.w.word, good = c.opts[i] === c.w;
+// 計分：答對 −1、答錯 +1（上限 5），減到 0 就移出錯題本
+function grade(k, good) {
   S.tot++;
   if (good) { S.ok++; if (S.m[k]) { S.m[k]--; if (!S.m[k]) delete S.m[k]; } }
   else S.m[k] = Math.min(5, (S.m[k] || 0) + 1);
-  c.done = true; c.pick = i; save(); render(); say(c.s.en);
+  save();
+}
+
+// 選擇題作答
+function pick(i) {
+  if (cur.done || cur.type !== "choice") return;
+  cur.pick = i; cur.done = true;
+  grade(cur.w.word, cur.opts[i] === cur.w);
+  render(); say(cur.s.en);
+}
+
+// 填充題作答：不分大小寫，前後空白不算
+function submitCloze() {
+  if (cur.done || cur.type !== "cloze") return;
+  const box = $("#cloze"), typed = box ? box.value.trim() : "";
+  if (!typed) { if (box) box.focus(); return; }
+  cur.typed = typed;
+  cur.good = typed.toLowerCase() === cur.w.word.toLowerCase();
+  cur.done = true;
+  grade(cur.w.word, cur.good);
+  render(); say(cur.s.en);
+}
+
+// 學生打的字要先轉成純文字再放進畫面，避免被當成 HTML
+const esc = t => t.replace(/[&<>"']/g, ch => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[ch]));
+
+// 朗讀題目：作答前把空格念成 "blank"，不會念出答案
+function readQuestion() {
+  const re = new RegExp("\\b" + cur.w.word + "\\b", "i");
+  say(cur.done ? cur.s.en : cur.s.en.replace(re, "blank"));
 }
 
 function render() {
@@ -91,28 +140,52 @@ function render() {
   if (tab === "book") return book();
   if (!cur) return next();
   const c = cur, k = c.w.word, re = new RegExp("\\b" + k + "\\b", "i");
-  const q = c.done ? c.s.en.replace(re, '<span class="hl">' + k + '</span>') : c.s.en.replace(re, "＿＿＿＿＿");
-  const near = !!c.w.near;
+  const cloze = c.type === "cloze", near = !cloze && !!c.w.near;
   const nNear = W.filter(w => w.near).length;
+
+  // 空格：選擇題用底線；填充題顯示第一個字母和字數，例如 a _ _ _ _ _ _
+  const blank = cloze ? '<span class="blank">' + k[0] + ' ' + Array(k.length - 1).fill("_").join(" ") + '</span>' : "＿＿＿＿＿";
+  const q = c.done ? c.s.en.replace(re, '<span class="hl">' + k + '</span>') : c.s.en.replace(re, blank);
+
   let h = '<label class="mode"><input type="checkbox" id="nearOnly"' + (nearOnly ? ' checked' : '') + '> 只練易混淆字（' + nNear + ' 個字）</label>';
-  h += '<div class="card">' + (near ? '<p class="tag">易混淆字</p>' : '') + '<p class="sent">' + q + '</p><div class="opts">';
-  c.opts.forEach((o, i) => {
-    let cls = "opt";
-    if (c.done) { if (o === c.w) cls += " ok"; else if (i === c.pick) cls += " bad"; }
-    h += '<button class="' + cls + '" data-i="' + i + '">' + o.word;
-    if (c.done) {
-      h += '<span class="zh">' + o.zh + (near ? '・第 ' + o.level + ' 級' : '') + '</span>';
-      // 易混淆字題：每個選項都顯示適合的情境
-      if (near) h += '<span class="fit">' + (o === c.w ? '✓ ' : '') + o.fit + '</span>';
+  h += '<div class="card"><div class="qhead">';
+  if (cloze) h += '<span class="tag">錯題複習・填充題</span>';
+  else if (near) h += '<span class="tag">易混淆字</span>';
+  if (!c.done) h += '<button class="btn sm" data-a="readq" aria-label="朗讀題目">🔊 朗讀題目</button>';
+  h += '</div><p class="sent">' + q + '</p>';
+
+  if (cloze) {
+    if (!c.done) {
+      h += '<p class="mut">提示：第一個字母是 ' + k[0] + '，共 ' + k.length + ' 個字母</p>' +
+        '<div class="cloze"><input id="cloze" type="text" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" aria-label="填入單字">' +
+        '<button class="btn pri" data-a="submit">送出</button></div>';
+    } else {
+      h += c.good ? '<p class="res ok">✓ 答對了！</p>'
+        : '<p class="res bad">✗ 你填的是「' + esc(c.typed) + '」，正確答案是 <b>' + k + '</b></p>';
     }
-    h += '</button>';
-  });
-  h += '</div>';
+  } else {
+    h += '<div class="opts">';
+    c.opts.forEach((o, i) => {
+      let cls = "opt";
+      if (c.done) { if (o === c.w) cls += " ok"; else if (i === c.pick) cls += " bad"; }
+      h += '<button class="' + cls + '" data-i="' + i + '">' + o.word;
+      if (c.done) {
+        h += '<span class="zh">' + o.zh + (near ? '・第 ' + o.level + ' 級' : '') + '</span>';
+        // 易混淆字題：每個選項都顯示適合的情境
+        if (near) h += '<span class="fit">' + (o === c.w ? '✓ ' : '') + o.fit + '</span>';
+      }
+      h += '</button>';
+    });
+    h += '</div>';
+  }
+
   if (c.done) {
     h += '<div class="fb"><p>' + c.s.zh + '</p><p class="mut">' + k + "（" + POS[c.w.pos] + "）" + c.w.zh + '</p>' +
       '<div class="row"><button class="btn" data-a="say">再聽一次</button><button class="btn pri" data-a="next">下一題</button></div></div>';
   }
   $("#main").innerHTML = h + '</div>';
+  // 填充題：自動把游標放進輸入框
+  if (cloze && !c.done) $("#cloze").focus();
 }
 
 function book() {
@@ -141,11 +214,18 @@ document.addEventListener("click", e => {
   const a = t.dataset.a;
   if (a === "next") next();
   else if (a === "say") say(cur.s.en);
+  else if (a === "readq") readQuestion();
+  else if (a === "submit") submitCloze();
   else if (a === "go") { tab = "quiz"; next(); }
   else if (a === "reset") {
     if (!armed) { armed = true; render(); return; }
     S = { m: {}, ok: 0, tot: 0 }; armed = false; save(); cur = null; render();
   }
+});
+
+// 填充題輸入框：按 Enter 送出
+document.addEventListener("keydown", e => {
+  if (e.key === "Enter" && e.target.id === "cloze") { e.preventDefault(); submitCloze(); }
 });
 
 // 勾選框：切換「只練易混淆字」
