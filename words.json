@@ -855,6 +855,7 @@
   },
   {
     "word": "devote", "pos": "v", "level": 4, "zh": "奉獻；致力於",
+    "fit": "devote 時間／生命 to + 名詞或 V-ing：把…奉獻給、投入於",
     "hp": [
       {"en": "Hermione decided to devote her free time to helping house-elves.", "zh": "妙麗決定把空閒時間都用來幫助家庭小精靈。"},
       {"en": "Oliver Wood wanted the team to devote every weekend to Quidditch practice.", "zh": "木透希望球隊把每個週末都投入魁地奇練習。"}
@@ -862,10 +863,16 @@
     "extra": [
       {"en": "My grandmother chose to devote her life to teaching.", "zh": "我奶奶選擇把一生奉獻給教育。"},
       {"en": "I plan to devote two hours a day to studying English.", "zh": "我打算每天花兩小時學英文。"}
+    ],
+    "near": [
+      {"word": "spend", "pos": "v", "level": 1, "zh": "花費", "fit": "spend 時間 V-ing／spend 時間 on 某事：花時間，不用 to。例：spend an hour reading"},
+      {"word": "invest", "pos": "v", "level": 4, "zh": "投資；投入", "fit": "invest 錢或時間 in 某事：投資，用 in 不用 to。例：invest time in learning"},
+      {"word": "waste", "pos": "v", "level": 2, "zh": "浪費", "fit": "waste 時間 V-ing／waste 時間 on 某事：浪費，不用 to。例：waste time on games"}
     ]
   },
   {
     "word": "interfere", "pos": "v", "level": 4, "zh": "干涉；妨礙",
+    "fit": "interfere with／in 某事：干涉、妨礙（不及物，要加 with 或 in）",
     "hp": [
       {"en": "Hermione told Harry not to interfere with the past when they used the Time-Turner.", "zh": "使用時光器時，妙麗告訴哈利不要干涉過去。"},
       {"en": "Dumbledore did not want the Ministry to interfere with Hogwarts.", "zh": "鄧不利多不希望魔法部干涉霍格華茲。"}
@@ -873,6 +880,11 @@
     "extra": [
       {"en": "Don't let video games interfere with your schoolwork.", "zh": "別讓電動妨礙你的課業。"},
       {"en": "My parents try not to interfere in my choice of friends.", "zh": "爸媽盡量不干涉我交什麼朋友。"}
+    ],
+    "near": [
+      {"word": "disturb", "pos": "v", "level": 4, "zh": "打擾", "fit": "disturb 人：打擾，後面直接接受詞，不加 with／in。例：Don't disturb me."},
+      {"word": "interrupt", "pos": "v", "level": 3, "zh": "打斷", "fit": "interrupt 人或事：打斷說話或進行中的事，直接接受詞。例：interrupt the teacher"},
+      {"word": "prevent", "pos": "v", "level": 3, "zh": "阻止", "fit": "prevent 人 from V-ing：阻止某人做某事。例：prevent him from leaving"}
     ]
   },
   {
@@ -910,6 +922,7 @@
   },
   {
     "word": "glimpse", "pos": "n", "level": 4, "zh": "一瞥；瞥見",
+    "fit": "catch／get／have a glimpse of 某物：瞥見（用 of）",
     "hp": [
       {"en": "Harry caught a glimpse of the Snitch near the ground.", "zh": "哈利瞥見金探子在接近地面的地方。"},
       {"en": "In the mirror, Harry had a glimpse of his parents smiling at him.", "zh": "在鏡子裡，哈利瞥見父母對他微笑。"}
@@ -917,6 +930,11 @@
     "extra": [
       {"en": "We caught a glimpse of the famous singer as her car drove by.", "zh": "那位知名歌手的車經過時，我們瞥見了她。"},
       {"en": "From the plane, I got a glimpse of Taipei 101.", "zh": "從飛機上，我瞥見了台北 101。"}
+    ],
+    "near": [
+      {"word": "look", "pos": "n", "level": 1, "zh": "看一眼", "fit": "have／take a look at 某物：看一看，用 at 不用 of。例：take a look at this"},
+      {"word": "glance", "pos": "n", "level": 3, "zh": "一瞥", "fit": "take／cast a glance at 某物：瞄一眼，用 at；也不說 catch a glance。例：a glance at the clock"},
+      {"word": "stare", "pos": "n", "level": 3, "zh": "凝視", "fit": "give 人 a stare：盯著看，不說 catch a stare of。例：give him a cold stare"}
     ]
   },
   {
@@ -943,13 +961,19 @@
   },
   {
     "word": "vulnerable", "pos": "adj", "level": 5, "zh": "脆弱的；容易受傷害的",
+    "fit": "be vulnerable to + 名詞：容易受到…的傷害",
     "hp": [
-      {"en": "Without his wand, Harry felt completely vulnerable.", "zh": "沒有魔杖，哈利覺得自己毫無防備。"},
+      {"en": "Without his wand, Harry was vulnerable to the Dementors.", "zh": "沒有魔杖，哈利在催狂魔面前毫無防備。"},
       {"en": "First-years are vulnerable to tricks from older students.", "zh": "一年級新生很容易被高年級生捉弄。"}
     ],
     "extra": [
       {"en": "Old people are more vulnerable to the flu.", "zh": "老年人比較容易得流感。"},
-      {"en": "Small animals are vulnerable when they leave their nests.", "zh": "小動物離開巢穴時很容易受到傷害。"}
+      {"en": "Small animals are vulnerable to hawks when they leave their nests.", "zh": "小動物離開巢穴時，很容易被老鷹攻擊。"}
+    ],
+    "near": [
+      {"word": "likely", "pos": "adj", "level": 2, "zh": "可能的", "fit": "be likely to + 原形動詞：可能會…，to 後面接動詞不接名詞。例：It is likely to rain."},
+      {"word": "apt", "pos": "adj", "level": 5, "zh": "易於…的", "fit": "be apt to + 原形動詞：容易…（傾向），to 後面接動詞。例：apt to forget"},
+      {"word": "easy", "pos": "adj", "level": 1, "zh": "容易的", "fit": "It is easy to + 原形動詞：做某事很容易（主詞通常是 it 或事情），不接 to + 名詞。例：It is easy to learn."}
     ]
   },
   {
@@ -998,24 +1022,36 @@
   },
   {
     "word": "allergy", "pos": "n", "level": 5, "zh": "過敏",
+    "fit": "have an allergy to 某物：對…過敏（用 to）",
     "hp": [
       {"en": "Ron joked that he had an allergy to homework.", "zh": "榮恩開玩笑說他對功課過敏。"},
       {"en": "Professor Sprout warned that some students might have an allergy to the plant's pollen.", "zh": "芽菜教授警告說，有些學生可能會對這種植物的花粉過敏。"}
     ],
     "extra": [
       {"en": "My brother has an allergy to peanuts.", "zh": "我弟弟對花生過敏。"},
-      {"en": "Spring is hard for people with a pollen allergy.", "zh": "對花粉過敏的人來說，春天很難熬。"}
+      {"en": "People with an allergy to pollen often sneeze in spring.", "zh": "對花粉過敏的人春天常常打噴嚏。"}
+    ],
+    "near": [
+      {"word": "disease", "pos": "n", "level": 2, "zh": "疾病", "fit": "disease：疾病，不說 a disease to 某物。例：heart disease"},
+      {"word": "infection", "pos": "n", "level": 4, "zh": "感染", "fit": "an infection of／in 身體部位：感染，不用 to。例：an ear infection"},
+      {"word": "symptom", "pos": "n", "level": 5, "zh": "症狀", "fit": "a symptom of 某病：…的症狀，用 of。例：a symptom of the flu"}
     ]
   },
   {
     "word": "applause", "pos": "n", "level": 5, "zh": "掌聲",
+    "fit": "applause：掌聲，不可數（不加 a，也不加 s）；burst into applause、a round of applause",
     "hp": [
       {"en": "The Great Hall burst into applause when Gryffindor won the House Cup.", "zh": "葛來分多贏得學院盃時，大廳響起熱烈掌聲。"},
       {"en": "Harry received loud applause after he finished the first task.", "zh": "哈利完成第一項任務後，獲得熱烈的掌聲。"}
     ],
     "extra": [
-      {"en": "The singer bowed to the applause of the audience.", "zh": "歌手向觀眾的掌聲鞠躬致意。"},
+      {"en": "The audience gave the singer loud applause.", "zh": "觀眾給了歌手熱烈的掌聲。"},
       {"en": "Let's give our teacher a big round of applause.", "zh": "讓我們給老師熱烈的掌聲。"}
+    ],
+    "near": [
+      {"word": "cheer", "pos": "n", "level": 2, "zh": "歡呼聲", "fit": "cheer：歡呼聲，可數，通常用 cheers 或 a cheer。例：loud cheers"},
+      {"word": "clap", "pos": "n", "level": 2, "zh": "拍手聲", "fit": "clap：拍一下手的聲音，可數（a clap）。例：a clap of thunder"},
+      {"word": "compliment", "pos": "n", "level": 5, "zh": "讚美", "fit": "compliment：讚美，可數（pay 人 a compliment）。例：Thanks for the compliment."}
     ]
   },
   {
@@ -1064,6 +1100,7 @@
   },
   {
     "word": "reliant", "pos": "adj", "level": 6, "zh": "依賴的",
+    "fit": "be reliant on 人或物：依賴…（一定接 on）",
     "hp": [
       {"en": "Draco was too reliant on his father's money and power.", "zh": "跩哥太依賴他父親的錢和權勢。"},
       {"en": "Ron became less reliant on Hermione's notes after his fifth year.", "zh": "五年級之後，榮恩比較不依賴妙麗的筆記了。"}
@@ -1071,6 +1108,11 @@
     "extra": [
       {"en": "Many people are too reliant on their phones.", "zh": "很多人太依賴手機了。"},
       {"en": "Our town is reliant on tourism.", "zh": "我們鎮靠觀光業維生。"}
+    ],
+    "near": [
+      {"word": "reliable", "pos": "adj", "level": 3, "zh": "可靠的", "fit": "reliable：可靠的，形容人或東西值得信賴，不接 on。例：a reliable friend"},
+      {"word": "confident", "pos": "adj", "level": 2, "zh": "有信心的", "fit": "be confident in／of 某事：對…有信心，不接 on。例：confident of winning"},
+      {"word": "faithful", "pos": "adj", "level": 4, "zh": "忠實的", "fit": "be faithful to 人：對…忠實，用 to 不用 on。例：faithful to his wife"}
     ]
   },
   {
@@ -1119,6 +1161,7 @@
   },
   {
     "word": "adolescence", "pos": "n", "level": 6, "zh": "青春期",
+    "fit": "adolescence：青春期（一段時期，不可數）；during／in adolescence",
     "hp": [
       {"en": "Harry spent his adolescence fighting dark wizards.", "zh": "哈利的青春期都在對抗黑巫師。"},
       {"en": "Tom Riddle showed his cruel nature in early adolescence.", "zh": "湯姆・瑞斗在青春期早期就顯露出殘酷的本性。"}
@@ -1126,10 +1169,16 @@
     "extra": [
       {"en": "Many people grow quickly during adolescence.", "zh": "很多人在青春期長得很快。"},
       {"en": "Writing a diary helped her get through adolescence.", "zh": "寫日記陪她度過了青春期。"}
+    ],
+    "near": [
+      {"word": "teenager", "pos": "n", "level": 1, "zh": "青少年", "fit": "teenager：青少年（指人，可數），不說 during teenager。例：a teenager of 15"},
+      {"word": "adolescent", "pos": "n", "level": 5, "zh": "青少年", "fit": "adolescent：青少年（指人，可數）。例：books for adolescents"},
+      {"word": "youngster", "pos": "n", "level": 3, "zh": "年輕人", "fit": "youngster：小孩、年輕人（指人，可數）。例：a group of youngsters"}
     ]
   },
   {
     "word": "disturbance", "pos": "n", "level": 6, "zh": "干擾；騷動",
+    "fit": "a disturbance：干擾、騷動（可數，可以加 a）",
     "hp": [
       {"en": "Peeves caused a disturbance in the library and made Madam Pince angry.", "zh": "皮皮鬼在圖書館引起騷動，惹得平斯夫人很生氣。"},
       {"en": "The Ministry noticed a magical disturbance near the Dursleys' house.", "zh": "魔法部察覺到德思禮家附近有魔法騷動。"}
@@ -1137,6 +1186,11 @@
     "extra": [
       {"en": "The loud music next door was a disturbance to our sleep.", "zh": "隔壁的大聲音樂干擾了我們睡覺。"},
       {"en": "The police were called to stop a disturbance in the park.", "zh": "警察被叫來平息公園裡的騷動。"}
+    ],
+    "near": [
+      {"word": "harm", "pos": "n", "level": 3, "zh": "傷害", "fit": "harm：傷害，不可數，不加 a（do harm to…）。例：do harm to your health"},
+      {"word": "damage", "pos": "n", "level": 2, "zh": "損害", "fit": "damage：東西被破壞的損害，不可數，不加 a。例：storm damage"},
+      {"word": "chaos", "pos": "n", "level": 5, "zh": "混亂", "fit": "chaos：一片混亂，不可數，不加 a（in chaos）。例：The room was in chaos."}
     ]
   }
 ]
