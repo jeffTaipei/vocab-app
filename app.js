@@ -1,7 +1,7 @@
 // 單字資料從 words.json 載入，格式見 CLAUDE.md
 let W = [];
 // 網站版本：改 app.js 或 style.css 時，這裡和 index.html 的 ?v= 要一起更新
-const APP_VERSION = "v11（2026-11-21）";
+const APP_VERSION = "v12（2026-11-21）";
 const POS = { adj: "形容詞", v: "動詞", n: "名詞" };
 const $ = s => document.querySelector(s);
 const find = k => W.find(x => x.word === k);
@@ -134,7 +134,9 @@ function grade(k, good) {
 
 // 選擇題作答
 function pick(i) {
-  if (cur.done || cur.type !== "choice") return;
+  if (cur.type !== "choice") return;
+  // 公布答案後，按選項就朗讀該英文單字，不會重新計分
+  if (cur.done) return say(cur.opts[i].word);
   cur.pick = i; cur.done = true;
   grade(cur.w.word, cur.opts[i] === cur.w);
   render(); say(cur.s.en);
@@ -204,9 +206,10 @@ function render() {
     c.opts.forEach((o, i) => {
       let cls = "opt";
       if (c.done) { if (o === c.w) cls += " ok"; else if (i === c.pick) cls += " bad"; }
-      h += '<button class="' + cls + '" data-i="' + i + '">' + o.word;
+      const label = c.done ? ' aria-label="' + esc("朗讀 " + o.word + "，" + o.zh + (near ? "，" + o.fit : "")) + '"' : "";
+      h += '<button class="' + cls + '" data-i="' + i + '"' + label + '>' + o.word;
       if (c.done) {
-        h += '<span class="zh">' + o.zh + (near ? '・第 ' + o.level + ' 級' : '') + '</span>';
+        h += '<span class="spk" aria-hidden="true">🔊</span><span class="zh">' + o.zh + (near ? '・第 ' + o.level + ' 級' : '') + '</span>';
         // 易混淆字題：每個選項都顯示適合的情境
         if (near) h += '<span class="fit">' + (o === c.w ? '✓ ' : '') + o.fit + '</span>';
       }
