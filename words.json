@@ -1240,5 +1240,335 @@
       {"word": "damage", "pos": "n", "level": 2, "zh": "損害", "fit": "damage：東西被破壞的損害，不可數，不加 a。例：storm damage"},
       {"word": "chaos", "pos": "n", "level": 5, "zh": "混亂", "fit": "chaos：一片混亂，不可數，不加 a（in chaos）。例：The room was in chaos."}
     ]
+  },
+  {
+    "word": "abundant", "pos": "adj", "level": 5, "zh": "豐富的；充足的",
+    "hp": [
+      {"en": "Taiwan has abundant fruit in the summer.", "zh": "台灣夏天有豐富的水果。"},
+      {"en": "The forest is home to abundant wildlife.", "zh": "這片森林有豐富的野生動物。"}
+    ],
+    "extra": [
+      {"en": "The farmers were happy about the abundant rain this spring.", "zh": "農夫們很高興今年春天雨量充足。"},
+      {"en": "Fresh seafood is abundant in this fishing town.", "zh": "這個漁村有豐富的新鮮海鮮。"}
+    ]
+  },
+  {
+    "word": "abrupt", "pos": "adj", "level": 5, "zh": "突然的；唐突的",
+    "hp": [
+      {"en": "The bus came to an abrupt stop at the red light.", "zh": "公車在紅燈前突然停下。"},
+      {"en": "His abrupt answer surprised everyone in the meeting.", "zh": "他唐突的回答讓會議上的人都很驚訝。"}
+    ],
+    "extra": [
+      {"en": "There was an abrupt change in the weather this afternoon.", "zh": "今天下午天氣突然改變。"},
+      {"en": "The movie had an abrupt ending that confused the audience.", "zh": "電影突然結束，讓觀眾一頭霧水。"}
+    ]
+  },
+  {
+    "word": "abnormal", "pos": "adj", "level": 5, "zh": "異常的；不正常的",
+    "hp": [
+      {"en": "The doctor found an abnormal result in my blood test.", "zh": "醫生發現我的血液檢查有異常結果。"},
+      {"en": "It is abnormal for this river to dry up in spring.", "zh": "這條河在春天乾涸是不正常的。"}
+    ],
+    "extra": [
+      {"en": "The machine made an abnormal noise and then stopped.", "zh": "機器發出異常的聲音後就停了。"},
+      {"en": "This year's abnormal heat has hurt many crops.", "zh": "今年異常的高溫傷害了許多農作物。"}
+    ]
+  },
+  {
+    "word": "inevitable", "pos": "adj", "level": 5, "zh": "不可避免的",
+    "hp": [
+      {"en": "Change is inevitable in every company.", "zh": "每間公司都免不了要改變。"},
+      {"en": "With so little practice, losing the game was inevitable.", "zh": "練習這麼少，輸掉比賽是無法避免的。"}
+    ],
+    "extra": [
+      {"en": "Mistakes are inevitable when you learn a new language.", "zh": "學新語言時，犯錯是難免的。"},
+      {"en": "Traffic jams seem inevitable during the holidays.", "zh": "連假期間塞車似乎無法避免。"}
+    ]
+  },
+  {
+    "word": "abolish", "pos": "v", "level": 5, "zh": "廢除",
+    "hp": [
+      {"en": "The government decided to abolish the old tax.", "zh": "政府決定廢除這項舊稅。"},
+      {"en": "Many countries have worked to abolish slavery.", "zh": "許多國家努力廢除奴隸制度。"}
+    ],
+    "extra": [
+      {"en": "Our school plans to abolish the strict hair rule.", "zh": "我們學校打算廢除嚴格的髮禁。"},
+      {"en": "Some people want to abolish homework on weekends.", "zh": "有些人希望廢除週末作業。"}
+    ]
+  },
+  {
+    "word": "accommodate", "pos": "v", "level": 5, "zh": "容納；提供住宿",
+    "hp": [
+      {"en": "This hotel can accommodate two hundred guests.", "zh": "這間飯店可以容納兩百位房客。"},
+      {"en": "The new gym can accommodate the whole school.", "zh": "新體育館可以容納全校師生。"}
+    ],
+    "extra": [
+      {"en": "The bus is large enough to accommodate fifty passengers.", "zh": "這輛巴士夠大，可以容納五十名乘客。"},
+      {"en": "The small apartment cannot accommodate all of our furniture.", "zh": "這間小公寓放不下我們所有的家具。"}
+    ]
+  },
+  {
+    "word": "advocate", "pos": "v", "level": 5, "zh": "提倡；主張",
+    "hp": [
+      {"en": "The doctor continues to advocate a healthy diet for children.", "zh": "醫生持續提倡兒童要有健康的飲食。"},
+      {"en": "Many teachers advocate more reading time at school.", "zh": "許多老師主張在學校增加閱讀時間。"}
+    ],
+    "extra": [
+      {"en": "These groups advocate equal pay for women.", "zh": "這些團體提倡女性同工同酬。"},
+      {"en": "I advocate using public transportation to reduce pollution.", "zh": "我主張搭乘大眾運輸來減少污染。"}
+    ]
+  },
+  {
+    "word": "amend", "pos": "v", "level": 5, "zh": "修改；修正",
+    "hp": [
+      {"en": "The lawmakers voted to amend the traffic law.", "zh": "立法委員投票修改交通法規。"},
+      {"en": "The club decided to amend its rules last month.", "zh": "社團上個月決定修改社規。"}
+    ],
+    "extra": [
+      {"en": "Please amend the report before you send it.", "zh": "請在寄出前修改這份報告。"},
+      {"en": "We need to amend the schedule because of the typhoon.", "zh": "因為颱風，我們需要修改行程。"}
+    ]
+  },
+  {
+    "word": "drought", "pos": "n", "level": 5, "zh": "乾旱",
+    "hp": [
+      {"en": "The long drought killed most of the rice.", "zh": "長期乾旱讓大部分稻子都死了。"},
+      {"en": "Farmers lost a lot of money during the drought.", "zh": "乾旱期間，農民損失了很多錢。"}
+    ],
+    "extra": [
+      {"en": "Water was limited in the city because of the drought.", "zh": "因為乾旱，這座城市限制用水。"},
+      {"en": "This area suffers from drought almost every summer.", "zh": "這個地區幾乎每年夏天都受乾旱所苦。"}
+    ]
+  },
+  {
+    "word": "alliance", "pos": "n", "level": 5, "zh": "聯盟；結盟",
+    "hp": [
+      {"en": "The two small countries formed an alliance.", "zh": "這兩個小國結成了聯盟。"},
+      {"en": "The companies made an alliance to sell electric cars.", "zh": "這些公司結盟銷售電動車。"}
+    ],
+    "extra": [
+      {"en": "The students built an alliance with local shops to reduce plastic.", "zh": "學生們和當地商店結盟，一起減少塑膠使用。"},
+      {"en": "The alliance between the two parties ended after the election.", "zh": "兩黨的聯盟在選舉後結束了。"}
+    ]
+  },
+  {
+    "word": "agony", "pos": "n", "level": 5, "zh": "極度痛苦",
+    "hp": [
+      {"en": "The injured player lay on the field in agony.", "zh": "受傷的球員痛苦地躺在球場上。"},
+      {"en": "He screamed in agony when the door closed on his finger.", "zh": "門夾到手指時，他痛得大叫。"}
+    ],
+    "extra": [
+      {"en": "Waiting for the test results was pure agony.", "zh": "等待考試結果真是一種煎熬。"},
+      {"en": "The toothache put me in agony all night.", "zh": "牙痛讓我痛苦了一整晚。"}
+    ]
+  },
+  {
+    "word": "activist", "pos": "n", "level": 5, "zh": "社會運動者；行動主義者",
+    "hp": [
+      {"en": "The young activist spoke about climate change at the meeting.", "zh": "這位年輕的社運人士在會議上談論氣候變遷。"},
+      {"en": "An activist asked the city to protect the old trees.", "zh": "一位社運人士要求市政府保護老樹。"}
+    ],
+    "extra": [
+      {"en": "The animal rights activist gave a speech at our school.", "zh": "那位動物權運動者到我們學校演講。"},
+      {"en": "My aunt became an activist after the factory polluted the river.", "zh": "工廠污染河川後，我阿姨成了社運人士。"}
+    ]
+  },
+  {
+    "word": "keen", "pos": "adj", "level": 4, "zh": "熱衷的；敏銳的",
+    "hp": [
+      {"en": "Amy is keen to learn Japanese this year.", "zh": "艾咪今年很想學日文。"},
+      {"en": "Dogs have a keen sense of smell.", "zh": "狗有敏銳的嗅覺。"}
+    ],
+    "extra": [
+      {"en": "My brother is keen on basketball.", "zh": "我弟弟很熱衷籃球。"},
+      {"en": "The young reporter has a keen eye for detail.", "zh": "這位年輕記者對細節觀察敏銳。"}
+    ]
+  },
+  {
+    "word": "vast", "pos": "adj", "level": 4, "zh": "廣大的；大量的",
+    "hp": [
+      {"en": "The vast desert stretches for hundreds of miles.", "zh": "廣大的沙漠綿延數百英里。"},
+      {"en": "The library has a vast collection of old maps.", "zh": "這間圖書館收藏了大量古地圖。"}
+    ],
+    "extra": [
+      {"en": "We looked out at the vast ocean from the ship.", "zh": "我們從船上望向廣闊的海洋。"},
+      {"en": "A vast number of people visit this temple every year.", "zh": "每年都有非常多人參訪這座廟。"}
+    ]
+  },
+  {
+    "word": "precise", "pos": "adj", "level": 4, "zh": "精確的",
+    "hp": [
+      {"en": "Please give me the precise time of your arrival.", "zh": "請告訴我你抵達的確切時間。"},
+      {"en": "A surgeon must make precise movements during an operation.", "zh": "外科醫師手術時動作必須精準。"}
+    ],
+    "extra": [
+      {"en": "The recipe gives precise amounts of sugar and flour.", "zh": "這份食譜列出糖和麵粉的精確用量。"},
+      {"en": "Her instructions were clear and precise.", "zh": "她的指示清楚又精確。"}
+    ]
+  },
+  {
+    "word": "flexible", "pos": "adj", "level": 4, "zh": "有彈性的；靈活的",
+    "hp": [
+      {"en": "My job has flexible working hours.", "zh": "我的工作時間很有彈性。"},
+      {"en": "Dancers need strong and flexible bodies.", "zh": "舞者需要強壯又柔軟的身體。"}
+    ],
+    "extra": [
+      {"en": "We can meet any day; my schedule is flexible.", "zh": "我們哪天見面都可以，我的時間很有彈性。"},
+      {"en": "This plastic ruler is flexible and hard to break.", "zh": "這把塑膠尺有彈性，不容易折斷。"}
+    ]
+  },
+  {
+    "word": "cease", "pos": "v", "level": 4, "zh": "停止",
+    "hp": [
+      {"en": "The factory will cease production next month.", "zh": "這間工廠下個月將停止生產。"},
+      {"en": "The rain did not cease until midnight.", "zh": "雨一直到半夜才停。"}
+    ],
+    "extra": [
+      {"en": "The two sides agreed to cease fighting.", "zh": "雙方同意停止戰鬥。"},
+      {"en": "The noise will cease when the workers finish.", "zh": "工人完工後，噪音就會停止。"}
+    ]
+  },
+  {
+    "word": "devise", "pos": "v", "level": 4, "zh": "設計；想出",
+    "hp": [
+      {"en": "The engineers tried to devise a cheaper way to clean water.", "zh": "工程師試著想出更便宜的淨水方法。"},
+      {"en": "The coach helped us devise a new plan for the game.", "zh": "教練幫我們想出新的比賽計畫。"}
+    ],
+    "extra": [
+      {"en": "We must devise a way to save more energy.", "zh": "我們必須想出更省能源的方法。"},
+      {"en": "Scientists hope to devise a better test for the disease.", "zh": "科學家希望設計出更好的疾病檢測方式。"}
+    ]
+  },
+  {
+    "word": "exaggerate", "pos": "v", "level": 4, "zh": "誇大；誇張",
+    "hp": [
+      {"en": "Kevin likes to exaggerate when he tells stories.", "zh": "凱文說故事時喜歡誇大。"},
+      {"en": "Don't exaggerate the problem; it is not that serious.", "zh": "別誇大問題，事情沒那麼嚴重。"}
+    ],
+    "extra": [
+      {"en": "Some ads exaggerate how well their products work.", "zh": "有些廣告誇大產品的效果。"},
+      {"en": "My uncle tends to exaggerate the size of the fish he catches.", "zh": "我叔叔常誇大他釣到的魚有多大。"}
+    ]
+  },
+  {
+    "word": "negotiate", "pos": "v", "level": 4, "zh": "談判；協商",
+    "hp": [
+      {"en": "The workers tried to negotiate a higher salary.", "zh": "員工試著協商更高的薪水。"},
+      {"en": "The two companies will negotiate the price next week.", "zh": "兩家公司下週將協商價格。"}
+    ],
+    "extra": [
+      {"en": "My dad knows how to negotiate with car dealers.", "zh": "我爸爸很懂得跟車商議價。"},
+      {"en": "The countries met to negotiate a peace agreement.", "zh": "各國會面談判和平協議。"}
+    ]
+  },
+  {
+    "word": "deadline", "pos": "n", "level": 4, "zh": "截止期限",
+    "hp": [
+      {"en": "The deadline for this report is Friday.", "zh": "這份報告的截止日是星期五。"},
+      {"en": "Kevin stayed up all night to meet the deadline.", "zh": "凱文熬了一整夜，才趕上截止期限。"}
+    ],
+    "extra": [
+      {"en": "Don't forget the deadline for college applications.", "zh": "別忘了大學申請的截止日期。"},
+      {"en": "We asked the teacher to extend the deadline.", "zh": "我們請老師延長截止期限。"}
+    ]
+  },
+  {
+    "word": "ingredient", "pos": "n", "level": 4, "zh": "原料；食材；要素",
+    "hp": [
+      {"en": "Fresh fish is the main ingredient of this soup.", "zh": "新鮮的魚是這道湯的主要食材。"},
+      {"en": "The chef refused to share his secret ingredient.", "zh": "主廚不肯透露他的祕密食材。"}
+    ],
+    "extra": [
+      {"en": "Check every ingredient if you have a food allergy.", "zh": "如果你有食物過敏，要檢查每一種成分。"},
+      {"en": "Hard work is a key ingredient of success.", "zh": "努力是成功的關鍵要素。"}
+    ]
+  },
+  {
+    "word": "hardship", "pos": "n", "level": 4, "zh": "艱難；困苦",
+    "hp": [
+      {"en": "The family faced great hardship after the factory closed.", "zh": "工廠關閉後，這家人面臨很大的困境。"},
+      {"en": "My grandparents lived through years of hardship.", "zh": "我的祖父母度過了多年的艱苦日子。"}
+    ],
+    "extra": [
+      {"en": "The typhoon brought hardship to many farmers.", "zh": "颱風讓許多農民的生活陷入困難。"},
+      {"en": "Studying abroad can be a financial hardship for some students.", "zh": "對有些學生來說，出國念書是沉重的經濟負擔。"}
+    ]
+  },
+  {
+    "word": "landmark", "pos": "n", "level": 4, "zh": "地標",
+    "hp": [
+      {"en": "Taipei 101 is a famous landmark in Taiwan.", "zh": "台北 101 是台灣著名的地標。"},
+      {"en": "The old clock tower is a landmark in our town.", "zh": "那座老鐘塔是我們鎮上的地標。"}
+    ],
+    "extra": [
+      {"en": "Use the red bridge as a landmark when you drive here.", "zh": "開車來這裡時，可以把紅橋當作地標。"},
+      {"en": "Tourists love taking photos in front of the city's landmark.", "zh": "遊客喜歡在這座城市的地標前拍照。"}
+    ]
+  },
+  {
+    "word": "punctual", "pos": "adj", "level": 6, "zh": "準時的",
+    "hp": [
+      {"en": "Our teacher is always punctual for class.", "zh": "我們老師上課總是很準時。"},
+      {"en": "Trains in Japan are famous for being punctual.", "zh": "日本的火車以準時聞名。"}
+    ],
+    "extra": [
+      {"en": "Please be punctual for the interview.", "zh": "面試請準時到。"},
+      {"en": "My boss likes punctual workers.", "zh": "我的老闆喜歡準時的員工。"}
+    ]
+  },
+  {
+    "word": "tedious", "pos": "adj", "level": 6, "zh": "冗長乏味的",
+    "hp": [
+      {"en": "Copying these numbers by hand is tedious work.", "zh": "用手抄這些數字是很乏味的工作。"},
+      {"en": "The speech was so tedious that many people fell asleep.", "zh": "這場演講冗長乏味，很多人都睡著了。"}
+    ],
+    "extra": [
+      {"en": "Cleaning the whole garage was a tedious job.", "zh": "打掃整個車庫是件乏味的工作。"},
+      {"en": "I find long meetings tedious.", "zh": "我覺得長時間開會很乏味。"}
+    ]
+  },
+  {
+    "word": "retrieve", "pos": "v", "level": 6, "zh": "取回；找回",
+    "hp": [
+      {"en": "The dog ran to retrieve the ball from the lake.", "zh": "狗跑去把湖裡的球撿回來。"},
+      {"en": "The technician helped me retrieve my lost photos.", "zh": "技術人員幫我找回遺失的照片。"}
+    ],
+    "extra": [
+      {"en": "You can retrieve your password by email.", "zh": "你可以透過電子郵件找回密碼。"},
+      {"en": "Divers tried to retrieve the phone from the pool.", "zh": "潛水員試著從泳池取回手機。"}
+    ]
+  },
+  {
+    "word": "affirm", "pos": "v", "level": 6, "zh": "肯定；確認",
+    "hp": [
+      {"en": "The president came out to affirm his support for the plan.", "zh": "總統出面肯定並重申對這項計畫的支持。"},
+      {"en": "The court decided to affirm the earlier ruling.", "zh": "法院決定維持先前的判決。"}
+    ],
+    "extra": [
+      {"en": "The teacher tried to affirm each student's effort.", "zh": "老師努力肯定每位學生的付出。"},
+      {"en": "The new study seems to affirm what doctors already believed.", "zh": "這項新研究似乎證實了醫生原本的看法。"}
+    ]
+  },
+  {
+    "word": "analogy", "pos": "n", "level": 6, "zh": "類比；比喻",
+    "hp": [
+      {"en": "The teacher used an analogy to explain electricity.", "zh": "老師用類比來解釋電。"},
+      {"en": "He made an analogy between the heart and a water pump.", "zh": "他把心臟比喻成抽水機。"}
+    ],
+    "extra": [
+      {"en": "A good analogy can make a hard idea easier.", "zh": "好的比喻能讓困難的概念變簡單。"},
+      {"en": "The writer drew an analogy between life and a long journey.", "zh": "作者把人生比喻成一段漫長的旅程。"}
+    ]
+  },
+  {
+    "word": "adaptation", "pos": "n", "level": 6, "zh": "改編作品；適應",
+    "hp": [
+      {"en": "The movie is an adaptation of a popular novel.", "zh": "這部電影改編自一本暢銷小說。"},
+      {"en": "The thick fur of polar bears is an adaptation to cold weather.", "zh": "北極熊厚厚的毛是適應寒冷天氣的結果。"}
+    ],
+    "extra": [
+      {"en": "This play is a modern adaptation of an old story.", "zh": "這齣戲是古老故事的現代改編版。"},
+      {"en": "Moving abroad requires a period of adaptation.", "zh": "搬到國外需要一段適應期。"}
+    ]
   }
 ]
