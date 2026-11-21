@@ -68,4 +68,5 @@
 - 詞性目前只有 `adj`、`v`、`n`。要新增詞性，先改 `POS` 對照表。
 - 改成 `words.json` 後，用 `npx serve` 或 `python -m http.server` 在本機測試，不要直接雙擊 html。
 - 每次修改後，實際開頁面測試：出題、答對、答錯、錯題本、朗讀按鈕。
+- 頁尾顯示網站版本。改 `app.js` 或 `style.css` 時，`index.html` 的兩個 `?v=` 數字加 1，`app.js` 的 `APP_VERSION` 也改成相同數字和當天日期（格式：`v10（2026-11-21）`）。
 - 專案用 Git 管理，每完成一項功能就 commit 一次。

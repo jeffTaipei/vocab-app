@@ -1,5 +1,7 @@
 // 單字資料從 words.json 載入，格式見 CLAUDE.md
 let W = [];
+// 網站版本：改 app.js 或 style.css 時，這裡和 index.html 的 ?v= 要一起更新
+const APP_VERSION = "v10（2026-11-21）";
 const POS = { adj: "形容詞", v: "動詞", n: "名詞" };
 const $ = s => document.querySelector(s);
 const find = k => W.find(x => x.word === k);
@@ -321,6 +323,9 @@ document.addEventListener("change", e => {
   // 剛勾選、而目前這題不是易混淆字題 → 馬上換一題；取消勾選則保留目前這題
   if (nearOnly && !(cur && cur.w.near)) next(); else render();
 });
+
+// 頁尾顯示目前載入的程式版本
+if ($("#ver")) $("#ver").textContent = "版本 " + APP_VERSION;
 
 // 讀取 words.json。直接雙擊 html 開啟時瀏覽器會擋下讀檔，要用本機伺服器
 // cache: "no-cache" = 每次都向伺服器確認檔案有沒有更新，新增單字後不用強制重新整理
