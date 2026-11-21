@@ -1,7 +1,7 @@
 // 單字資料從 words.json 載入，格式見 CLAUDE.md
 let W = [];
 // 網站版本：改 app.js 或 style.css 時，這裡和 index.html 的 ?v= 要一起更新
-const APP_VERSION = "v10（2026-11-21）";
+const APP_VERSION = "v11（2026-11-21）";
 const POS = { adj: "形容詞", v: "動詞", n: "名詞" };
 const $ = s => document.querySelector(s);
 const find = k => W.find(x => x.word === k);
