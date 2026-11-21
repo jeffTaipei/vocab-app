@@ -844,6 +844,7 @@
   },
   {
     "word": "tolerate", "pos": "v", "level": 4, "zh": "容忍；忍受",
+    "fit": "tolerate 人或事：容忍、忍受（及物，後面直接接受詞）",
     "hp": [
       {"en": "Professor McGonagall would not tolerate cheating in her class.", "zh": "麥教授不容許有人在她的課上作弊。"},
       {"en": "Hermione could not tolerate Ron's bad table manners.", "zh": "妙麗無法容忍榮恩糟糕的餐桌禮儀。"}
@@ -851,6 +852,11 @@
     "extra": [
       {"en": "Our teacher does not tolerate rude behavior.", "zh": "我們老師不容忍無禮的行為。"},
       {"en": "Some plants can tolerate very little sunlight.", "zh": "有些植物能忍受很少的日照。"}
+    ],
+    "near": [
+      {"word": "cope", "pos": "v", "level": 4, "zh": "應付", "fit": "cope with 某事：應付、處理，一定要加 with。例：cope with stress"},
+      {"word": "sympathize", "pos": "v", "level": 6, "zh": "同情；體諒", "fit": "sympathize with 人：同情、體諒，一定要加 with。例：sympathize with her"},
+      {"word": "complain", "pos": "v", "level": 3, "zh": "抱怨", "fit": "complain about 某事：抱怨，要加 about。例：complain about the food"}
     ]
   },
   {
@@ -900,13 +906,19 @@
   },
   {
     "word": "privacy", "pos": "n", "level": 4, "zh": "隱私",
+    "fit": "privacy：隱私，不可數，不加 a、不加 s（need privacy、for privacy）",
     "hp": [
-      {"en": "Harry wanted some privacy, so he read the letter under his blanket.", "zh": "哈利想要一點隱私，所以躲在被子裡讀信。"},
-      {"en": "There is little privacy in the Gryffindor dormitory.", "zh": "葛來分多的宿舍幾乎沒什麼隱私。"}
+      {"en": "Harry closed the curtains around his bed for privacy.", "zh": "哈利拉上床邊的簾子，保有一點隱私。"},
+      {"en": "Students in the Gryffindor dormitory do not have much privacy.", "zh": "葛來分多宿舍的學生沒有太多隱私。"}
     ],
     "extra": [
       {"en": "Teenagers often want more privacy from their parents.", "zh": "青少年常希望父母給他們更多隱私。"},
-      {"en": "Please respect my privacy and don't read my diary.", "zh": "請尊重我的隱私，不要看我的日記。"}
+      {"en": "Please knock first because I need privacy in my room.", "zh": "請先敲門，因為我在房間裡需要隱私。"}
+    ],
+    "near": [
+      {"word": "secret", "pos": "n", "level": 2, "zh": "祕密", "fit": "a secret／secrets：祕密，可數，單數前面要有 a 或 my 等字。例：keep a secret"},
+      {"word": "affair", "pos": "n", "level": 2, "zh": "事務；私事", "fit": "an affair／affairs：事務，可數，常用複數。例：family affairs"},
+      {"word": "individual", "pos": "n", "level": 2, "zh": "個人", "fit": "an individual：個人（指人，可數）。例：each individual"}
     ]
   },
   {
@@ -978,6 +990,7 @@
   },
   {
     "word": "betray", "pos": "v", "level": 5, "zh": "背叛；出賣",
+    "fit": "betray 人或祕密：背叛、出賣（及物，後面直接接受詞）",
     "hp": [
       {"en": "Peter Pettigrew chose to betray his friends, the Potters.", "zh": "彼得・佩迪魯選擇背叛他的朋友波特夫婦。"},
       {"en": "Harry would never betray the people who trusted him.", "zh": "哈利絕不會背叛信任他的人。"}
@@ -985,10 +998,16 @@
     "extra": [
       {"en": "A true friend will never betray your secret.", "zh": "真正的朋友絕不會出賣你的祕密。"},
       {"en": "The spy decided to betray his country for money.", "zh": "這名間諜為了錢決定背叛他的國家。"}
+    ],
+    "near": [
+      {"word": "rebel", "pos": "v", "level": 4, "zh": "反叛", "fit": "rebel against 人或權威：反叛，一定要加 against。例：rebel against the king"},
+      {"word": "disagree", "pos": "v", "level": 2, "zh": "不同意", "fit": "disagree with 人或意見：不同意，一定要加 with。例：disagree with my brother"},
+      {"word": "object", "pos": "v", "level": 2, "zh": "反對", "fit": "object to 某事：反對，一定要加 to。例：object to the plan"}
     ]
   },
   {
     "word": "adore", "pos": "v", "level": 5, "zh": "非常喜愛；崇拜",
+    "fit": "adore 人或物：非常喜愛（及物，後面直接接受詞）",
     "hp": [
       {"en": "Hagrid seems to adore every dangerous creature he meets.", "zh": "海格似乎很喜愛他遇到的每一種危險生物。"},
       {"en": "The younger students adore Professor Lupin's lessons.", "zh": "低年級學生非常喜歡路平教授的課。"}
@@ -996,6 +1015,11 @@
     "extra": [
       {"en": "Children adore this cartoon character.", "zh": "小朋友非常喜愛這個卡通角色。"},
       {"en": "I adore the smell of fresh bread in the morning.", "zh": "我非常喜歡早上新鮮麵包的香味。"}
+    ],
+    "near": [
+      {"word": "care", "pos": "v", "level": 1, "zh": "在乎；關心", "fit": "care about 人或事：在乎，要加 about。例：care about your health"},
+      {"word": "long", "pos": "v", "level": 1, "zh": "渴望", "fit": "long for 某物／long to V：渴望，要加 for 或 to。例：long for home"},
+      {"word": "yearn", "pos": "v", "level": 6, "zh": "渴望；嚮往", "fit": "yearn for 某物／yearn to V：嚮往，要加 for 或 to。例：yearn for freedom"}
     ]
   },
   {
@@ -1117,6 +1141,7 @@
   },
   {
     "word": "linger", "pos": "v", "level": 6, "zh": "逗留；徘徊；揮之不去",
+    "fit": "linger + 地點或時間：逗留、揮之不去（不及物，不直接接受詞）",
     "hp": [
       {"en": "Harry liked to linger in the Great Hall after the feast.", "zh": "宴會結束後，哈利喜歡在大廳逗留。"},
       {"en": "The smell of Snape's potion seemed to linger in the dungeon all day.", "zh": "石內卜魔藥的氣味似乎整天都在地窖裡揮之不去。"}
@@ -1124,21 +1149,33 @@
     "extra": [
       {"en": "We like to linger at the café after school.", "zh": "放學後我們喜歡在咖啡廳逗留。"},
       {"en": "Sad memories can linger for a long time.", "zh": "悲傷的回憶可能會縈繞很久。"}
+    ],
+    "near": [
+      {"word": "postpone", "pos": "v", "level": 3, "zh": "延後", "fit": "postpone 某事：把事情延後，後面要接受詞。例：postpone the meeting"},
+      {"word": "inhabit", "pos": "v", "level": 6, "zh": "居住於", "fit": "inhabit 某地：居住於，及物，不說 inhabit in。例：Bears inhabit the forest."},
+      {"word": "occupy", "pos": "v", "level": 4, "zh": "佔據", "fit": "occupy 空間或時間：佔據，及物，不說 occupy in。例：occupy two seats"}
     ]
   },
   {
     "word": "accumulate", "pos": "v", "level": 6, "zh": "累積；堆積",
+    "fit": "某物 accumulate：東西慢慢累積、堆積（可以不接受詞）",
     "hp": [
-      {"en": "Fred and George began to accumulate money for their joke shop.", "zh": "弗雷和喬治開始為他們的惡作劇商店存錢。"},
+      {"en": "Gold coins began to accumulate in Fred and George's joke shop.", "zh": "金幣開始在弗雷和喬治的惡作劇商店裡越積越多。"},
       {"en": "Dust began to accumulate on the old books in the Restricted Section.", "zh": "禁書區的舊書上開始積起灰塵。"}
     ],
     "extra": [
       {"en": "Snow began to accumulate on the roads.", "zh": "路上開始積雪。"},
       {"en": "If you save a little every day, the money will accumulate.", "zh": "每天存一點，錢就會越積越多。"}
+    ],
+    "near": [
+      {"word": "reserve", "pos": "v", "level": 3, "zh": "保留；預訂", "fit": "reserve 某物：保留、預訂，後面要接受詞。例：reserve a table"},
+      {"word": "obtain", "pos": "v", "level": 4, "zh": "取得", "fit": "obtain 某物：取得，後面要接受詞。例：obtain a license"},
+      {"word": "acquire", "pos": "v", "level": 4, "zh": "獲得；習得", "fit": "acquire 某物：獲得、學到，後面要接受詞。例：acquire a new skill"}
     ]
   },
   {
     "word": "alienate", "pos": "v", "level": 6, "zh": "使疏遠",
+    "fit": "alienate 人 (from 某人)：使某人疏遠（及物，後面直接接人）",
     "hp": [
       {"en": "Harry's angry mood began to alienate his friends in his fifth year.", "zh": "五年級時，哈利的壞脾氣開始讓朋友疏遠他。"},
       {"en": "Percy's choice to side with the Ministry began to alienate him from his family.", "zh": "派西選擇站在魔法部那邊，開始和家人疏遠。"}
@@ -1146,10 +1183,16 @@
     "extra": [
       {"en": "Rude comments can alienate your classmates.", "zh": "無禮的評論會讓同學疏遠你。"},
       {"en": "The new rule may alienate some loyal customers.", "zh": "新規定可能會讓一些忠實顧客疏遠。"}
+    ],
+    "near": [
+      {"word": "drift", "pos": "v", "level": 4, "zh": "漂離；漸行漸遠", "fit": "drift apart／drift away：自己漸漸疏遠，不直接接人。例：Old friends drift apart."},
+      {"word": "depart", "pos": "v", "level": 4, "zh": "離開；出發", "fit": "depart (from) 某地：離開，不說 depart 人。例：depart from Taipei"},
+      {"word": "retreat", "pos": "v", "level": 4, "zh": "撤退；退縮", "fit": "retreat (from) 某處：撤退，不直接接人。例：retreat from the city"}
     ]
   },
   {
     "word": "amplify", "pos": "v", "level": 6, "zh": "放大；增強",
+    "fit": "amplify 聲音或事情：放大、增強（及物，後面要接受詞）",
     "hp": [
       {"en": "Lee Jordan used a magical microphone to amplify his voice during Quidditch matches.", "zh": "魁地奇比賽時，李・喬丹用魔法麥克風放大自己的聲音。"},
       {"en": "The Weasley twins used magic to amplify the sound of their fireworks.", "zh": "衛斯理雙胞胎用魔法讓煙火的聲音更響亮。"}
@@ -1157,6 +1200,11 @@
     "extra": [
       {"en": "The speaker can amplify the music for the whole room.", "zh": "喇叭能把音樂放大，讓整個房間都聽得到。"},
       {"en": "Social media can amplify a small rumor.", "zh": "社群媒體可能把一個小謠言放大。"}
+    ],
+    "near": [
+      {"word": "rise", "pos": "v", "level": 1, "zh": "上升", "fit": "某物 rise：自己上升，不及物，不能接受詞。例：Prices rise."},
+      {"word": "arise", "pos": "v", "level": 4, "zh": "出現；發生", "fit": "問題 arise：問題出現，不及物，不能接受詞。例：Problems may arise."},
+      {"word": "soar", "pos": "v", "level": 5, "zh": "飆升", "fit": "某物 soar：快速上升，不及物，不能接受詞。例：Prices soared."}
     ]
   },
   {
